@@ -1,0 +1,718 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="8104c7e8-bf3c-4173-a13f-540b62ab7554" name="UMLClassDiagram1" linkedPackageId="53911808-a4ba-4b85-94c5-49f8ad4c20e0" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="d78be81c-3469-4b15-b933-83e467aa5406">
+      <elementDefinition Id="33c6f65b-01a0-4ff5-b63c-8ba30e0d7326" />
+      <body>HERE BE WEAPONS
+</body>
+    </comment>
+    <comment Id="9ee0f0b9-a978-43f1-9d97-b48a1c7f7a0c">
+      <elementDefinition Id="5102b327-eaf4-4291-891d-5b731088ffdf" />
+      <body>ability mod = floor((x - 10) / 2.0)</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="23e35f9b-37e1-446f-a7f6-366d63d2e614" name="IList?" isAbstract="false" isLeaf="false" cachedFullName="IList?">
+        <elementDefinition Id="48b57780-e90a-45d5-b3b4-d61f9b2f391f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="80d0499f-2278-4e95-a87b-d0e7e9a3c4a4" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f9a4017e-8a1a-49d5-b6b5-1f968d6c98e8" name="IList" isAbstract="false" isLeaf="false" cachedFullName="IList">
+        <elementDefinition Id="aaf43322-8c78-433a-97eb-7fb699ffdf96" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a71fee5b-783b-4de8-9f97-71acf5b92a82" name="Weapon" isAbstract="false" isLeaf="false" cachedFullName="Weapon">
+        <elementDefinition Id="d110f133-6db0-45ae-9404-518e4a2ce53d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e286fad5-57ba-423d-a14c-0b59715a3bb1" name="Shield" isAbstract="false" isLeaf="false" cachedFullName="Shield">
+        <elementDefinition Id="13e5f7bc-a474-4a81-a0e5-a5af2539b885" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f205a689-29fd-44cc-acf2-d1b60e23552c" name="Armor" isAbstract="false" isLeaf="false" cachedFullName="Armor">
+        <elementDefinition Id="cf9afc68-9901-4a2a-a9e7-3b8e29a1fb0e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3b4fc403-f2d0-476e-a158-d21e26a735b6" name="Size" isAbstract="false" isLeaf="false" cachedFullName="Size">
+        <elementDefinition Id="32c6b54e-46b2-4802-aec1-259b3a94b9b6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="48a2a33d-e085-4f02-a810-001cac744158" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b2d4bbf8-c256-4f1a-9725-b6633971a869" name="ModelingProject1::Entity" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Entity">
+        <elementDefinition Id="8014d877-bff9-447a-8e30-5e90a893866b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5d8f01bd-a35b-4a36-942c-9bfdeb416972" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0f1aced1-1a27-428f-a4c0-373d0d09aae1" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="00ef689d-72b5-4f7d-ab6b-bee1a2f0f49c" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="980b65a3-16aa-45f8-aaf5-f375871a7060" name="ISet&lt;Weapon&gt;" isAbstract="false" isLeaf="false" cachedFullName="ISet&lt;Weapon&gt;">
+        <elementDefinition Id="e97a8572-f52d-4541-aafb-42902780639c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8988b6f4-0de5-4085-8c7f-b64bc504ddb1" name="IList&lt;Player&gt;" isAbstract="false" isLeaf="false" cachedFullName="IList&lt;Player&gt;">
+        <elementDefinition Id="fc2ae5e5-2636-49f0-9fac-f152c37f7a98" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="88514e66-e58a-426a-bc25-58251e838b56" name="IList&lt;Monster&gt;" isAbstract="false" isLeaf="false" cachedFullName="IList&lt;Monster&gt;">
+        <elementDefinition Id="59922d8a-353c-4ca1-be7d-bfaef7f24524" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ac332a8d-1b34-4587-a087-05b3029c7a31" name="IList&lt;Entity&gt;" isAbstract="false" isLeaf="false" cachedFullName="IList&lt;Entity&gt;">
+        <elementDefinition Id="687f141f-8343-429f-a0e6-86489eac5925" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="341390fe-2250-4f53-935b-147619532404" name="Entity" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d92c2e70-8cf4-43a9-928b-5ed649a04fbc" />
+        <targetEnds>
+          <association Id="0698507f-b4bf-499e-a7b9-7e9e10352185" isDerived="false" sourceEndRoleName="Entity" targetEndRoleName="Size" isLeaf="false" isAbstract="false">
+            <enumerationMoniker Id="9230972b-c399-44c4-b2e4-7a7be7dbc5a2" LastKnownName="Size" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="15a92663-fbbd-4f3c-8179-bb1aca7b9609" name="Entity" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="42de782d-66e8-4859-a196-c4cebbf61a8a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f6bf6874-0d10-4aca-a91b-ba9671fa13bc" name="Size" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="02f95d98-58e5-4880-8dbd-6980e064afaa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="546294eb-9d41-4eca-9e83-8b27f639dcc8" />
+          </association>
+          <association Id="27a95bae-e7d4-4e58-abba-8ae94bda9548" isDerived="false" sourceEndRoleName="Entity" targetEndRoleName="Attributes" isLeaf="false" isAbstract="false">
+            <enumerationMoniker Id="71e59e4c-ba24-4d43-9fb3-eb00b87828c5" LastKnownName="Attributes" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7a1c1de5-b1e9-453f-9796-94a6cac4ef02" name="Entity" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0184351c-9081-4f6a-ab6a-5a3bfa1efd81" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f4642a61-0d4b-4210-8e84-a15023c31c2f" name="Attributes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="75cb43f8-0098-4dfc-bdc3-2ffe19cf059f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9012edf0-7bba-4bf3-bda5-041ef2bcb75f" />
+          </association>
+          <association Id="39c57945-7312-49aa-9318-3f2fc7271201" isDerived="false" sourceEndRoleName="Entity" targetEndRoleName="Weapon" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="414774d2-64fd-4590-b5a7-d7f80b12cc00" LastKnownName="Weapon" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ef54015a-34e3-4187-abae-1e74c0b2bf0e" name="Entity" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1a03be4a-c713-4021-918c-a69d38d8759a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f5eb10ed-d566-4f54-9192-8a4532bd6a13" name="Weapon" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0fb276a6-7b34-4d19-8a49-55f07b6f169d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6b6a7bbf-8d45-4e25-be5c-a2f9340fde27" />
+          </association>
+          <association Id="0a228e3b-e8d4-4519-bd36-7f8782f14ae7" isDerived="false" sourceEndRoleName="Entity" targetEndRoleName="Armor" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="a311724f-2b1d-4183-9f7b-749235772f23" LastKnownName="Armor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="28a84568-47fb-48c1-97a9-7f23fd43e9c3" name="Entity" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="16f42223-f5f1-459d-981f-c7c45e5c8112" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5e556c1b-88e0-4d48-a461-b4eba86bb98e" name="Armor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="95dd14cb-9bb3-4592-8a61-30a5cf91adb5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="91ca1778-e245-421e-a317-4d8f52d9640f" />
+          </association>
+          <association Id="193a3762-30b6-4e5d-8869-328d91cea2b7" isDerived="false" sourceEndRoleName="Entity" targetEndRoleName="Spell" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="97317503-9796-4f58-afb8-51be293094a0" LastKnownName="Spell" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4da0bfa0-a12d-4f90-bb3c-7bb153c1f1cb" name="Entity" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b98b1b78-05ef-417b-9af6-522227bb8098" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0f3cf2c0-1691-4e18-a6fb-b12da91a245e" name="Spell" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="69c36db0-4693-49a7-b76b-1915dde2f82d" name="Lower" value="*">
+                      <elementDefinition Id="7015a5df-0481-48c2-b0f4-238bacf0ffae" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="284c8a6c-a1f1-4725-8816-1bd059afb19c" name="Upper" value="*">
+                      <elementDefinition Id="dd5e94b3-5f45-44c2-b7d7-c58a217f82a5" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="3d985f8f-b3c3-4ffb-8e89-9a194df482ed" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="db7816c9-dda4-464b-b7f6-8a09e0db71e6" />
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property Id="4f9a3db6-9afe-428d-8047-ca9dcda08e93" name="attributes" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7c8bb26e-d9ba-449e-b9f1-a5afc625bb37" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="23e35f9b-37e1-446f-a7f6-366d63d2e614" LastKnownName="IList?" />
+            </type_NamedElement>
+          </property>
+          <property Id="f77b0e02-c6b7-417d-b28a-94ef5e3aed7d" name="hp" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4a37d053-e9a3-4710-bf2c-3cc8f3997624" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80d0499f-2278-4e95-a87b-d0e7e9a3c4a4" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="6cf5660a-b608-4b23-8291-1c0fab3d92c3" name="hpMax" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="978f4927-1168-4131-b020-4b0cc2471de2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80d0499f-2278-4e95-a87b-d0e7e9a3c4a4" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="7a283c43-abfc-4116-85b2-31550a2b6f1b" name="spells" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8e9b94a1-b640-42ac-9703-c041e2a821a8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f9a4017e-8a1a-49d5-b6b5-1f968d6c98e8" LastKnownName="IList" />
+            </type_NamedElement>
+          </property>
+          <property Id="aeefaa82-f62a-4feb-bc47-e8ef747045a8" name="weapon" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ec51a8b8-fefe-4356-aa38-cb3a9fe1bb5a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a71fee5b-783b-4de8-9f97-71acf5b92a82" LastKnownName="Weapon" />
+            </type_NamedElement>
+          </property>
+          <property Id="c0c0e40f-0f1d-44d2-b4dd-af849b25ba78" name="initiative" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="390cc929-6a21-4503-8502-2e5f487a9a18" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80d0499f-2278-4e95-a87b-d0e7e9a3c4a4" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="a54995e7-b614-48d6-acf4-9e276b964fec" name="shield" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="40917688-310a-4424-a1f8-c4c0a6aac85d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e286fad5-57ba-423d-a14c-0b59715a3bb1" LastKnownName="Shield" />
+            </type_NamedElement>
+          </property>
+          <property Id="b686eabe-ec4d-4e0e-a77c-02ca7f4dd1b4" name="armor" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8dfe06d8-880a-439d-992e-57ff0c8a2f3a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f205a689-29fd-44cc-acf2-d1b60e23552c" LastKnownName="Armor" />
+            </type_NamedElement>
+          </property>
+          <property Id="560f110b-a5a6-4c0c-8eb2-7ad54bd208ff" name="size" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5450f82d-1219-4998-9ddd-1010363e6242" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3b4fc403-f2d0-476e-a158-d21e26a735b6" LastKnownName="Size" />
+            </type_NamedElement>
+          </property>
+          <property Id="02eb174a-f150-4bdd-bf66-c353e335d6b6" name="name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="35389ca8-aea4-4b61-bc35-de973a5e5768" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="48a2a33d-e085-4f02-a810-001cac744158" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="b55b1629-bc3c-46f8-a1e2-38590e1e2e15" name="curMana" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bf9eb0b3-9a2e-44cf-89e1-aba1dee147b2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80d0499f-2278-4e95-a87b-d0e7e9a3c4a4" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="d2ff6f2a-8300-49c7-b9da-96f68edaabcf" name="maxMana" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9967612a-aeb8-4cb7-a738-4efca187d3cd" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80d0499f-2278-4e95-a87b-d0e7e9a3c4a4" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="e8d9bdf4-4d73-403d-922e-9249bd02ef29" name="level" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="303ba6ef-7176-45ae-97a1-b8f666f02f88" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80d0499f-2278-4e95-a87b-d0e7e9a3c4a4" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation Id="6767a7b0-c2c3-49a7-a771-0b3f1f37b4bf" name="Update" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ed6b0c9c-c096-462f-8b73-17963f817a99" />
+          </operation>
+          <operation Id="8a307472-5af5-4efe-9124-a45007a55fe9" name="Attack" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="080b3f2b-3037-407b-8830-f6eacb10c082" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a4065028-4b1f-4fdd-b178-efb1bb822259" name="target" direction="In" isUnique="false">
+                  <elementDefinition Id="3c05188f-cb16-459e-9e73-320adf93b69e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b2d4bbf8-c256-4f1a-9725-b6633971a869" LastKnownName="ModelingProject1::Entity" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ed747c86-1321-4727-8c89-0ff0ff9b3952" name="IsDead" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3978497b-0010-40c6-9c32-2b3064f15c84" />
+          </operation>
+          <operation Id="856df8d2-055b-46e2-8254-2c8a95206527" name="ArmorClass" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2c807083-523e-4284-933b-a60b6e83d806" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d88c2f0c-7fd5-4117-8939-a5f43af4c181" direction="Return">
+                  <elementDefinition Id="ec685d96-d549-400a-9fca-8da205c2a55e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5d8f01bd-a35b-4a36-942c-9bfdeb416972" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e1e81152-33f0-4e57-a0f9-2cea62d42633" name="TouchArmorClass" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2ec3be23-5cd7-41f0-b924-2c44dccba4c3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="78f1f1a3-a74b-454f-8947-c6306d3bdf5a" direction="Return">
+                  <elementDefinition Id="d47592af-b4c2-4900-b042-25e94cc275f6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="0f1aced1-1a27-428f-a4c0-373d0d09aae1" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="aa037e77-9d92-4b3a-ad5d-9bb6e2b9630b" name="Has2H" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e848144e-a7e4-4aaa-a8bd-c0ebb1f55ab5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="38608925-5152-41b4-b6b7-364d421d9b2f" direction="Return" isUnique="false">
+                  <elementDefinition Id="739ee6ac-36e7-441e-a1f2-07abe342c222" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="00ef689d-72b5-4f7d-ab6b-bee1a2f0f49c" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="c09ce268-1d03-43fa-b10e-9b3c67a151cb" name="Player" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fd5fcbe1-2c98-4449-ac56-bb5282e77e71" />
+        <generalsInternal>
+          <generalization Id="159f8ff3-a11f-40e1-bdea-06c3c55bdf28" isSubstitutable="false">
+            <interfaceMoniker Id="341390fe-2250-4f53-935b-147619532404" LastKnownName="Entity" />
+            <elementDefinition Id="5c392af1-9368-44d6-abd3-a391f87411f5" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributes>
+          <property Id="01c8d136-a1a5-41bd-99f9-35173b77fc96" name="weaponProficiencies" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4dc00d18-56cc-421f-921a-032ea6479a66" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="980b65a3-16aa-45f8-aaf5-f375871a7060" LastKnownName="ISet&lt;Weapon&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation Id="517ee456-ac70-447d-80ab-b6e223d5b87a" name="LevelUp" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4de795ae-64af-4d08-996f-af84e6110c71" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="473c326f-b178-450e-bf2b-ef74d00f0bbc" name="Monster" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5fe97ae9-1020-44e3-9f51-4180520c95a6" />
+        <generalsInternal>
+          <generalization Id="32dac137-142d-48f2-ac1f-07f46248031d" isSubstitutable="false">
+            <interfaceMoniker Id="341390fe-2250-4f53-935b-147619532404" LastKnownName="Entity" />
+            <elementDefinition Id="5968e64a-f158-4dc9-9fff-55986b974d7c" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="9230972b-c399-44c4-b2e4-7a7be7dbc5a2" name="Size" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6c31d617-2a47-4b24-af8d-13410542b357" />
+        <ownedLiterals>
+          <enumerationLiteral Id="f19c9c0f-1948-456f-ade5-26bc70180933" name="Fine">
+            <elementDefinition Id="013f4067-86a1-4b1c-bd02-da7ed6a632e3" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="60f43da7-9718-4b74-b390-1f0d9b6a0750" name="Diminutive">
+            <elementDefinition Id="60500829-af68-498e-b756-9aca857028dd" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="760ebd52-4f08-4e1a-b840-14a52bb43653" name="Tiny">
+            <elementDefinition Id="fe60dce2-22a0-44b4-96eb-980189229a48" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="a6f20b59-790a-45bc-b181-d2671143134c" name="Small">
+            <elementDefinition Id="b5fa8cee-a378-4c14-b58a-2145a4d68da8" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="ce49a52a-daf0-4583-9816-d3360a924a4a" name="Medium">
+            <elementDefinition Id="dbcd8b37-ad0e-4b79-bcd9-0cd05fec6b5e" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="6c1cbbae-9f6b-4a83-939a-34bcdb4dc25f" name="Large">
+            <elementDefinition Id="e915960e-5972-4902-8ccb-ebf9bc19e235" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="9d70fa10-d32d-4827-a024-74fd1901f0af" name="Huge">
+            <elementDefinition Id="5d9cc2ba-acfb-4b5b-b360-088a880432bc" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="b5944278-955a-491c-bcd9-cbf4b2ef613a" name="Gargantuan">
+            <elementDefinition Id="7c12de1f-35a0-427c-9d6d-9cac38637d19" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="e8e33eb8-247d-4a30-8bee-408a9633de41" name="Colossal">
+            <elementDefinition Id="27523383-e727-4385-ae82-c3e424190db0" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="71e59e4c-ba24-4d43-9fb3-eb00b87828c5" name="Attributes" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c8015777-7a8b-46ca-8efb-e173c53d3c96" />
+        <ownedLiterals>
+          <enumerationLiteral Id="7528d95e-5d2d-4a8c-a2a5-cbabdf2d52ed" name="Strength">
+            <elementDefinition Id="f480fc47-5590-40b5-893b-159746108307" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="893fbdf0-6af0-4b8c-8e36-494286627e55" name="Dexterity">
+            <elementDefinition Id="83bb655a-624b-4a25-91cf-f83bb51aa611" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="191d2184-fa91-4a75-82f9-2819ea9de725" name="Constitution">
+            <elementDefinition Id="fc94f574-fac7-4927-bd17-126a8d5cfb42" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="62f2c696-a486-4e36-a008-755668361b87" name="Intelligence">
+            <elementDefinition Id="b813c92a-a4b3-461f-970f-4cd727a7f9fe" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="a79e2ec2-9563-4ca5-80b2-ec1e53f59db0" name="Wisdom">
+            <elementDefinition Id="77491623-0696-4166-8eb6-fdd5b373540c" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="94a91584-f30d-4e39-9f4f-95d3b97100ce" name="Charisma">
+            <elementDefinition Id="b4f93ab5-f015-4b1e-8224-87e3cbdd425a" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="414774d2-64fd-4590-b5a7-d7f80b12cc00" name="Weapon" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="911eb007-415c-4d49-8bad-0a367c03e411" />
+        <ownedAttributes>
+          <property Id="76b428a7-5a20-4214-b0a3-c04a062e0c0c" name="damageDice" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3f2f2620-3144-410f-a781-a2b0a3c84a68" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f9a4017e-8a1a-49d5-b6b5-1f968d6c98e8" LastKnownName="IList" />
+            </type_NamedElement>
+          </property>
+          <property Id="ad1b503b-0aa7-4673-920a-c4d4b9675bf6" name="damageMod" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f5f0710f-e28f-4c38-ade3-675d465a7135" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80d0499f-2278-4e95-a87b-d0e7e9a3c4a4" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="bd4e6732-7cdc-44b1-9952-b5d305b5c586" name="threatRangeMin" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fb3c4096-e95e-45f5-bfd0-7d858a515172" />
+          </property>
+          <property Id="d709f05d-810b-4d5d-bd40-7fbe8b9617a9" name="threatRangeMax" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f59475ee-833c-4584-a07e-95438d08058a" />
+          </property>
+          <property Id="910fdbd8-690c-4705-95b1-e92ded362e31" name="criticalMultiplier" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d5eb201a-5f81-4bcc-9934-e51988e18ff3" />
+          </property>
+          <property Id="c20a218e-2822-4917-bc44-47b5764f6c31" name="isLight" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="abded69e-f403-4621-96a7-3781b5488fef" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="00ef689d-72b5-4f7d-ab6b-bee1a2f0f49c" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+          <property Id="b7f9c2dc-25d1-4d9a-be46-2cb675cc5c19" name="is2H" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="757bf5e9-c9ac-498c-af0c-be60611c318d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="00ef689d-72b5-4f7d-ab6b-bee1a2f0f49c" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="a311724f-2b1d-4183-9f7b-749235772f23" name="Armor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fb2932f6-6f66-48af-89d9-86b89e08e016" />
+        <ownedAttributes>
+          <property Id="40c3c1dc-eac8-46b9-a7bb-ce2178fdf449" name="armorClass" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c4dc5ecf-13b9-4ef6-899f-937993e10929" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80d0499f-2278-4e95-a87b-d0e7e9a3c4a4" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="3b630f3a-1281-4d3b-af1d-24c02d382b74" name="maxDexMod" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9df4a6c6-dffc-46ce-b39e-a4a58260f079" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80d0499f-2278-4e95-a87b-d0e7e9a3c4a4" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="b45c78e4-b160-41ab-b449-b99496082969" name="arcaneSpellFailure" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f8855a66-245b-4ce4-9437-6f6d5ad4e627" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80d0499f-2278-4e95-a87b-d0e7e9a3c4a4" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="84b7a970-bc15-4f36-a600-f518c036d8e1" name="Shield" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f21b2794-6bbf-4a7c-a918-746f8ff13988" />
+        <suppliersInternal>
+          <interfaceRealization Id="b0742052-16f8-42fb-9e23-770300afa347">
+            <interfaceMoniker Id="a311724f-2b1d-4183-9f7b-749235772f23" LastKnownName="Armor" />
+            <elementDefinition Id="1dd9b4c8-9834-40c7-95f1-50e845fc33e0" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="70b2c6fb-c534-44e3-ae0d-ffabcdba83be" name="HeavyArmor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ce3c1264-a57a-45ac-98de-38f1ec8f0bd6" />
+        <suppliersInternal>
+          <interfaceRealization Id="a014376a-db0d-447f-adb9-666faf88f752">
+            <interfaceMoniker Id="a311724f-2b1d-4183-9f7b-749235772f23" LastKnownName="Armor" />
+            <elementDefinition Id="df2ab09a-d93e-49ea-9165-639b9be2dce4" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="611a0872-b892-48d5-bb37-b23c5f755c78" name="MediumArmor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5dfa8cfd-848c-4208-b065-51be41b158a2" />
+        <suppliersInternal>
+          <interfaceRealization Id="cc71ec1b-cdd4-4884-a497-f105e921874f">
+            <interfaceMoniker Id="a311724f-2b1d-4183-9f7b-749235772f23" LastKnownName="Armor" />
+            <elementDefinition Id="8767b827-2d15-4afb-aa51-88ad59c6c89b" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="53f7e77d-c2f7-4c40-b50a-110404e71cb8" name="LightArmor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4783bc15-3644-406e-91bd-fbe7bc94a3a4" />
+        <suppliersInternal>
+          <interfaceRealization Id="41caf0dc-2484-4f05-b90b-23928bd5646d">
+            <interfaceMoniker Id="a311724f-2b1d-4183-9f7b-749235772f23" LastKnownName="Armor" />
+            <elementDefinition Id="7c2f53c4-2930-42cf-ade5-5f10fa976b15" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ae404957-5a20-42b0-9743-91a01d51791f" name="Game" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b6b01747-fbf5-4c06-a3a3-1867f1f4ad93" />
+        <targetEnds>
+          <association Id="0f29f3eb-a317-4b9f-8647-00288bb892ce" isDerived="false" sourceEndRoleName="Game" targetEndRoleName="Player" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="c09ce268-1d03-43fa-b10e-9b3c67a151cb" LastKnownName="Player" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4a7de3e2-4a46-4962-82ea-2c1c24af8ab8" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="470d4908-bc82-42ae-ba1f-52b39dbe1ad3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4492ad73-8eaf-40c1-8406-b70090659a03" name="Player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="ac5074b4-44a9-4b05-9fe8-a7834e6bfde2" name="Lower" value="1">
+                      <elementDefinition Id="02e7574f-bf28-4b2c-90af-6ca06fd98bf9" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="78fc5b90-60c9-41c0-826f-2550065b8aa4" name="Upper" value="4">
+                      <elementDefinition Id="75682dd9-8264-47b6-8437-6d4caa7d5954" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="5cfe6d5b-380e-4b03-96fd-4401dbab0435" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7f7a5b28-5e76-4394-b2b3-dc0e529add19" />
+          </association>
+          <association Id="176d0d30-fdb2-4a27-8b17-cc5b1192de3e" isDerived="false" sourceEndRoleName="Game" targetEndRoleName="Monster" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="473c326f-b178-450e-bf2b-ef74d00f0bbc" LastKnownName="Monster" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="094296b4-48e8-4960-a423-8a0a7a44cdf4" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bf79ed68-3ec9-416c-a3cd-a78e0bff1f4c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6f5e37c1-1073-4acc-a170-3556dfbb7692" name="Monster" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="634d294c-a008-4e9c-b969-98348a9dd5ec" name="Lower" value="*">
+                      <elementDefinition Id="92c2ebc9-e646-41eb-9dc7-bcbd6f05b7dc" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="cb9250f8-8a71-4e5f-af05-637955ca9d25" name="Upper" value="*">
+                      <elementDefinition Id="a7a82073-3652-4eba-acf3-e6a5f5d6a87d" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="42c363bd-168b-45a0-aa34-33df99f4b82c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d837e727-e5b6-4521-ba52-4ea16d7159ad" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="4552a4b1-989b-4478-85ce-199e56ea0acb" name="players" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0b016cae-68a3-47c8-b8fd-a5821ea2a001" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8988b6f4-0de5-4085-8c7f-b64bc504ddb1" LastKnownName="IList&lt;Player&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="b2ff9dbd-e29c-4867-8827-3ba11ca0251b" name="monsters" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6797485b-5191-4597-b212-e4c3d37730fd" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="88514e66-e58a-426a-bc25-58251e838b56" LastKnownName="IList&lt;Monster&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="e138eb1f-c073-49be-86ee-7bbde72f5a7d" name="MartialWeapon" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="628e9de1-4b67-4e34-8b11-fdb2a4d184a8" />
+        <generalsInternal>
+          <generalization Id="81cc61d1-8cc6-4bc0-a041-ede74e34d63b" isSubstitutable="false">
+            <interfaceMoniker Id="414774d2-64fd-4590-b5a7-d7f80b12cc00" LastKnownName="Weapon" />
+            <elementDefinition Id="0a88c19e-05b4-47f0-adcf-35a9d06d558c" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="29e06fc1-ea10-449e-a188-7bb907dc8d8d" name="ExoticWeapon" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8a086686-f5de-431e-8ae5-5fe9b178af9a" />
+        <generalsInternal>
+          <generalization Id="f836786d-7b0a-4e14-bde6-d4638e00378e" isSubstitutable="false">
+            <interfaceMoniker Id="414774d2-64fd-4590-b5a7-d7f80b12cc00" LastKnownName="Weapon" />
+            <elementDefinition Id="490c341e-3692-484a-8f3f-5bac8cccf568" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="f4960c7f-cc48-442e-b331-09b25b4f9a47" name="SimpleWeapon" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2dea6ece-3e3d-4e3a-8435-83f1ac6f7f81" />
+        <generalsInternal>
+          <generalization Id="4646a8c4-10c9-4cc6-b62f-ef6a4dc4ede6" isSubstitutable="false">
+            <interfaceMoniker Id="414774d2-64fd-4590-b5a7-d7f80b12cc00" LastKnownName="Weapon" />
+            <elementDefinition Id="bceef58c-b400-47c8-a75b-99a2a75ceed6" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="97317503-9796-4f58-afb8-51be293094a0" name="Spell" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8f44172b-de23-4ddc-abec-e5e76fe38c2f" />
+        <ownedAttributes>
+          <property Id="f7b16715-87c5-4a6c-b1a7-a4ddaa53c4ed" name="level" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="043beb5f-0052-484a-826a-9c75d87f1f3b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80d0499f-2278-4e95-a87b-d0e7e9a3c4a4" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="8e0a9ee0-c2b5-44b0-97bb-87e725ab447f" name="name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="29715afe-daad-48db-a257-ab7abe7113b5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="48a2a33d-e085-4f02-a810-001cac744158" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="b22fd424-aa55-4ce0-9486-a5b4fcd87168" name="duration" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="71993d77-804f-47b0-a2cc-fdfffd63dc06" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80d0499f-2278-4e95-a87b-d0e7e9a3c4a4" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="562f4eaa-defd-4a8c-ab0c-0a0e73264a49" name="manaCost" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="afd1c52a-0f52-4747-aed5-585b811d2dc9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80d0499f-2278-4e95-a87b-d0e7e9a3c4a4" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation Id="a0949309-2827-45d0-a0ee-81aa54201b03" name="CastAt" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ab7b4d30-8d1e-4b8e-b39d-8810d431a260" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c2332438-1fcd-4a6a-b84d-7a23aa837741" name="target" direction="In" isUnique="false">
+                  <elementDefinition Id="751d92b9-bb29-4271-9b19-2a587fe4e756" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b2d4bbf8-c256-4f1a-9725-b6633971a869" LastKnownName="ModelingProject1::Entity" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="016d0dbc-e270-4244-ae03-4bc73bf3e564" name="CastAt" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1861ad33-d37c-4493-ae3e-4a0aceab4cb7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b1f2cccb-13cf-4b8a-938d-32673614470c" name="targets" direction="In" isUnique="false">
+                  <elementDefinition Id="afdf3360-2b98-4812-a743-e7c670bfb7db" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ac332a8d-1b34-4587-a087-05b3029c7a31" LastKnownName="IList&lt;Entity&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="53911808-a4ba-4b85-94c5-49f8ad4c20e0" name="FinalProjectUML">
+    <elementDefinition Id="d876a4de-76b5-40d1-9d98-22fcc7663c9e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9bf64c3d-58ed-4a14-b7dc-fef3db2925dc">
+        <profileInstance Id="30503b30-19b8-4864-af62-086c8785cb31" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c0802257-f831-408f-937a-56d787b2d310">
+        <profileInstance Id="372ee7b1-e469-49fd-b573-4f6ac1eccf0f" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
