@@ -94,8 +94,8 @@
           <association
             Id="546294eb-9d41-4eca-9e83-8b27f639dcc8"
             isDerived="false"
-            sourceEndRoleName="Entity"
-            targetEndRoleName="Size"
+            sourceEndRoleName=""
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <enumerationMoniker
@@ -106,7 +106,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="42de782d-66e8-4859-a196-c4cebbf61a8a"
-                  name="Entity"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -119,7 +118,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="02f95d98-58e5-4880-8dbd-6980e064afaa"
-                  name="Size"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -133,8 +131,8 @@
           <association
             Id="9012edf0-7bba-4bf3-bda5-041ef2bcb75f"
             isDerived="false"
-            sourceEndRoleName="Entity"
-            targetEndRoleName="Attributes"
+            sourceEndRoleName=""
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <enumerationMoniker
@@ -145,7 +143,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="0184351c-9081-4f6a-ab6a-5a3bfa1efd81"
-                  name="Entity"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -158,7 +155,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="75cb43f8-0098-4dfc-bdc3-2ffe19cf059f"
-                  name="Attributes"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -172,8 +168,8 @@
           <association
             Id="6b6a7bbf-8d45-4e25-be5c-a2f9340fde27"
             isDerived="false"
-            sourceEndRoleName="Entity"
-            targetEndRoleName="Weapon"
+            sourceEndRoleName=""
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <interfaceMoniker
@@ -184,7 +180,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="1a03be4a-c713-4021-918c-a69d38d8759a"
-                  name="Entity"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -197,7 +192,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="0fb276a6-7b34-4d19-8a49-55f07b6f169d"
-                  name="Weapon"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -211,8 +205,8 @@
           <association
             Id="91ca1778-e245-421e-a317-4d8f52d9640f"
             isDerived="false"
-            sourceEndRoleName="Entity"
-            targetEndRoleName="Armor"
+            sourceEndRoleName=""
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <interfaceMoniker
@@ -223,7 +217,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="16f42223-f5f1-459d-981f-c7c45e5c8112"
-                  name="Entity"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -236,7 +229,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="95dd14cb-9bb3-4592-8a61-30a5cf91adb5"
-                  name="Armor"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -250,8 +242,8 @@
           <association
             Id="db7816c9-dda4-464b-b7f6-8a09e0db71e6"
             isDerived="false"
-            sourceEndRoleName="Entity"
-            targetEndRoleName="Spell"
+            sourceEndRoleName=""
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <interfaceMoniker
@@ -262,7 +254,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="b98b1b78-05ef-417b-9af6-522227bb8098"
-                  name="Entity"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -275,7 +266,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="3d985f8f-b3c3-4ffb-8e89-9a194df482ed"
-                  name="Spell"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -296,6 +286,43 @@
                       value="*" />
                   </upperValueInternal>
                 </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a50e5511-e889-4d65-807e-48edfee5f31d"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="f42aa946-9969-493d-8f0f-56236faee024"
+              LastKnownName="Wieldable"
+              LastKnownLocation="FinalProjectUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4aaaa835-e568-4798-a7db-bcfa209d97d4"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9d84abe9-c391-40bf-bae9-ed0f2b30134e"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -375,7 +402,7 @@
           </property>
           <property
             Id="ec51a8b8-fefe-4356-aa38-cb3a9fe1bb5a"
-            name="weapon"
+            name="mainHand"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -411,7 +438,7 @@
           </property>
           <property
             Id="40917688-310a-4424-a1f8-c4c0a6aac85d"
-            name="shield"
+            name="offHand"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -421,9 +448,9 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="13e5f7bc-a474-4a81-a0e5-a5af2539b885"
-                LastKnownName="Shield"
+              <interfaceMoniker
+                Id="f42aa946-9969-493d-8f0f-56236faee024"
+                LastKnownName="Wieldable"
                 LastKnownLocation="FinalProjectUML.uml" />
             </type_NamedElement>
           </property>
@@ -561,9 +588,9 @@
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="8014d877-bff9-447a-8e30-5e90a893866b"
-                      LastKnownName="ModelingProject1::Entity"
+                    <interfaceMoniker
+                      Id="d92c2e70-8cf4-43a9-928b-5ed649a04fbc"
+                      LastKnownName="Entity"
                       LastKnownLocation="FinalProjectUML.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -667,6 +694,58 @@
               LastKnownLocation="FinalProjectUML.uml" />
           </generalization>
         </generalsInternal>
+        <targetEnds>
+          <association
+            Id="9afdb2b8-89cf-428e-bd63-5518f8d6732d"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="56a4a2f2-5c0a-412e-91c5-8bd7f10b0f35"
+              LastKnownName="Item"
+              LastKnownLocation="FinalProjectUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="151a2cb7-e724-48c5-87d3-ff907284c091"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="88f76ef0-f8c9-4453-97bd-b8c1482e505f"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="121e4cd7-c75c-4450-80a1-8ae942d95a7b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ab3257e7-be4e-4a06-a9be-1272d8f8efde"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributes>
           <property
             Id="4dc00d18-56cc-421f-921a-032ea6479a66"
@@ -683,6 +762,24 @@
               <undefinedTypeMoniker
                 Id="e97a8572-f52d-4541-aafb-42902780639c"
                 LastKnownName="ISet&lt;Weapon&gt;"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6a1b6564-7f6f-4c62-ad92-dbd0ff028888"
+            name="inventory"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a35739d3-71b1-49d0-b829-26c07c1a5de5"
+                LastKnownName="IList&lt;Item&gt;"
                 LastKnownLocation="FinalProjectUML.uml" />
             </type_NamedElement>
           </property>
@@ -788,6 +885,76 @@
         name="Weapon"
         isAbstract="false"
         isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="718f8e93-a880-413b-9347-a98ee7bb12d7"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="56a4a2f2-5c0a-412e-91c5-8bd7f10b0f35"
+              LastKnownName="Item"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </generalization>
+          <generalization
+            Id="d32fcb3b-3469-475c-b495-87ccf98022e0"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="f42aa946-9969-493d-8f0f-56236faee024"
+              LastKnownName="Wieldable"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="1afb8b5a-dacf-44c5-a465-bd89d26e33a4"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="d25d1d71-1cf9-4880-b104-6a6e717b0031"
+              LastKnownName="Die"
+              LastKnownLocation="FinalProjectUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8124548f-25cf-4ab8-977e-4e721c875816"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1832a119-fcea-468c-b4cc-657560943d09"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ded8c7e4-a569-4e30-bad7-abbb410c1a60"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c6a3ed06-66c3-4408-87ea-431d01d0c039"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributes>
           <property
             Id="3f2f2620-3144-410f-a781-a2b0a3c84a68"
@@ -802,8 +969,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="aaf43322-8c78-433a-97eb-7fb699ffdf96"
-                LastKnownName="IList"
+                Id="c5085b0e-3e10-4c94-9d85-d164255eabf7"
+                LastKnownName="IList&lt;Die&gt;"
                 LastKnownLocation="FinalProjectUML.uml" />
             </type_NamedElement>
           </property>
@@ -895,6 +1062,40 @@
             </type_NamedElement>
           </property>
         </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="fd992b89-8c4c-41ea-8e8b-6892db7d714c"
+            name="getBaseWeapon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8010af2c-fa8e-49e6-9acd-7d7bdcf056fe"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="911eb007-415c-4d49-8bad-0a367c03e411"
+                      LastKnownName="Weapon"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1bd7e800-b5c8-4668-b5e7-5924906da813"
+            name="attack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
       </Interface>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -903,6 +1104,16 @@
         name="Armor"
         isAbstract="false"
         isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="c3f3f404-6de1-40b9-9876-37626f69e5f7"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="56a4a2f2-5c0a-412e-91c5-8bd7f10b0f35"
+              LastKnownName="Item"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributes>
           <property
             Id="c4dc5ecf-13b9-4ef6-899f-937993e10929"
@@ -959,6 +1170,39 @@
             </type_NamedElement>
           </property>
         </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="8d672a93-01ea-4864-b9e5-081688778a1c"
+            name="getBaseArmor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="61c59abb-80a3-41f6-b59d-d64f40f9613b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="fb2932f6-6f66-48af-89d9-86b89e08e016"
+                      LastKnownName="Armor"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9b0f166a-8700-4012-9715-1e062cac385f"
+            name="getAC"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
       </Interface>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -976,7 +1220,47 @@
               LastKnownName="Armor"
               LastKnownLocation="FinalProjectUML.uml" />
           </interfaceRealization>
+          <interfaceRealization
+            Id="b454f157-6851-4b72-80ce-cf43f408ca8a">
+            <interfaceMoniker
+              Id="f42aa946-9969-493d-8f0f-56236faee024"
+              LastKnownName="Wieldable"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </interfaceRealization>
         </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3825e30f-761a-4440-bc47-af3b6212e499"
+            name="getBaseArmor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fbd483b9-3780-4993-9ad6-d39ad838ae14"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="fb2932f6-6f66-48af-89d9-86b89e08e016"
+                      LastKnownName="Armor"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3c1bc8fc-695d-4b53-a5bb-6f5e7c9279e5"
+            name="getAC"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -995,6 +1279,39 @@
               LastKnownLocation="FinalProjectUML.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="138c625d-79a7-46e5-88d7-2f2b4c81e3bb"
+            name="getBaseArmor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="606ddfb0-7919-434a-87fe-2437d8e28c79"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="fb2932f6-6f66-48af-89d9-86b89e08e016"
+                      LastKnownName="Armor"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7925e8d4-3a5b-4e6b-8b22-5d76fb3b5ed8"
+            name="getAC"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1013,6 +1330,39 @@
               LastKnownLocation="FinalProjectUML.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f39687ac-193d-4e1c-b00d-ea4f2349e16a"
+            name="getBaseArmor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c17562b3-93ae-4381-9449-27f11edb987b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="fb2932f6-6f66-48af-89d9-86b89e08e016"
+                      LastKnownName="Armor"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9ed5e69e-5055-4c7e-8dc5-90035674eb60"
+            name="getAC"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1031,6 +1381,39 @@
               LastKnownLocation="FinalProjectUML.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a70e46ca-bfae-40ec-b8b7-af0d500e1cd0"
+            name="getBaseArmor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d8203fa7-0cec-4d70-9293-c6a8fcda20f6"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="fb2932f6-6f66-48af-89d9-86b89e08e016"
+                      LastKnownName="Armor"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3bb1cf08-0a10-4530-851c-76308102fb14"
+            name="getAC"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1044,8 +1427,8 @@
           <association
             Id="7f7a5b28-5e76-4394-b2b3-dc0e529add19"
             isDerived="false"
-            sourceEndRoleName="Game"
-            targetEndRoleName="Player"
+            sourceEndRoleName=""
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <interfaceMoniker
@@ -1056,7 +1439,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="470d4908-bc82-42ae-ba1f-52b39dbe1ad3"
-                  name="Game"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1069,7 +1451,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="5cfe6d5b-380e-4b03-96fd-4401dbab0435"
-                  name="Player"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1096,8 +1477,8 @@
           <association
             Id="d837e727-e5b6-4521-ba52-4ea16d7159ad"
             isDerived="false"
-            sourceEndRoleName="Game"
-            targetEndRoleName="Monster"
+            sourceEndRoleName=""
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <interfaceMoniker
@@ -1108,7 +1489,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="bf79ed68-3ec9-416c-a3cd-a78e0bff1f4c"
-                  name="Game"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1121,7 +1501,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="42c363bd-168b-45a0-aa34-33df99f4b82c"
-                  name="Monster"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1150,6 +1529,7 @@
           <property
             Id="0b016cae-68a3-47c8-b8fd-a5821ea2a001"
             name="players"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1168,6 +1548,7 @@
           <property
             Id="6797485b-5191-4597-b212-e4c3d37730fd"
             name="monsters"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1373,6 +1754,1223 @@
           </operation>
         </ownedOperations>
       </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="56a4a2f2-5c0a-412e-91c5-8bd7f10b0f35"
+        name="Item"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedAttributes>
+          <property
+            Id="45f5afdb-9aad-416d-bcdb-abab8fea6d1f"
+            name="price"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7d8612a9-ea5c-45fd-9e3b-e053a54b58ca"
+            name="weight"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="66c2870d-4ee1-4b34-b575-090bc582e384"
+            name="name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a35739d3-71b1-49d0-b829-26c07c1a5de5"
+        name="IList&lt;Item&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="02b98208-49cc-471c-9449-35a04e480dde"
+        name="WeaponEnchantment"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="bc6670f1-53ae-480c-8286-76388f2f44e2"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="911eb007-415c-4d49-8bad-0a367c03e411"
+              LastKnownName="Weapon"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="330918c3-856f-4d39-b047-57dd40184736"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="911eb007-415c-4d49-8bad-0a367c03e411"
+              LastKnownName="Weapon"
+              LastKnownLocation="FinalProjectUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="af850159-658e-4834-945a-f1d61545740b"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="836ad705-dac2-40c5-b5da-cefe82f53e35"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property
+            Id="e4cdc4cf-a7d6-459d-b82d-e892394da645"
+            name="enchantedWeapon"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="911eb007-415c-4d49-8bad-0a367c03e411"
+                LastKnownName="Weapon"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="726133da-dc7b-41a0-985d-4b0058c6e6ce"
+        name="ArmorEnchantment"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="11dd9cb5-f6e3-4bb3-a587-dca354aaf2df"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="fb2932f6-6f66-48af-89d9-86b89e08e016"
+              LastKnownName="Armor"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="a25b356a-b53d-42ae-9a8d-947a91a4e049"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="fb2932f6-6f66-48af-89d9-86b89e08e016"
+              LastKnownName="Armor"
+              LastKnownLocation="FinalProjectUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="64215e3c-7c3d-4230-8e90-5280b2d12d0f"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="909d248a-406a-4ac2-8d8a-faaf27dfcf17"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property
+            Id="212bbc12-e74a-4352-892a-c4df1ac63f05"
+            name="enchantedArmor"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="fb2932f6-6f66-48af-89d9-86b89e08e016"
+                LastKnownName="Armor"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f42aa946-9969-493d-8f0f-56236faee024"
+        name="Wieldable"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="18dfe9a6-064d-4d93-8f30-8df3f9ab583d"
+        name="SimpleWeapon"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="2d17e27d-4786-4941-8150-f4a149980cd7">
+            <interfaceMoniker
+              Id="911eb007-415c-4d49-8bad-0a367c03e411"
+              LastKnownName="Weapon"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d0a7e9ce-b8ab-49f5-9647-b7fb8d4b5552"
+            name="getBaseWeapon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="555152d6-31f3-4255-a59a-40fb7429177e"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="911eb007-415c-4d49-8bad-0a367c03e411"
+                      LastKnownName="Weapon"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="beee2cf1-18aa-42e9-b99f-94e7d34f9a73"
+            name="attack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="45f395c3-f640-4f85-bae7-b9847d69fb94"
+        name="MartialWeapon"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="1647824e-de9d-455a-ba94-fd6ab3f74cd0">
+            <interfaceMoniker
+              Id="911eb007-415c-4d49-8bad-0a367c03e411"
+              LastKnownName="Weapon"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="dce6df36-b03a-4862-bbcd-f1131c7c8a3c"
+            name="getBaseWeapon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cbe912d7-1632-4655-8bde-901af993be58"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="911eb007-415c-4d49-8bad-0a367c03e411"
+                      LastKnownName="Weapon"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="944ebfe0-7806-4279-a854-95608ecdd741"
+            name="attack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="384f5ba9-5785-4073-bc8f-da3adeaafe83"
+        name="ExoticWeapon"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="d30616f8-67fb-4be2-a43b-552e8105002b">
+            <interfaceMoniker
+              Id="911eb007-415c-4d49-8bad-0a367c03e411"
+              LastKnownName="Weapon"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f67198c9-c3bd-458c-a6f8-cb04ddbae1b1"
+            name="getBaseWeapon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9e46c25e-5384-4619-989a-9c71b242b2b6"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="911eb007-415c-4d49-8bad-0a367c03e411"
+                      LastKnownName="Weapon"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9d4064bd-5024-4cdc-91f9-6bf95e67df04"
+            name="attack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="d25d1d71-1cf9-4880-b104-6a6e717b0031"
+        name="Die"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedAttributes>
+          <property
+            Id="409f7f78-0f70-44d6-8812-cd77e49c2aa0"
+            name="random"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="88af398d-9089-4088-b519-89df0c0ed636"
+                LastKnownName="Random"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="54ea3302-3970-4053-ba44-81ed9b7129df"
+            name="roll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="aac97e18-0737-43ab-aace-6c52ad768ea4"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="88af398d-9089-4088-b519-89df0c0ed636"
+        name="Random" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c5085b0e-3e10-4c94-9d85-d164255eabf7"
+        name="IList&lt;Die&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0f9080c4-6801-43ef-a796-bc790087595d"
+        name="D4"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="5d8307b1-bec4-4477-8156-80d8f2081238">
+            <interfaceMoniker
+              Id="d25d1d71-1cf9-4880-b104-6a6e717b0031"
+              LastKnownName="Die"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="dbccaa6d-7961-4732-9e19-19c8a4bdb8db"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0f9080c4-6801-43ef-a796-bc790087595d"
+              LastKnownName="D4"
+              LastKnownLocation="FinalProjectUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="67589e83-4e93-427e-bb8d-51306c329a46"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2b2d2ecb-62e3-457c-bc28-3167aef727f8"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="38a62c15-603f-4e1f-b83c-0e257ab1a596"
+            name="instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="0f9080c4-6801-43ef-a796-bc790087595d"
+                LastKnownName="D4"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="7dd24e17-9695-4791-84e2-3ec03b77d150"
+            name="roll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e04f29ef-3b4e-4558-a2fa-e4f6c5bbbb50"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3f2a070a-aead-4e0d-92bf-65f232dacede"
+            name="getInstance"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6dbcfc75-317f-423d-96dc-928400f259a0"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0f9080c4-6801-43ef-a796-bc790087595d"
+                      LastKnownName="D4"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="aeca00bf-9429-444d-a471-b8ffafcd7efa"
+        name="D6"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="17762af5-052a-4041-8695-eb0e13a314bc">
+            <interfaceMoniker
+              Id="d25d1d71-1cf9-4880-b104-6a6e717b0031"
+              LastKnownName="Die"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="c1d5db86-953f-4819-96d2-0a93c1dcf1bf"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="aeca00bf-9429-444d-a471-b8ffafcd7efa"
+              LastKnownName="D6"
+              LastKnownLocation="FinalProjectUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="63d68a3d-462e-4d5f-9bff-2dbd16dbd8f7"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f5282b48-0c6c-4bb5-a298-c8d378eb9161"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="22bfbcd8-d217-4ec8-aeee-7b251641b037"
+            name="instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="aeca00bf-9429-444d-a471-b8ffafcd7efa"
+                LastKnownName="D6"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0e3fa12c-fb87-455b-83d8-152a21303ce2"
+            name="roll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e9ac250f-8729-4b2c-b315-721a240cf3d6"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="eca67dc9-56d4-4105-9f53-3986f93f7460"
+            name="getInstance"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3c22f46c-ec7a-4f4f-bf4d-1b2c45acbffb"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="aeca00bf-9429-444d-a471-b8ffafcd7efa"
+                      LastKnownName="D6"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="99e55676-23b4-422f-a698-34d74f6d843d"
+        name="D8"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="86232f0f-5e08-4ed0-9564-43eb349ff2c1">
+            <interfaceMoniker
+              Id="d25d1d71-1cf9-4880-b104-6a6e717b0031"
+              LastKnownName="Die"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="fd170a18-0db6-41e3-8cac-b132222d995d"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="99e55676-23b4-422f-a698-34d74f6d843d"
+              LastKnownName="D8"
+              LastKnownLocation="FinalProjectUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="59a9fd47-445e-4fe2-9bec-f2b88057a107"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2c8e782d-b155-4300-996d-a80bad47cd67"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="833269db-a742-4eab-9c6f-2d0a62dd8a03"
+            name="instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="99e55676-23b4-422f-a698-34d74f6d843d"
+                LastKnownName="D8"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5d31da31-833b-43ee-b405-1118186cf528"
+            name="roll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8e92e20e-e19e-476a-b6b9-7859f0e038a3"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8da82d56-1ba5-400c-95ff-19b3408192a1"
+            name="getInstance"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="736f9ab0-4f4c-473f-967e-5907568ce914"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="99e55676-23b4-422f-a698-34d74f6d843d"
+                      LastKnownName="D8"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f427819a-4ade-4560-9436-26fd2f95a217"
+        name="D10"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="4c6f2e59-ece9-450f-9fb4-546351802b60">
+            <interfaceMoniker
+              Id="d25d1d71-1cf9-4880-b104-6a6e717b0031"
+              LastKnownName="Die"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="836d0ef1-970e-410b-a4b3-0af7f575cc96"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f427819a-4ade-4560-9436-26fd2f95a217"
+              LastKnownName="D10"
+              LastKnownLocation="FinalProjectUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0db2f18f-0bf3-4e3a-ac37-3968fb30a4fa"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="90707e5e-cb35-457a-b58a-787afe7a56d4"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="7e16ec28-00ef-4e2f-bb71-4b6526d73176"
+            name="instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="f427819a-4ade-4560-9436-26fd2f95a217"
+                LastKnownName="D10"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c49eccd7-7f93-4588-b392-0778649a4b53"
+            name="roll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8c27ca55-4a8e-4fd8-a508-bf898f96c334"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="73c4253a-19f0-42db-bc53-cb6c11bb4614"
+            name="getInstance"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="eb56940b-a48e-4a86-8350-1e58ec23c676"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f427819a-4ade-4560-9436-26fd2f95a217"
+                      LastKnownName="D10"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fe43ca0e-bf31-4f9a-abaf-964d7e38bbb9"
+        name="D12"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="7d0fd0c1-b411-45a3-bed8-6c7579d05a16">
+            <interfaceMoniker
+              Id="d25d1d71-1cf9-4880-b104-6a6e717b0031"
+              LastKnownName="Die"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="81ac3dee-1759-44a1-b5d3-ba780069530c"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="fe43ca0e-bf31-4f9a-abaf-964d7e38bbb9"
+              LastKnownName="D12"
+              LastKnownLocation="FinalProjectUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b87582eb-e7a4-4ebe-9752-0a0e04fda20e"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bae66d9e-1fa2-4872-a0d2-b855cbd0f762"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="a32ae71d-3131-4569-9697-63770a293aca"
+            name="instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="fe43ca0e-bf31-4f9a-abaf-964d7e38bbb9"
+                LastKnownName="D12"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="dd885e75-bc1b-4743-96ae-9184d2dda37b"
+            name="roll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cfd9bbcc-701b-426b-b822-a21fe17f745b"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d020055d-896c-4501-990a-97f8c00bbcfd"
+            name="getInstance"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fecbfd3a-bba6-4e7c-9d7a-f73bbe442dab"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fe43ca0e-bf31-4f9a-abaf-964d7e38bbb9"
+                      LastKnownName="D12"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fda62bca-aefa-451d-b15d-a74faae81a4e"
+        name="D20"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="70497b3d-c6f6-486e-bede-fd9b567dd886">
+            <interfaceMoniker
+              Id="d25d1d71-1cf9-4880-b104-6a6e717b0031"
+              LastKnownName="Die"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="4f5b0ae3-a77d-4080-9336-1675deb458c6"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="fda62bca-aefa-451d-b15d-a74faae81a4e"
+              LastKnownName="D20"
+              LastKnownLocation="FinalProjectUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9fb1874b-80d4-4049-87dc-721602f354ff"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0e41cedc-e8a1-483d-9e46-5036b8c924cc"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="14076c97-4bd6-4cca-b654-428e707d4d8c"
+            name="instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="fda62bca-aefa-451d-b15d-a74faae81a4e"
+                LastKnownName="D20"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="cb19121a-36dc-4505-964e-ae0b37c3052e"
+            name="roll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b0553df4-7f35-487e-bec7-6c685b34bfe9"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a609fe11-aa88-45fa-b504-ccf383794361"
+            name="getInstance"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e9b2369d-d92f-4ffe-b525-beaa0a643744"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fda62bca-aefa-451d-b15d-a74faae81a4e"
+                      LastKnownName="D20"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
