@@ -53,6 +53,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ArmorEnchantment.cs" />
+    <Compile Include="Monster.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Size.cs" />
+    <Compile Include="Spell.cs" />
+    <Compile Include="Weapon.cs" />
+    <Compile Include="WeaponEnchantment.cs" />
+    <Compile Include="Wieldable.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -61,6 +69,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Armor.cs" />
+    <Compile Include="Attributes.cs" />
+    <Compile Include="D10.cs" />
+    <Compile Include="D12.cs" />
+    <Compile Include="D20.cs" />
+    <Compile Include="D4.cs" />
+    <Compile Include="D6.cs" />
+    <Compile Include="D8.cs" />
+    <Compile Include="Die.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="Item.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
