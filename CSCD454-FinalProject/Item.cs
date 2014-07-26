@@ -8,24 +8,48 @@ namespace CSCD454_FinalProject.Items
 {
     public abstract class Item
     {
+        public Item()
+        {
+            Name = "";
+        }
+
         public string Name
         {
             get;
-            protected set;
+            private set;
+        }
+
+        public Item SetName(string name)
+        {
+            if (Name == "")
+                Name = name;
+            return this;
         }
 
         public int Price
         {
             get;
-            protected set;
+            private set;
+        }
+
+        public Item SetPrice(int price)
+        {
+            if (Price == 0)
+                Price = price;
+            return this;
         }
 
         public int Weight
         {
             get;
-            protected set;
+            private set;
         }
 
-
+        public Item SetWeight(int weight)
+        {
+            if (Weight == 0)
+                Weight = weight;
+            return this;
+        }
     }
 }

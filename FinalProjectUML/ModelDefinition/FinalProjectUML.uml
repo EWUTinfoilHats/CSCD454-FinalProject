@@ -1216,7 +1216,7 @@
             isQuery="false" />
           <operation
             Id="e1c66bc1-9104-49d7-a779-006b14613cdf"
-            name="getBaseWieldable"
+            name="GetBaseWieldable"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1904,7 +1904,7 @@
         <ownedOperations>
           <operation
             Id="1fd87827-1258-48e9-ab90-cb3ec710a8a0"
-            name="getBaseWieldable"
+            name="GetBaseWieldable"
             isLeaf="false"
             isStatic="false"
             isAbstract="true"
@@ -1948,7 +1948,7 @@
             isQuery="false" />
           <operation
             Id="b038b091-6f20-4bc6-a0ef-6ea90511768e"
-            name="getBaseWieldable"
+            name="GetBaseWieldable"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1992,7 +1992,7 @@
             isQuery="false" />
           <operation
             Id="4997c5df-ba63-472a-95c2-c036eb875f7e"
-            name="getBaseWieldable"
+            name="GetBaseWieldable"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -2036,7 +2036,7 @@
             isQuery="false" />
           <operation
             Id="e24f997e-fce2-4f59-b2cd-256b7172bb99"
-            name="getBaseWieldable"
+            name="GetBaseWieldable"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -2073,7 +2073,7 @@
         <ownedOperations>
           <operation
             Id="54ea3302-3970-4053-ba44-81ed9b7129df"
-            name="roll"
+            name="Roll"
             isLeaf="false"
             isStatic="false"
             isAbstract="true"
@@ -2114,127 +2114,7 @@
         name="D4"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="5d8307b1-bec4-4477-8156-80d8f2081238">
-            <interfaceMoniker
-              Id="d25d1d71-1cf9-4880-b104-6a6e717b0031"
-              LastKnownName="Die"
-              LastKnownLocation="FinalProjectUML.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
-        <targetEnds>
-          <association
-            Id="dbccaa6d-7961-4732-9e19-19c8a4bdb8db"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="0f9080c4-6801-43ef-a796-bc790087595d"
-              LastKnownName="D4"
-              LastKnownLocation="FinalProjectUML.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="67589e83-4e93-427e-bb8d-51306c329a46"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="2b2d2ecb-62e3-457c-bc28-3167aef727f8"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="38a62c15-603f-4e1f-b83c-0e257ab1a596"
-            name="instance"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="true"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <classMoniker
-                Id="0f9080c4-6801-43ef-a796-bc790087595d"
-                LastKnownName="D4"
-                LastKnownLocation="FinalProjectUML.uml" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="7dd24e17-9695-4791-84e2-3ec03b77d150"
-            name="roll"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="e04f29ef-3b4e-4558-a2fa-e4f6c5bbbb50"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                      LastKnownName="Integer"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="3f2a070a-aead-4e0d-92bf-65f232dacede"
-            name="getInstance"
-            isLeaf="false"
-            isStatic="true"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="6dbcfc75-317f-423d-96dc-928400f259a0"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="0f9080c4-6801-43ef-a796-bc790087595d"
-                      LastKnownName="D4"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
+        isActiveClass="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -2242,127 +2122,7 @@
         name="D6"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="17762af5-052a-4041-8695-eb0e13a314bc">
-            <interfaceMoniker
-              Id="d25d1d71-1cf9-4880-b104-6a6e717b0031"
-              LastKnownName="Die"
-              LastKnownLocation="FinalProjectUML.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
-        <targetEnds>
-          <association
-            Id="c1d5db86-953f-4819-96d2-0a93c1dcf1bf"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="aeca00bf-9429-444d-a471-b8ffafcd7efa"
-              LastKnownName="D6"
-              LastKnownLocation="FinalProjectUML.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="63d68a3d-462e-4d5f-9bff-2dbd16dbd8f7"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f5282b48-0c6c-4bb5-a298-c8d378eb9161"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="22bfbcd8-d217-4ec8-aeee-7b251641b037"
-            name="instance"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="true"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <classMoniker
-                Id="aeca00bf-9429-444d-a471-b8ffafcd7efa"
-                LastKnownName="D6"
-                LastKnownLocation="FinalProjectUML.uml" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="0e3fa12c-fb87-455b-83d8-152a21303ce2"
-            name="roll"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="e9ac250f-8729-4b2c-b315-721a240cf3d6"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                      LastKnownName="Integer"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="eca67dc9-56d4-4105-9f53-3986f93f7460"
-            name="getInstance"
-            isLeaf="false"
-            isStatic="true"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="3c22f46c-ec7a-4f4f-bf4d-1b2c45acbffb"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="aeca00bf-9429-444d-a471-b8ffafcd7efa"
-                      LastKnownName="D6"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
+        isActiveClass="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -2370,127 +2130,7 @@
         name="D8"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="86232f0f-5e08-4ed0-9564-43eb349ff2c1">
-            <interfaceMoniker
-              Id="d25d1d71-1cf9-4880-b104-6a6e717b0031"
-              LastKnownName="Die"
-              LastKnownLocation="FinalProjectUML.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
-        <targetEnds>
-          <association
-            Id="fd170a18-0db6-41e3-8cac-b132222d995d"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="99e55676-23b4-422f-a698-34d74f6d843d"
-              LastKnownName="D8"
-              LastKnownLocation="FinalProjectUML.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="59a9fd47-445e-4fe2-9bec-f2b88057a107"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="2c8e782d-b155-4300-996d-a80bad47cd67"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="833269db-a742-4eab-9c6f-2d0a62dd8a03"
-            name="instance"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="true"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <classMoniker
-                Id="99e55676-23b4-422f-a698-34d74f6d843d"
-                LastKnownName="D8"
-                LastKnownLocation="FinalProjectUML.uml" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="5d31da31-833b-43ee-b405-1118186cf528"
-            name="roll"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="8e92e20e-e19e-476a-b6b9-7859f0e038a3"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                      LastKnownName="Integer"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="8da82d56-1ba5-400c-95ff-19b3408192a1"
-            name="getInstance"
-            isLeaf="false"
-            isStatic="true"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="736f9ab0-4f4c-473f-967e-5907568ce914"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="99e55676-23b4-422f-a698-34d74f6d843d"
-                      LastKnownName="D8"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
+        isActiveClass="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -2498,127 +2138,7 @@
         name="D10"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="4c6f2e59-ece9-450f-9fb4-546351802b60">
-            <interfaceMoniker
-              Id="d25d1d71-1cf9-4880-b104-6a6e717b0031"
-              LastKnownName="Die"
-              LastKnownLocation="FinalProjectUML.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
-        <targetEnds>
-          <association
-            Id="836d0ef1-970e-410b-a4b3-0af7f575cc96"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="f427819a-4ade-4560-9436-26fd2f95a217"
-              LastKnownName="D10"
-              LastKnownLocation="FinalProjectUML.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="0db2f18f-0bf3-4e3a-ac37-3968fb30a4fa"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="90707e5e-cb35-457a-b58a-787afe7a56d4"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="7e16ec28-00ef-4e2f-bb71-4b6526d73176"
-            name="instance"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="true"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <classMoniker
-                Id="f427819a-4ade-4560-9436-26fd2f95a217"
-                LastKnownName="D10"
-                LastKnownLocation="FinalProjectUML.uml" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="c49eccd7-7f93-4588-b392-0778649a4b53"
-            name="roll"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="8c27ca55-4a8e-4fd8-a508-bf898f96c334"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                      LastKnownName="Integer"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="73c4253a-19f0-42db-bc53-cb6c11bb4614"
-            name="getInstance"
-            isLeaf="false"
-            isStatic="true"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="eb56940b-a48e-4a86-8350-1e58ec23c676"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="f427819a-4ade-4560-9436-26fd2f95a217"
-                      LastKnownName="D10"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
+        isActiveClass="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -2626,127 +2146,7 @@
         name="D12"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="7d0fd0c1-b411-45a3-bed8-6c7579d05a16">
-            <interfaceMoniker
-              Id="d25d1d71-1cf9-4880-b104-6a6e717b0031"
-              LastKnownName="Die"
-              LastKnownLocation="FinalProjectUML.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
-        <targetEnds>
-          <association
-            Id="81ac3dee-1759-44a1-b5d3-ba780069530c"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="fe43ca0e-bf31-4f9a-abaf-964d7e38bbb9"
-              LastKnownName="D12"
-              LastKnownLocation="FinalProjectUML.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="b87582eb-e7a4-4ebe-9752-0a0e04fda20e"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="bae66d9e-1fa2-4872-a0d2-b855cbd0f762"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="a32ae71d-3131-4569-9697-63770a293aca"
-            name="instance"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="true"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <classMoniker
-                Id="fe43ca0e-bf31-4f9a-abaf-964d7e38bbb9"
-                LastKnownName="D12"
-                LastKnownLocation="FinalProjectUML.uml" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="dd885e75-bc1b-4743-96ae-9184d2dda37b"
-            name="roll"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="cfd9bbcc-701b-426b-b822-a21fe17f745b"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                      LastKnownName="Integer"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="d020055d-896c-4501-990a-97f8c00bbcfd"
-            name="getInstance"
-            isLeaf="false"
-            isStatic="true"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="fecbfd3a-bba6-4e7c-9d7a-f73bbe442dab"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="fe43ca0e-bf31-4f9a-abaf-964d7e38bbb9"
-                      LastKnownName="D12"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
+        isActiveClass="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -2755,54 +2155,6 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="70497b3d-c6f6-486e-bede-fd9b567dd886">
-            <interfaceMoniker
-              Id="d25d1d71-1cf9-4880-b104-6a6e717b0031"
-              LastKnownName="Die"
-              LastKnownLocation="FinalProjectUML.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
-        <targetEnds>
-          <association
-            Id="4f5b0ae3-a77d-4080-9336-1675deb458c6"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="fda62bca-aefa-451d-b15d-a74faae81a4e"
-              LastKnownName="D20"
-              LastKnownLocation="FinalProjectUML.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="9fb1874b-80d4-4049-87dc-721602f354ff"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="0e41cedc-e8a1-483d-9e46-5036b8c924cc"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="14076c97-4bd6-4cca-b654-428e707d4d8c"
@@ -2825,30 +2177,6 @@
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation
-            Id="cb19121a-36dc-4505-964e-ae0b37c3052e"
-            name="roll"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="b0553df4-7f35-487e-bec7-6c685b34bfe9"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                      LastKnownName="Integer"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
           <operation
             Id="a609fe11-aa88-45fa-b504-ccf383794361"
             name="getInstance"
@@ -2873,6 +2201,717 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bd217cb0-57fd-4711-b345-0c722266f6c3"
+        name="Weapon"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="3d063c1f-a34e-4574-8753-7aa95270ca38">
+            <interfaceMoniker
+              Id="56a4a2f2-5c0a-412e-91c5-8bd7f10b0f35"
+              LastKnownName="Item"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </interfaceRealization>
+          <interfaceRealization
+            Id="b78a005e-988d-4d06-8e40-970e47612a34">
+            <interfaceMoniker
+              Id="f42aa946-9969-493d-8f0f-56236faee024"
+              LastKnownName="Wieldable"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="ad0ed5d7-6220-4b50-8712-647d52217d57"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="d25d1d71-1cf9-4880-b104-6a6e717b0031"
+              LastKnownName="Die"
+              LastKnownLocation="FinalProjectUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7e197a9d-5b4b-43be-8757-41aa55cb4845"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cfb368e1-dfca-42ac-8a70-ed5c32ee425d"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="209e74b3-cc1c-4c86-a68c-6147debfcb25"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="477e729d-f33c-4a4c-88c4-78854820241d"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="ac3617ba-a2d6-45f2-82cc-cdfbd0831c60"
+            name="CriticalMultiplier"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                LastKnownName="int"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fa5ed74f-933a-4ef5-bb71-98c919f1c67e"
+            name="DamageDice"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="c5085b0e-3e10-4c94-9d85-d164255eabf7"
+                LastKnownName="IList&lt;Die&gt;"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="97e710f3-f32b-4f75-8256-054f61eb107b"
+            name="DamageMod"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                LastKnownName="int"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="577ecc03-0495-4be9-a0b9-36d8ce1b414e"
+            name="Is2H"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="194be6a7-de89-4f69-a847-60e52a5c0482"
+                LastKnownName="bool"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0c5a21ee-6eae-4173-ad49-a4a988cd5a3e"
+            name="isLight"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="194be6a7-de89-4f69-a847-60e52a5c0482"
+                LastKnownName="bool"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9cec9abb-ae56-4ea7-b733-42e7f770033a"
+            name="ThreatRangeMin"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                LastKnownName="int"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5b057be5-b2d2-4fb3-87df-8c4e1ca7dcb0"
+            name="ThreatRangeMax"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                LastKnownName="int"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d2d9a16b-cd60-41ab-9733-8d8391497266"
+            name="Type"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="f6f5d040-18bd-4066-a288-2ae406257534"
+                LastKnownName="string"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="04aba59e-b0a2-466b-ae21-d7cdda733298"
+            name="GetBaseWeapon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5d90afc7-74d2-424a-8e89-e641d1350811"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="911eb007-415c-4d49-8bad-0a367c03e411"
+                      LastKnownName="Weapon"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6180bfeb-779f-4c81-8450-6dd58d569f77"
+            name="IsInThreatRange"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e7a001b8-077b-4a08-aa27-c8a349724abe"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="194be6a7-de89-4f69-a847-60e52a5c0482"
+                      LastKnownName="bool"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ba7787cb-14c7-4b7e-9ad3-555eb42d3fea"
+            name="SetCriticalMultiplier"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="693f6e24-2387-40f2-89f3-b7360d68bf2b"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="abef6802-7f21-41a9-bfff-d503138d35d2"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="911eb007-415c-4d49-8bad-0a367c03e411"
+                      LastKnownName="Weapon"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9ce41877-1e50-48c5-afa4-61e9b40d5119"
+            name="SetDamageDice"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="38608b5c-86b7-483c-907f-70e3cc83c612"
+                  name="IList&lt;Die&gt;"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7f1b12d0-162c-4492-a493-21928c7b827a"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="911eb007-415c-4d49-8bad-0a367c03e411"
+                      LastKnownName="Weapon"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1968b221-88b3-4885-b57a-212d8bbf9a60"
+            name="SetDamageMod"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="87ac28cc-c735-44bc-b233-1a30267246bc"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="89c98fbb-eb5b-485f-91f9-c7369c520012"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="911eb007-415c-4d49-8bad-0a367c03e411"
+                      LastKnownName="Weapon"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="687361db-9580-4e9c-86c7-c8ce508b6c26"
+            name="SetIs2H"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="79d27295-2889-4f92-b29a-f7231c465579"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7bd90f7d-1e09-41da-8c25-ee2eded37a60"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="911eb007-415c-4d49-8bad-0a367c03e411"
+                      LastKnownName="Weapon"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7ebcb213-1cd8-4993-85f2-ceadd53ee9ce"
+            name="SetIsLight"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d7562416-c49c-4a12-a316-bad9ed8eb0c3"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d84973bc-bd39-49ef-8a06-00bf39124dee"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="911eb007-415c-4d49-8bad-0a367c03e411"
+                      LastKnownName="Weapon"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="626282a5-1e5b-4bdf-8908-581c8f2ba321"
+            name="SetThreatRange"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6e801399-acfb-4b03-80c9-21c53518c5b3"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e9900ba3-a3f4-42de-9ddd-6a61cd67bb2c"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d110b68f-404c-4abe-8fce-bd3ddbeb706f"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="911eb007-415c-4d49-8bad-0a367c03e411"
+                      LastKnownName="Weapon"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d30159e0-9c0e-4d99-bd47-8cc7d5df3151"
+            name="SetType"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c4b595aa-201c-4cb0-9de3-75e0dd9b6740"
+                  name="string"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ae48dfd9-db80-4925-af53-52772122d6b5"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="911eb007-415c-4d49-8bad-0a367c03e411"
+                      LastKnownName="Weapon"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f0f61f4f-40b4-4ed8-89ce-6788d1be0a0a"
+            name="GetBaseWieldable"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+        name="int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="194be6a7-de89-4f69-a847-60e52a5c0482"
+        name="bool" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f6f5d040-18bd-4066-a288-2ae406257534"
+        name="string" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6d08a57b-db59-4301-8c8e-f5490186af37"
+        name="WeaponEnchantment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="add2a709-8efd-4630-904a-f083e617fbac"
+            isSubstitutable="false">
+            <classMoniker
+              Id="bd217cb0-57fd-4711-b345-0c722266f6c3"
+              LastKnownName="Weapon"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="38f18010-a35f-4677-aef4-169062932f44"
+        name="D0"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b7642622-91d0-4c4e-bba5-f85832cfafd5"
+        name="D3"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="13a715f4-87a5-443d-aa97-e88cf4fc2286"
+        name="D0"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="e5297b8b-acc0-4c50-aa87-c4dfee6b9bdc">
+            <interfaceMoniker
+              Id="d25d1d71-1cf9-4880-b104-6a6e717b0031"
+              LastKnownName="Die"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0db09540-54d8-4a8a-8c95-e66e31fd77a3"
+            name="Roll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c26a43bd-c93d-4607-bff2-479149382fd7"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ce0ce1e9-da66-405a-a629-17025e5d4bed"
+        name="D3"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f3f27a24-c8ea-41a1-95ce-1e41b3eef952"
+        name="D4"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="689aad3f-e429-4052-825c-c4b54312dd13"
+        name="D6"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b8f944d5-8206-4bef-ac02-9a1ab030b4d9"
+        name="D8"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ec2bbb4b-8e5f-4d88-abca-027fcc63b12c"
+        name="D10"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="51ba418b-3221-4c79-9ee2-6ee98fb341ab"
+        name="D12"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2cca0c7e-b950-4877-8737-0d772d2a2c97"
+        name="D20"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="2bafba6d-884c-43be-b43a-cc3e3f6d3550"
+            name="instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="fda62bca-aefa-451d-b15d-a74faae81a4e"
+                LastKnownName="D20"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="944d48af-77c4-48c7-bc58-5a45307e3c2f"
+            name="Roll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b697c29b-0600-48ba-893d-881c033409ad"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                      LastKnownName="int"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="36fe805a-cc2e-4b02-8268-0fb23fb1c6f8"
+            name="GetInstance : D20"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>

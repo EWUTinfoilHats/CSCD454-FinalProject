@@ -54,12 +54,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ArmorEnchantment.cs" />
+    <Compile Include="D0.cs" />
     <Compile Include="Monster.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Size.cs" />
     <Compile Include="Spell.cs" />
     <Compile Include="Weapon.cs" />
     <Compile Include="WeaponEnchantment.cs" />
+    <Compile Include="Weapons.cs" />
     <Compile Include="Wieldable.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
