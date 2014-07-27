@@ -55,6 +55,7 @@
     </ApplicationDefinition>
     <Compile Include="ArmorEnchantment.cs" />
     <Compile Include="D0.cs" />
+    <Compile Include="D3.cs" />
     <Compile Include="Monster.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Size.cs" />

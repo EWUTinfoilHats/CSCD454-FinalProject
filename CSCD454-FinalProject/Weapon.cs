@@ -21,6 +21,7 @@ namespace CSCD454_FinalProject.Items
             ThreatRangeMax = 20;
             ThreatRangeMin = 20;
             DamageDice = new Die[0];
+            CriticalMultiplier = 2;
             Type = "";
         }
 
@@ -32,7 +33,7 @@ namespace CSCD454_FinalProject.Items
 
         public Weapon SetCriticalMultiplier(int mult)
         {
-            if (CriticalMultiplier == 0)
+            if (CriticalMultiplier == 2)
                 CriticalMultiplier = mult;
             return this;
         }
@@ -63,16 +64,28 @@ namespace CSCD454_FinalProject.Items
             return this;
         }
 
+        public virtual int AttackMod
+        {
+            get;
+            private set;
+        }
+
+        public Weapon SetAttackMod(int am)
+        {
+            if (AttackMod == 0)
+                AttackMod = am;
+            return this;
+        }
+
         public bool Is2H
         {
             get;
             private set;
         }
 
-        public Weapon SetIs2H(bool is2h)
+        public Weapon Set2H()
         {
-            if (Is2H == false)
-                Is2H = is2h;
+            Is2H = true;
             return this;
         }
 
@@ -82,10 +95,9 @@ namespace CSCD454_FinalProject.Items
             private set;
         }
 
-        public Weapon SetIsLight(bool light)
+        public Weapon SetLight()
         {
-            if (IsLight == false)
-                IsLight = light;
+            IsLight = true;
             return this;
         }
 
