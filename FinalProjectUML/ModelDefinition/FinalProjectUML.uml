@@ -1064,32 +1064,16 @@
         </ownedAttributes>
         <ownedOperations>
           <operation
-            Id="fd992b89-8c4c-41ea-8e8b-6892db7d714c"
-            name="getBaseWeapon"
+            Id="e7000cfa-ba83-4aaf-8aae-962b1f160f90"
+            name="attack"
             isLeaf="false"
             isStatic="false"
             isAbstract="true"
             concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="8010af2c-fa8e-49e6-9acd-7d7bdcf056fe"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <interfaceMoniker
-                      Id="911eb007-415c-4d49-8bad-0a367c03e411"
-                      LastKnownName="Weapon"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
+            isQuery="false" />
           <operation
-            Id="1bd7e800-b5c8-4668-b5e7-5924906da813"
-            name="attack"
+            Id="b2c493f1-29ba-4c54-9632-9e921a41333b"
+            name="getBaseWeapon"
             isLeaf="false"
             isStatic="false"
             isAbstract="true"
@@ -1172,31 +1156,16 @@
         </ownedAttributes>
         <ownedOperations>
           <operation
-            Id="8d672a93-01ea-4864-b9e5-081688778a1c"
-            name="getBaseArmor"
+            Id="9b0f166a-8700-4012-9715-1e062cac385f"
+            name="getAC"
             isLeaf="false"
             isStatic="false"
             isAbstract="true"
             concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="61c59abb-80a3-41f6-b59d-d64f40f9613b"
-                  direction="Return">
-                  <type_NamedElement>
-                    <interfaceMoniker
-                      Id="fb2932f6-6f66-48af-89d9-86b89e08e016"
-                      LastKnownName="Armor"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
+            isQuery="false" />
           <operation
-            Id="9b0f166a-8700-4012-9715-1e062cac385f"
-            name="getAC"
+            Id="c633ad58-c602-4ca6-b2ce-f2ddffeab0d1"
+            name="getBaseArmor"
             isLeaf="false"
             isStatic="false"
             isAbstract="true"
@@ -1230,31 +1199,24 @@
         </suppliersInternal>
         <ownedOperationsInternal>
           <operation
-            Id="3825e30f-761a-4440-bc47-af3b6212e499"
+            Id="3c1bc8fc-695d-4b53-a5bb-6f5e7c9279e5"
+            name="getAC"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="dfb18cbe-8622-40e3-b509-9823daae4f6f"
             name="getBaseArmor"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="fbd483b9-3780-4993-9ad6-d39ad838ae14"
-                  direction="Return">
-                  <type_NamedElement>
-                    <interfaceMoniker
-                      Id="fb2932f6-6f66-48af-89d9-86b89e08e016"
-                      LastKnownName="Armor"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
+            isQuery="false" />
           <operation
-            Id="3c1bc8fc-695d-4b53-a5bb-6f5e7c9279e5"
-            name="getAC"
+            Id="e1c66bc1-9104-49d7-a779-006b14613cdf"
+            name="getBaseWieldable"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1281,31 +1243,16 @@
         </suppliersInternal>
         <ownedOperationsInternal>
           <operation
-            Id="138c625d-79a7-46e5-88d7-2f2b4c81e3bb"
-            name="getBaseArmor"
+            Id="7925e8d4-3a5b-4e6b-8b22-5d76fb3b5ed8"
+            name="getAC"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="606ddfb0-7919-434a-87fe-2437d8e28c79"
-                  direction="Return">
-                  <type_NamedElement>
-                    <interfaceMoniker
-                      Id="fb2932f6-6f66-48af-89d9-86b89e08e016"
-                      LastKnownName="Armor"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
+            isQuery="false" />
           <operation
-            Id="7925e8d4-3a5b-4e6b-8b22-5d76fb3b5ed8"
-            name="getAC"
+            Id="36800c8b-b542-4a94-a3ae-db86b947e9e8"
+            name="getBaseArmor"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1332,31 +1279,16 @@
         </suppliersInternal>
         <ownedOperationsInternal>
           <operation
-            Id="f39687ac-193d-4e1c-b00d-ea4f2349e16a"
-            name="getBaseArmor"
+            Id="9ed5e69e-5055-4c7e-8dc5-90035674eb60"
+            name="getAC"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="c17562b3-93ae-4381-9449-27f11edb987b"
-                  direction="Return">
-                  <type_NamedElement>
-                    <interfaceMoniker
-                      Id="fb2932f6-6f66-48af-89d9-86b89e08e016"
-                      LastKnownName="Armor"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
+            isQuery="false" />
           <operation
-            Id="9ed5e69e-5055-4c7e-8dc5-90035674eb60"
-            name="getAC"
+            Id="a72d8cf3-1b3f-4f82-8371-629e4c338971"
+            name="getBaseArmor"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1383,31 +1315,16 @@
         </suppliersInternal>
         <ownedOperationsInternal>
           <operation
-            Id="a70e46ca-bfae-40ec-b8b7-af0d500e1cd0"
-            name="getBaseArmor"
+            Id="3bb1cf08-0a10-4530-851c-76308102fb14"
+            name="getAC"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="d8203fa7-0cec-4d70-9293-c6a8fcda20f6"
-                  direction="Return">
-                  <type_NamedElement>
-                    <interfaceMoniker
-                      Id="fb2932f6-6f66-48af-89d9-86b89e08e016"
-                      LastKnownName="Armor"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
+            isQuery="false" />
           <operation
-            Id="3bb1cf08-0a10-4530-851c-76308102fb14"
-            name="getAC"
+            Id="e72bb0cc-22b9-496e-b4c0-57e7ffd45ee5"
+            name="getBaseArmor"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1983,7 +1900,18 @@
         Id="f42aa946-9969-493d-8f0f-56236faee024"
         name="Wieldable"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="1fd87827-1258-48e9-ab90-cb3ec710a8a0"
+            name="getBaseWieldable"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -2003,32 +1931,24 @@
         </suppliersInternal>
         <ownedOperationsInternal>
           <operation
-            Id="d0a7e9ce-b8ab-49f5-9647-b7fb8d4b5552"
+            Id="34180993-bf2c-4fda-8bb8-3b881418a26d"
+            name="attack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="dbf96583-f307-4fad-849d-7221fea44601"
             name="getBaseWeapon"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="555152d6-31f3-4255-a59a-40fb7429177e"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <interfaceMoniker
-                      Id="911eb007-415c-4d49-8bad-0a367c03e411"
-                      LastKnownName="Weapon"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
+            isQuery="false" />
           <operation
-            Id="beee2cf1-18aa-42e9-b99f-94e7d34f9a73"
-            name="attack"
+            Id="b038b091-6f20-4bc6-a0ef-6ea90511768e"
+            name="getBaseWieldable"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -2055,32 +1975,24 @@
         </suppliersInternal>
         <ownedOperationsInternal>
           <operation
-            Id="dce6df36-b03a-4862-bbcd-f1131c7c8a3c"
+            Id="eac16eb2-d107-409d-bb28-bba62c7d52b2"
+            name="attack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="35e25828-004f-4952-8571-277318b5ae5e"
             name="getBaseWeapon"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="cbe912d7-1632-4655-8bde-901af993be58"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <interfaceMoniker
-                      Id="911eb007-415c-4d49-8bad-0a367c03e411"
-                      LastKnownName="Weapon"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
+            isQuery="false" />
           <operation
-            Id="944ebfe0-7806-4279-a854-95608ecdd741"
-            name="attack"
+            Id="4997c5df-ba63-472a-95c2-c036eb875f7e"
+            name="getBaseWieldable"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -2107,32 +2019,24 @@
         </suppliersInternal>
         <ownedOperationsInternal>
           <operation
-            Id="f67198c9-c3bd-458c-a6f8-cb04ddbae1b1"
+            Id="edee6466-c2d7-4c62-ab1c-a38a195e6e4f"
+            name="attack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b806c552-e519-48db-8426-31a891fc921b"
             name="getBaseWeapon"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="9e46c25e-5384-4619-989a-9c71b242b2b6"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <interfaceMoniker
-                      Id="911eb007-415c-4d49-8bad-0a367c03e411"
-                      LastKnownName="Weapon"
-                      LastKnownLocation="FinalProjectUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
+            isQuery="false" />
           <operation
-            Id="9d4064bd-5024-4cdc-91f9-6bf95e67df04"
-            name="attack"
+            Id="e24f997e-fce2-4f59-b2cd-256b7172bb99"
+            name="getBaseWieldable"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
