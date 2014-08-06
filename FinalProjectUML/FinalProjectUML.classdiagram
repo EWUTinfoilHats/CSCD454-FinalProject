@@ -6,10 +6,6 @@
       <body>HERE BE WEAPONS
 </body>
     </comment>
-    <comment Id="9ee0f0b9-a978-43f1-9d97-b48a1c7f7a0c">
-      <elementDefinition Id="5102b327-eaf4-4291-891d-5b731088ffdf" />
-      <body>ability mod = floor((x - 10) / 2.0)</body>
-    </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <packageHasNamedElement>
@@ -1088,6 +1084,12 @@
           <operation Id="e82ec4a0-2974-4798-ae0a-19afa66e50bb" name="GetBaseWieldable" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="f0f61f4f-40b4-4ed8-89ce-6788d1be0a0a" />
           </operation>
+          <operation Id="9435c72a-12ff-4dbe-819b-09c891945eaf" name="GetDamageRoll" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e240c5aa-f5e3-4640-b079-c7b70ac60f7e" />
+          </operation>
+          <operation Id="a26c0458-2fc8-4b48-9333-9f9c653234d3" name="GetCriticalDamageRoll" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e6060ebe-2e70-4b48-a846-9af99293c205" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -1214,6 +1216,31 @@
         <elementDefinition Id="fda62bca-aefa-451d-b15d-a74faae81a4e" />
       </referencedType>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="44fc607a-065c-4d82-b22c-65f15180f3e4" name="Attribute" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="06ce1e5c-0d7c-46cc-b0d1-5219c2708b24" />
+        <ownedOperationsInternal>
+          <operation Id="fc7777f9-6cb4-4927-8e4e-2084019800f9" name="GetAbilityMod" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8f73f9aa-6d71-4497-9e47-e1695afce99b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="496cbdab-3bb5-43e9-b045-e1e59e02aaad" name="int attribute" direction="In" isUnique="false">
+                  <elementDefinition Id="a285f0f2-d94e-4f81-8989-ac865e5719b9" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ee7ff71c-98fc-4579-a476-399397d7f727" direction="Return" isUnique="false">
+                  <elementDefinition Id="c8970002-8816-4faa-8f89-0531ac1bef19" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6173ff6e-7795-4f94-b8d3-6fb1c2c879a8" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="53911808-a4ba-4b85-94c5-49f8ad4c20e0" name="FinalProjectUML">
     <elementDefinition Id="d876a4de-76b5-40d1-9d98-22fcc7663c9e" />
