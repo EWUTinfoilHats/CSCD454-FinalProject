@@ -144,5 +144,51 @@ namespace CSCD454_FinalProject.Items
         {
             return roll >= ThreatRangeMin && roll <= ThreatRangeMax;
         }
+
+        public virtual int GetDamageRoll(int strength, bool isOffhand)
+        {
+            return DamageHelper(strength, isOffhand);
+        }
+
+        protected virtual int DamageHelper(int strength, bool isOffhand)
+        {
+            int strMod = Attribute.GetAbilityMod(strength);
+
+            double damage = 0;
+
+            foreach (Die d in DamageDice)
+            {
+                damage += d.Roll();
+            }
+
+            if (strMod < 0)
+            {
+                damage += strMod; //Offhand and 2h don't get multipliers for neg
+            }
+            else if (isOffhand)
+            {
+                damage += strMod / 2.0;
+            }
+            else if (Is2H)
+            {
+                damage += strMod * 1.5;
+            }
+            else
+            {
+                damage += strMod;
+            }
+
+            return Math.Max((int)Math.Floor(damage), 1);
+        }
+
+        public virtual int GetCriticalDamageRoll(int strength, bool isOffhand)
+        {
+            int damage = 0;
+            for (int i = 0; i < CriticalMultiplier; i++)
+            {
+                damage += GetDamageRoll(strength, isOffhand);
+            }
+            return damage;
+        }
     }
 }
