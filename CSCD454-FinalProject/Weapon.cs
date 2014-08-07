@@ -14,7 +14,7 @@ namespace CSCD454_FinalProject.Items
     /// </summary>
     public class Weapon : Item, Wieldable
     {
-        public static readonly string[] WEAPON_TYPES = new string[] {"exotic", "martial", "simple" };
+        public static readonly IList<string> WEAPON_TYPES = new string[] {"exotic", "martial", "simple" };
 
         public Weapon() : base()
         {
@@ -33,7 +33,7 @@ namespace CSCD454_FinalProject.Items
 
         public Weapon SetCriticalMultiplier(int mult)
         {
-            if (CriticalMultiplier == 2)
+            if (CriticalMultiplier == 2 && mult > 0)
                 CriticalMultiplier = mult;
             return this;
         }
@@ -46,7 +46,7 @@ namespace CSCD454_FinalProject.Items
 
         public Weapon SetDamageDice(IList<Die> dice)
         {
-            if (DamageDice.Count == 0)
+            if (DamageDice.Count == 0 && dice != null)
                 DamageDice = dice;
             return this;
         }
@@ -59,7 +59,7 @@ namespace CSCD454_FinalProject.Items
 
         public Weapon SetDamageMod(int dm)
         {
-            if (DamageMod == 0)
+            if (DamageMod == 0 && dm >= 0)
                 DamageMod = dm;
             return this;
         }
@@ -72,7 +72,7 @@ namespace CSCD454_FinalProject.Items
 
         public Weapon SetAttackMod(int am)
         {
-            if (AttackMod == 0)
+            if (AttackMod == 0 && am >= 0)
                 AttackMod = am;
             return this;
         }
@@ -113,12 +113,11 @@ namespace CSCD454_FinalProject.Items
             private set;
         }
 
-        public Weapon SetThreatRange(int min, int max)
+        public Weapon SetThreatRange(int min)
         {
-            if(ThreatRangeMax == 20 && ThreatRangeMin == 20)
+            if(ThreatRangeMax == 20 && ThreatRangeMin == 20 && min >= 0 && min <= 20)
             {
                 ThreatRangeMin = min;
-                ThreatRangeMax = max;
             }
             return this;
         }

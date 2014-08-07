@@ -23,9 +23,9 @@ namespace CSCD454_FinalProject.Items.Weapons
 
         public static readonly Weapon brassKnuckles = (Weapon)(new Weapon()).SetDamageDice(d3).SetLight().SetType("simple").SetName("Brass Knuckles").SetPrice(1).SetWeight(1);
 
-        public static readonly Weapon cestus = (Weapon)(new Weapon()).SetDamageDice(d4).SetLight().SetType("simple").SetThreatRange(19, 20).SetName("Cestus").SetPrice(5).SetWeight(1);
+        public static readonly Weapon cestus = (Weapon)(new Weapon()).SetDamageDice(d4).SetLight().SetType("simple").SetThreatRange(19).SetName("Cestus").SetPrice(5).SetWeight(1);
 
-        public static readonly Weapon dagger = (Weapon)(new Weapon()).SetDamageDice(d4).SetLight().SetType("simple").SetThreatRange(19, 20).SetName("Dagger").SetPrice(2).SetWeight(1);
+        public static readonly Weapon dagger = (Weapon)(new Weapon()).SetDamageDice(d4).SetLight().SetType("simple").SetThreatRange(19).SetName("Dagger").SetPrice(2).SetWeight(1);
 
         public static readonly Weapon gauntlet = (Weapon)(new Weapon()).SetDamageDice(d3).SetLight().SetType("simple").SetName("Gauntlet").SetPrice(2).SetWeight(1);
 
@@ -62,7 +62,7 @@ namespace CSCD454_FinalProject.Items.Weapons
 
         public static readonly Weapon dart = (Weapon)(new Weapon()).SetDamageDice(d4).SetType("simple").SetName("Dart").SetPrice(1).SetWeight(1);
 
-        public static readonly Weapon heavyCrossbow = (Weapon)(new Weapon()).SetDamageDice(d10).SetType("simple").Set2H().SetThreatRange(19, 20).SetName("Heavy Crossbow").SetPrice(50).SetWeight(8);
+        public static readonly Weapon heavyCrossbow = (Weapon)(new Weapon()).SetDamageDice(d10).SetType("simple").Set2H().SetThreatRange(19).SetName("Heavy Crossbow").SetPrice(50).SetWeight(8);
 
         public static readonly Weapon javelin = (Weapon)(new Weapon()).SetDamageDice(d4).SetType("simple").SetName("Javelin").SetPrice(1).SetWeight(2);
 

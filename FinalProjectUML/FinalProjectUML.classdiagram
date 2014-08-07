@@ -1,12 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="8104c7e8-bf3c-4173-a13f-540b62ab7554" name="UMLClassDiagram1" linkedPackageId="53911808-a4ba-4b85-94c5-49f8ad4c20e0" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <ownedCommentsInternal>
-    <comment Id="d78be81c-3469-4b15-b933-83e467aa5406">
-      <elementDefinition Id="33c6f65b-01a0-4ff5-b63c-8ba30e0d7326" />
-      <body>HERE BE WEAPONS
-</body>
-    </comment>
-  </ownedCommentsInternal>
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="23e35f9b-37e1-446f-a7f6-366d63d2e614" name="IList?" isAbstract="false" isLeaf="false" cachedFullName="IList?">
@@ -118,22 +111,6 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="9012edf0-7bba-4bf3-bda5-041ef2bcb75f" />
-          </association>
-          <association Id="0a228e3b-e8d4-4519-bd36-7f8782f14ae7" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <interfaceMoniker Id="a311724f-2b1d-4183-9f7b-749235772f23" LastKnownName="Armor" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="28a84568-47fb-48c1-97a9-7f23fd43e9c3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="16f42223-f5f1-459d-981f-c7c45e5c8112" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="5e556c1b-88e0-4d48-a461-b4eba86bb98e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="95dd14cb-9bb3-4592-8a61-30a5cf91adb5" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="91ca1778-e245-421e-a317-4d8f52d9640f" />
           </association>
           <association Id="193a3762-30b6-4e5d-8869-328d91cea2b7" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <interfaceMoniker Id="97317503-9796-4f58-afb8-51be293094a0" LastKnownName="Spell" />
@@ -449,123 +426,23 @@
       </enumeration>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="a311724f-2b1d-4183-9f7b-749235772f23" name="Armor" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="fb2932f6-6f66-48af-89d9-86b89e08e016" />
-        <generalsInternal>
-          <generalization Id="42199ed7-1699-4ccd-84d0-b42c27d12c32" isSubstitutable="false">
-            <interfaceMoniker Id="2e4a9d17-c747-4737-baff-4520cf717b50" LastKnownName="Item" />
-            <elementDefinition Id="c3f3f404-6de1-40b9-9876-37626f69e5f7" />
-          </generalization>
-        </generalsInternal>
-        <ownedAttributes>
-          <property Id="40c3c1dc-eac8-46b9-a7bb-ce2178fdf449" name="armorClass" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="c4dc5ecf-13b9-4ef6-899f-937993e10929" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="80d0499f-2278-4e95-a87b-d0e7e9a3c4a4" LastKnownName="Integer" />
-            </type_NamedElement>
-          </property>
-          <property Id="3b630f3a-1281-4d3b-af1d-24c02d382b74" name="maxDexMod" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="9df4a6c6-dffc-46ce-b39e-a4a58260f079" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="80d0499f-2278-4e95-a87b-d0e7e9a3c4a4" LastKnownName="Integer" />
-            </type_NamedElement>
-          </property>
-          <property Id="b45c78e4-b160-41ab-b449-b99496082969" name="arcaneSpellFailure" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="f8855a66-245b-4ce4-9437-6f6d5ad4e627" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="80d0499f-2278-4e95-a87b-d0e7e9a3c4a4" LastKnownName="Integer" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributes>
-        <ownedOperations>
-          <operation Id="adb8d89f-a61c-4450-a006-ff5987949cec" name="getAC" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="9b0f166a-8700-4012-9715-1e062cac385f" />
-          </operation>
-          <operation Id="524b0000-fb1b-45f2-93b9-e415882ff2fa" name="getBaseArmor" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="c633ad58-c602-4ca6-b2ce-f2ddffeab0d1" />
-          </operation>
-        </ownedOperations>
-      </Interface>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
       <class Id="84b7a970-bc15-4f36-a600-f518c036d8e1" name="Shield" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f21b2794-6bbf-4a7c-a918-746f8ff13988" />
         <suppliersInternal>
-          <interfaceRealization Id="b0742052-16f8-42fb-9e23-770300afa347">
-            <interfaceMoniker Id="a311724f-2b1d-4183-9f7b-749235772f23" LastKnownName="Armor" />
-            <elementDefinition Id="1dd9b4c8-9834-40c7-95f1-50e845fc33e0" />
-          </interfaceRealization>
           <interfaceRealization Id="afbc6f52-166d-4e6f-a25b-2f40ffe9fa98">
             <interfaceMoniker Id="83242398-127a-4d15-a54a-3b77d737cf0b" LastKnownName="Wieldable" />
             <elementDefinition Id="b454f157-6851-4b72-80ce-cf43f408ca8a" />
           </interfaceRealization>
         </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="b2fa33e6-34fc-4af7-b318-ccf39b3b56c5" isSubstitutable="false">
+            <classMoniker Id="3b5a4cf5-d34c-4ab0-998f-6437369fdb6c" LastKnownName="Armor" />
+            <elementDefinition Id="940eee0e-f730-453c-96a8-102fbe6ce910" />
+          </generalization>
+        </generalsInternal>
         <ownedOperationsInternal>
-          <operation Id="daa6864b-8719-4f2b-a628-c210e509cc96" name="getAC" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="3c1bc8fc-695d-4b53-a5bb-6f5e7c9279e5" />
-          </operation>
-          <operation Id="c7aea027-c133-4a3c-93f9-b50c2fa9c01f" name="getBaseArmor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="dfb18cbe-8622-40e3-b509-9823daae4f6f" />
-          </operation>
           <operation Id="299c0977-f32c-4191-889c-e4714f8748b7" name="GetBaseWieldable" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="e1c66bc1-9104-49d7-a779-006b14613cdf" />
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="70b2c6fb-c534-44e3-ae0d-ffabcdba83be" name="HeavyArmor" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="ce3c1264-a57a-45ac-98de-38f1ec8f0bd6" />
-        <suppliersInternal>
-          <interfaceRealization Id="a014376a-db0d-447f-adb9-666faf88f752">
-            <interfaceMoniker Id="a311724f-2b1d-4183-9f7b-749235772f23" LastKnownName="Armor" />
-            <elementDefinition Id="df2ab09a-d93e-49ea-9165-639b9be2dce4" />
-          </interfaceRealization>
-        </suppliersInternal>
-        <ownedOperationsInternal>
-          <operation Id="b35f58d6-59f9-4a18-a0ee-64b283ea6134" name="getAC" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="7925e8d4-3a5b-4e6b-8b22-5d76fb3b5ed8" />
-          </operation>
-          <operation Id="1600afcb-91fe-451a-9caa-f071d8de8ab7" name="getBaseArmor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="36800c8b-b542-4a94-a3ae-db86b947e9e8" />
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="611a0872-b892-48d5-bb37-b23c5f755c78" name="MediumArmor" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="5dfa8cfd-848c-4208-b065-51be41b158a2" />
-        <suppliersInternal>
-          <interfaceRealization Id="cc71ec1b-cdd4-4884-a497-f105e921874f">
-            <interfaceMoniker Id="a311724f-2b1d-4183-9f7b-749235772f23" LastKnownName="Armor" />
-            <elementDefinition Id="8767b827-2d15-4afb-aa51-88ad59c6c89b" />
-          </interfaceRealization>
-        </suppliersInternal>
-        <ownedOperationsInternal>
-          <operation Id="a4a2b2d8-341e-48af-8bf0-bb5d8e52f0fd" name="getAC" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="9ed5e69e-5055-4c7e-8dc5-90035674eb60" />
-          </operation>
-          <operation Id="aa0be221-d6f1-4c4e-802c-b8f7353c55c5" name="getBaseArmor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="a72d8cf3-1b3f-4f82-8371-629e4c338971" />
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="53f7e77d-c2f7-4c40-b50a-110404e71cb8" name="LightArmor" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="4783bc15-3644-406e-91bd-fbe7bc94a3a4" />
-        <suppliersInternal>
-          <interfaceRealization Id="41caf0dc-2484-4f05-b90b-23928bd5646d">
-            <interfaceMoniker Id="a311724f-2b1d-4183-9f7b-749235772f23" LastKnownName="Armor" />
-            <elementDefinition Id="7c2f53c4-2930-42cf-ade5-5f10fa976b15" />
-          </interfaceRealization>
-        </suppliersInternal>
-        <ownedOperationsInternal>
-          <operation Id="c983dde4-f79b-4ec9-9ca7-46ff418ad93f" name="getAC" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="3bb1cf08-0a10-4530-851c-76308102fb14" />
-          </operation>
-          <operation Id="db282636-67b1-439e-8da9-bf2b5660aecc" name="getBaseArmor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="e72bb0cc-22b9-496e-b4c0-57e7ffd45ee5" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -738,43 +615,6 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="1b00c2f1-ba06-4499-91b7-1c3495d8c153" name="ArmorEnchantment" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="726133da-dc7b-41a0-985d-4b0058c6e6ce" />
-        <generalsInternal>
-          <generalization Id="2f401925-358a-4a15-8874-201a9eb53eaf" isSubstitutable="false">
-            <interfaceMoniker Id="a311724f-2b1d-4183-9f7b-749235772f23" LastKnownName="Armor" />
-            <elementDefinition Id="11dd9cb5-f6e3-4bb3-a587-dca354aaf2df" />
-          </generalization>
-        </generalsInternal>
-        <targetEnds>
-          <association Id="a713887e-c1a1-44cb-ac5b-298088420405" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <interfaceMoniker Id="a311724f-2b1d-4183-9f7b-749235772f23" LastKnownName="Armor" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="bf40e464-788e-408c-9183-d2e0f1d0e137" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="64215e3c-7c3d-4230-8e90-5280b2d12d0f" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="146529c7-4701-46f1-8ecc-fec28de4d0f0" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="909d248a-406a-4ac2-8d8a-faaf27dfcf17" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="a25b356a-b53d-42ae-9a8d-947a91a4e049" />
-          </association>
-        </targetEnds>
-        <ownedAttributes>
-          <property Id="d8308832-c992-402d-a049-76f2c913bfa3" name="enchantedArmor" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="212bbc12-e74a-4352-892a-c4df1ac63f05" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="0d742a9b-e4f4-441a-a2dc-d0962cfb699d" LastKnownName="Armor" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributes>
-      </Interface>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
       <Interface Id="83242398-127a-4d15-a54a-3b77d737cf0b" name="Wieldable" isAbstract="false" isLeaf="false">
         <elementDefinition Id="f42aa946-9969-493d-8f0f-56236faee024" />
         <ownedOperations>
@@ -792,11 +632,6 @@
     <packageHasNamedElement>
       <referencedType Id="d000d098-0340-458f-9cb2-4ec89a2310de" name="Weapon" isAbstract="false" isLeaf="false" cachedFullName="FinalProjectUML::Weapon">
         <elementDefinition Id="911eb007-415c-4d49-8bad-0a367c03e411" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="0d742a9b-e4f4-441a-a2dc-d0962cfb699d" name="Armor" isAbstract="false" isLeaf="false" cachedFullName="FinalProjectUML::Armor">
-        <elementDefinition Id="fb2932f6-6f66-48af-89d9-86b89e08e016" />
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
@@ -1114,7 +949,7 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="ffe68444-7a32-49cd-aeb5-d6fa0fff5901" name="WeaponEnchantment" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="ffe68444-7a32-49cd-aeb5-d6fa0fff5901" name="WeaponEnchantment" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6d08a57b-db59-4301-8c8e-f5490186af37" />
         <generalsInternal>
           <generalization Id="75f5ec0a-c25a-4df5-abdb-ca83bf6797ba" isSubstitutable="false">
@@ -1239,6 +1074,80 @@
             </ownedParameters>
           </operation>
         </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3b5a4cf5-d34c-4ab0-998f-6437369fdb6c" name="Armor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0e6874d6-5b75-4279-8c59-17ebaeb98397" />
+        <suppliersInternal>
+          <interfaceRealization Id="18093344-a950-44d6-930b-51c19cd30bad">
+            <interfaceMoniker Id="2e4a9d17-c747-4737-baff-4520cf717b50" LastKnownName="Item" />
+            <elementDefinition Id="86c63c28-90e7-4981-ab0e-4f6db27c5307" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="64517c30-4292-4ad5-9ff2-4e180fd5369f" name="Type" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="018e8751-671f-439c-95d5-bfc143fc5c94" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="483d350a-7b7c-4ab4-a0aa-c8b8ccfd4762" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="522b26cc-efef-43b9-bc6c-57e1e0ad2812" name="ArmorClass" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="55018a83-830a-4188-893b-990c64a71f53" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6173ff6e-7795-4f94-b8d3-6fb1c2c879a8" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="e58bdd8c-1be7-4849-9779-b12daa33085c" name="MaxDexMod" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="807c10eb-1b34-40ff-9e4c-a7080d33b5e6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6173ff6e-7795-4f94-b8d3-6fb1c2c879a8" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="1d5afc91-9d8a-42b0-b0d5-acf304ee20ad" name="ArcaneSpellFailure" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b5a64094-eb3f-4e4b-a08b-c61cc8a70fad" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6173ff6e-7795-4f94-b8d3-6fb1c2c879a8" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="6f645334-a452-4fcd-ba79-881d2b9bb5d6" name="ArmorCheckPenalty" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5cdb146d-968d-46c7-8b42-3f4a50d823e8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6173ff6e-7795-4f94-b8d3-6fb1c2c879a8" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="c1316c70-6509-4a99-adbc-630e40b72a07" name="SetArcaneSpellFailure" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="542b4c4e-d243-4cff-be74-5ae0506d5bf9" />
+          </operation>
+          <operation Id="abfc88f7-8b88-453e-bfc9-a3757853809d" name="SetArmorCheckPenalty" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4c561aae-fe28-424f-b9fa-d6fbe06fd281" />
+          </operation>
+          <operation Id="4a74f0e3-c5d9-4fbe-92a0-1fd17d07a92d" name="SetArmorClass" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="458779cb-65f8-43b0-9c10-9ecdf04590cf" />
+          </operation>
+          <operation Id="aceae870-bc93-4dc5-b827-9a702984ba47" name="SetMaxDexMod" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c907d162-7c32-48b3-974d-8a79c1d6b5d2" />
+          </operation>
+          <operation Id="0698ef8b-56ff-45d5-8afe-25a351acec29" name="SetType" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ed9476d0-4484-4e7b-9b5f-2ac5714dc7a7" />
+          </operation>
+          <operation Id="3f7521c1-d416-44cc-acdf-def6d7ae5064" name="GetBaseArmor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="837fb6f3-d92e-4710-b934-18567210f6e0" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="952d58a2-1370-460e-88f4-7678ea755c94" name="ArmorEnchantment" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7c90fcf1-7048-433d-84c5-008a355f752f" />
+        <generalsInternal>
+          <generalization Id="a305ecb6-667a-4518-b228-b7ad54df81fb" isSubstitutable="false">
+            <classMoniker Id="3b5a4cf5-d34c-4ab0-998f-6437369fdb6c" LastKnownName="Armor" />
+            <elementDefinition Id="11b9b841-ec1a-41da-9368-cc85aead49e8" />
+          </generalization>
+        </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
