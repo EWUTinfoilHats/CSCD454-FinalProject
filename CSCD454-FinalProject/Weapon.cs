@@ -195,7 +195,8 @@ namespace CSCD454_FinalProject.Items
         public virtual int GetCriticalDamageRoll(int strength, bool isOffhand)
         {
             int damage = 0;
-            for(int i = 0; i < CriticalMultiplier; i++)
+
+            for (int i = 0; i < CriticalMultiplier; i++)
             {
                 damage += GetDamageRoll(strength, isOffhand);
             }
