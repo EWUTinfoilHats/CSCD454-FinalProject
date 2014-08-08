@@ -14,13 +14,14 @@ namespace CSCD454_FinalProject.Items
     /// </summary>
     public class Weapon : Item, Wieldable
     {
-        public static readonly string[] WEAPON_TYPES = new string[] {"exotic", "martial", "simple" };
+        public static readonly IList<string> WEAPON_TYPES = new string[] {"exotic", "martial", "simple" };
 
         public Weapon() : base()
         {
             ThreatRangeMax = 20;
             ThreatRangeMin = 20;
             DamageDice = new Die[0];
+            CriticalMultiplier = 2;
             Type = "";
         }
 
@@ -32,7 +33,7 @@ namespace CSCD454_FinalProject.Items
 
         public Weapon SetCriticalMultiplier(int mult)
         {
-            if (CriticalMultiplier == 0)
+            if (CriticalMultiplier == 2 && mult > 0)
                 CriticalMultiplier = mult;
             return this;
         }
@@ -45,7 +46,7 @@ namespace CSCD454_FinalProject.Items
 
         public Weapon SetDamageDice(IList<Die> dice)
         {
-            if (DamageDice.Count == 0)
+            if (DamageDice.Count == 0 && dice != null)
                 DamageDice = dice;
             return this;
         }
@@ -58,8 +59,21 @@ namespace CSCD454_FinalProject.Items
 
         public Weapon SetDamageMod(int dm)
         {
-            if (DamageMod == 0)
+            if (DamageMod == 0 && dm >= 0)
                 DamageMod = dm;
+            return this;
+        }
+
+        public virtual int AttackMod
+        {
+            get;
+            private set;
+        }
+
+        public Weapon SetAttackMod(int am)
+        {
+            if (AttackMod == 0 && am >= 0)
+                AttackMod = am;
             return this;
         }
 
@@ -69,10 +83,9 @@ namespace CSCD454_FinalProject.Items
             private set;
         }
 
-        public Weapon SetIs2H(bool is2h)
+        public Weapon Set2H()
         {
-            if (Is2H == false)
-                Is2H = is2h;
+            Is2H = true;
             return this;
         }
 
@@ -82,10 +95,9 @@ namespace CSCD454_FinalProject.Items
             private set;
         }
 
-        public Weapon SetIsLight(bool light)
+        public Weapon SetLight()
         {
-            if (IsLight == false)
-                IsLight = light;
+            IsLight = true;
             return this;
         }
 
@@ -101,12 +113,11 @@ namespace CSCD454_FinalProject.Items
             private set;
         }
 
-        public Weapon SetThreatRange(int min, int max)
+        public Weapon SetThreatRange(int min)
         {
-            if(ThreatRangeMax == 20 && ThreatRangeMin == 20)
+            if(ThreatRangeMax == 20 && ThreatRangeMin == 20 && min >= 0 && min <= 20)
             {
                 ThreatRangeMin = min;
-                ThreatRangeMax = max;
             }
             return this;
         }
@@ -184,6 +195,7 @@ namespace CSCD454_FinalProject.Items
         public virtual int GetCriticalDamageRoll(int strength, bool isOffhand)
         {
             int damage = 0;
+
             for (int i = 0; i < CriticalMultiplier; i++)
             {
                 damage += GetDamageRoll(strength, isOffhand);

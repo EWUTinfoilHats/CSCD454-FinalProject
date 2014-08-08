@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace CSCD454_FinalProject
 {
-
     public class Attribute
     {
         public static int GetAbilityMod(int attr)
