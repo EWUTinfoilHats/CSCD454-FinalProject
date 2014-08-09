@@ -2740,6 +2740,16 @@
               LastKnownLocation="FinalProjectUML.uml" />
           </generalization>
         </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9101b8a8-4e96-40a1-8ac3-7337c50aa423"
+            name="GetBaseWeapon : Weapon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -3134,6 +3144,49 @@
           </generalization>
         </generalsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ca9f1f6c-6643-42d6-8695-0a375a682daf"
+        name="Masterwork"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="d2d62ff7-c03b-4d97-8300-32f06a93b88b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6d08a57b-db59-4301-8c8e-f5490186af37"
+              LastKnownName="WeaponEnchantment"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f9a0020d-d686-4cbf-932f-0dc279aa26c8"
+        name="BasicWeaponEnchantment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2fb6af3a-93a5-4dbc-9044-486b5247781c"
+        name="ElementalWeaponEnchantment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e749b1bc-212d-4a20-9474-f5f50d01c056"
+        name="ElementalBurstWeaponEnchantment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
