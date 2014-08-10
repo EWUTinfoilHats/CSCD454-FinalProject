@@ -202,5 +202,26 @@ namespace CSCD454_FinalProject.Items
             }
             return damage;
         }
+
+
+        public int ArmorClass
+        {
+            get { return 0; }
+        }
+
+        public int MaxDexMod
+        {
+            get { return 20; }
+        }
+
+        public int ArcaneSpellFailure
+        {
+            get { return 0; }
+        }
+
+        public int ArmorCheckPenalty
+        {
+            get { return 0; }
+        }
     }
 }

@@ -1205,6 +1205,82 @@
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="2f46082b-13ab-421f-83e7-ad3ee05fa3f6"
+            name="GetDamageRoll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d3d39d90-5d3d-40e2-a989-830ef62448ce"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="91c71714-9702-4e2f-a852-3cee0da93cea"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c80d84c7-b4c4-44fa-ba8c-8d7168fc8c52"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                      LastKnownName="int"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cec15ae2-4b2a-46f2-bee5-0923997c6891"
+            name="GetCriticalDamageRoll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="80963f31-b6b7-4d5a-bea6-89e375004f00"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c771fbfc-33f3-4625-8311-d0bf0da72f81"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cb7bff61-10dc-47a7-8f72-b57a478a4e73"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                      LastKnownName="int"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -1884,6 +1960,163 @@
         name="Wieldable"
         isAbstract="false"
         isLeaf="false">
+        <ownedAttributes>
+          <property
+            Id="12a99a11-5d98-4912-aebd-0240d57c035c"
+            name="DamageMod"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                LastKnownName="int"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="54cb0487-54d3-496e-ac08-1b25da18045b"
+            name="AttackMod"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                LastKnownName="int"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ed950e53-e528-4165-9850-d2a0665f4be1"
+            name="ThreatRangeMin"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                LastKnownName="int"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0e072c4f-b50e-4885-852c-aea0a4f6fdb5"
+            name="ThreatRangeMax"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                LastKnownName="int"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2bb71864-ccc9-41f2-a8b6-ad6704c55491"
+            name="Type"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="f6f5d040-18bd-4066-a288-2ae406257534"
+                LastKnownName="string"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="11590264-503c-4b49-ae06-91e081a44a91"
+            name="ArmorClass"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                LastKnownName="int"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d263c016-135b-4d8f-b9aa-58fdfa558cc2"
+            name="MaxDexMod"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                LastKnownName="int"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f22954c9-ea0c-4153-82e6-1b49d31964c4"
+            name="ArcaneSpellFailure"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                LastKnownName="int"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="733cb4eb-878d-47c2-bf9c-291b69fd6a25"
+            name="ArmorCheckPenalty"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributes>
         <ownedOperations>
           <operation
             Id="1fd87827-1258-48e9-ab90-cb3ec710a8a0"
@@ -1893,6 +2126,82 @@
             isAbstract="true"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="12e6c6a8-dab8-41f1-9cc1-58d69bbb3ffa"
+            name="GetDamageRoll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bed198d9-dc83-4497-8868-f4d972eaf821"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="161026c7-c31a-48b9-a45b-35cf2219d6e7"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9c972ecc-c2e4-478e-b879-59c1ea52e242"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                      LastKnownName="int"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4bee749f-68c0-48af-af89-b89fc8e4e5d2"
+            name="GetCriticalDamageRoll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f7d9d5fd-afab-4a00-a28b-0b5f2fc05f98"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2ff74a9f-7b0f-4aef-9554-2b5c0e95f8c6"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4d71a7a9-cfb1-4240-8795-6c72c42a0761"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                      LastKnownName="int"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperations>
       </Interface>
     </packageHasNamedElement>
@@ -1937,6 +2246,82 @@
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="82c84c62-46c4-41e4-8d2d-caf29bb1c5ad"
+            name="GetDamageRoll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d900000e-cf45-44cd-b961-3dee845968ae"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cd7c6a31-6e65-4221-a673-1d9cb0026c7b"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b2cb192e-ba52-4664-a546-8074dc6aead7"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                      LastKnownName="int"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4786ddcd-ed76-4362-b212-9a9c73cd5af7"
+            name="GetCriticalDamageRoll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ee6369e3-535c-4cce-bad3-a74cf1b9415a"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f6284f81-a3d5-4ff6-8b9f-5cadc4a990c2"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bfe451a9-182c-46b6-a48c-81f684d3cb10"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                      LastKnownName="int"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -1981,6 +2366,82 @@
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="db1032b3-edd7-4afb-a1d5-b01d310c24f1"
+            name="GetDamageRoll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f81a9c96-e78f-42aa-9270-0e3ef78d4982"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f1ed1d4b-0340-45aa-aab8-1ef504761a98"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c0fb876e-95b1-4ae0-8b35-8c500442bd93"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                      LastKnownName="int"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4e3580b3-7209-4752-9782-bfc0d060eee0"
+            name="GetCriticalDamageRoll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="63beb83b-a694-459f-b2b4-76eb8b932713"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dd903ade-fabb-42c8-8a0f-054694d0f607"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e2cb7499-2a3e-4ade-a48b-ed82d6cb60ae"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                      LastKnownName="int"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -2025,6 +2486,82 @@
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="5315f3b6-25d7-4720-a1f5-652c2b2e9fc6"
+            name="GetDamageRoll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="53a2d27e-475e-45b7-8cf5-fd02e58d09f6"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e7ca2d8a-e00d-44a3-b1e6-b29ed7e424cc"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2f8aefb3-e07a-43dc-b43e-9d73f45c31c1"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                      LastKnownName="int"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2353071d-02e9-4c29-95c9-a72fe6ecb47d"
+            name="GetCriticalDamageRoll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="716e1f21-44d0-4725-9940-4197cf5b998e"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f736488a-6686-4c4c-a2fc-2cb388d6da72"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="34aa945e-8168-4c6b-a746-dcb29eff7db1"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                      LastKnownName="int"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -2705,6 +3242,82 @@
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="4191dd1d-de57-4c5e-a0f4-c15361fe46e9"
+            name="GetDamageRoll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="80221337-02b0-478f-99f8-ef3f5c5cdcea"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2ef61b87-b701-422e-a003-68c6cb49148e"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6ad4a031-5142-41e9-bb79-6d84569365a1"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                      LastKnownName="int"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="05e551fe-e6e5-4d3d-96d3-9212167dbb38"
+            name="GetCriticalDamageRoll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5709e19e-54b0-40c5-8cbe-0e44701155e3"
+                  name="int"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b64fbf76-f110-4ba8-837f-cbec6ac706d8"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d3216154-74a8-4c16-a38c-9bd82c9c074f"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3651d837-a402-4de9-bbb6-caffc358ba83"
+                      LastKnownName="int"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>

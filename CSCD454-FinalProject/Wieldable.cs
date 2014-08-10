@@ -8,7 +8,57 @@ namespace CSCD454_FinalProject.Items
 {
     public interface Wieldable
     {
-        //does nothing currently use reflection to find actual type
         Wieldable GetBaseWieldable();
+
+        int GetDamageRoll(int strength, bool isOffHand);
+
+        int GetCriticalDamageRoll(int strength, bool isOffHand);
+
+        int AttackMod
+        {
+            get;
+        }
+
+        int DamageMod
+        {
+            get;
+        }
+
+        int ThreatRangeMin
+        {
+            get;
+        }
+
+        int ThreatRangeMax
+        {
+            get;
+        }
+
+        string Type
+        {
+            get;
+        }
+
+        bool IsInThreatRange(int roll);
+
+        int ArmorClass
+        {
+            get;
+        }
+
+        int MaxDexMod
+        {
+            get;
+        }
+
+        int ArcaneSpellFailure
+        {
+            get;
+        }
+
+        int ArmorCheckPenalty
+        {
+            get;
+        }
     }
 }
