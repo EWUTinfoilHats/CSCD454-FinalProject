@@ -18,10 +18,32 @@ namespace CSCD454_FinalProject.Entitys
             protected set;
         }
 
-        public int CurMana
+        public int Mana
         {
             get;
             protected set;
+        }
+
+        public int ManaMax
+        {
+            get;
+            protected set;
+        }
+
+        public bool AddMana(int amount)
+        {
+            if (Mana == ManaMax)
+                return false;
+            Mana = Math.Min(Mana + amount, ManaMax);
+            return true;
+        }
+
+        public bool RemoveMana(int amount)
+        {
+            if (Mana < amount)
+                return false;
+            Mana -= amount;
+            return true;
         }
 
         public int HP
@@ -34,6 +56,22 @@ namespace CSCD454_FinalProject.Entitys
         {
             get;
             protected set;
+        }
+
+        public bool AddHP(int amount)
+        {
+            if (IsDead() || HP == HPMax)
+                return false;
+            HP = Math.Min(HPMax, HP + amount);
+            return true;
+        }
+
+        public bool RemoveHP(int amount)
+        {
+            if (IsDead())
+                return false;
+            HP -= amount;
+            return true;
         }
 
         public int Initiative
