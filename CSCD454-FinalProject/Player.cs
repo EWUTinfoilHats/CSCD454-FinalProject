@@ -49,7 +49,7 @@ namespace CSCD454_FinalProject.Entitys
             set;
         }
 
-        new public virtual void Attack(Entity target)
+        public override void Attack(Entity target)
         {
             throw new NotImplementedException();
         }

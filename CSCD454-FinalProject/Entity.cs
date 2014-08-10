@@ -116,7 +116,7 @@ namespace CSCD454_FinalProject.Entitys
 
         public bool IsDead()
         {
-            return HP == 0;
+            return HP <= 0;
         }
 
         public int TouchArmorClass()
