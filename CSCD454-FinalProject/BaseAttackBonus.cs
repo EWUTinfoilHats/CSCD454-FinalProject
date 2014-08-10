@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSCD454_FinalProject.Entitys
 {
-    interface BaseAttackBonus
+    public interface BaseAttackBonus
     {
         int[] getBaB(int level);
     }

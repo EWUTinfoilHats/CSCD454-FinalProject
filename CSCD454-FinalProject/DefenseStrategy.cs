@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSCD454_FinalProject.Entitys
 {
-    interface DefenseStrategy
+    public interface DefenseStrategy
     {
         int[] getThrows(int level);
     }

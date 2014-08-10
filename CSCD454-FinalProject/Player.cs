@@ -16,40 +16,40 @@ namespace CSCD454_FinalProject.Entitys
         protected Die HitDie
         {
             get;
-            protected set;
+            set;
         }
 
         protected BaseAttackBonus BaBStrat
         {
-            protected get;
-            protected set;
+            get;
+            set;
         }
 
         protected int[] BaB
         {
-            protected get;
-            protected set;
+            get;
+            set;
         }
 
         protected DefenseStrategy ThrowStrategy
         {
-            protected get;
-            protected set;
+            get;
+            set;
         }
 
         protected int[] SavingThrows
         {
             get;
-            protected set;
+            set;
         }
 
         protected int experience
         {
             get;
-            protected set;
+            set;
         }
 
-        public virtual void Attack(Entity target)
+        new public virtual void Attack(Entity target)
         {
             throw new NotImplementedException();
         }
