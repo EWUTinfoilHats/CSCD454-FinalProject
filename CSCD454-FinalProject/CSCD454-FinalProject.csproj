@@ -61,6 +61,7 @@
     <Compile Include="MasterworkWeapon.cs" />
     <Compile Include="Monster.cs" />
     <Compile Include="Player.cs" />
+    <Compile Include="Shield.cs" />
     <Compile Include="SimpleWeaponEnchantment.cs" />
     <Compile Include="Size.cs" />
     <Compile Include="Spell.cs" />
