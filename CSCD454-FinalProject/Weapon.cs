@@ -202,5 +202,51 @@ namespace CSCD454_FinalProject.Items
             }
             return damage;
         }
+
+        public virtual string GetDamageDiceAsString()
+        {
+            IDictionary<Die, int> count = new Dictionary<Die, int>();
+            foreach (Die d in DamageDice)
+            {
+                if (!count.ContainsKey(d))
+                {
+                    count.Add(d, 1);
+                }
+                else
+                {
+                    count[d] += 1;
+                }
+            }
+
+            string result = "";
+            int tmp = 0;
+            foreach (var kv in count)
+            {
+                if (tmp != 0)
+                {
+                    result += "+ ";
+                }
+                result += kv.Value + "" + kv.Key;
+                tmp++;
+            }
+
+            return result;
+        }
+
+        public string GetThreatRange()
+        {
+            if (ThreatRangeMax == ThreatRangeMin)
+                return ThreatRangeMax.ToString();
+            else
+                return ThreatRangeMin + "-" + ThreatRangeMax;
+        }
+
+        public override string Description
+        {
+            get
+            {
+                return "A " + Name + " that deals " + GetDamageDiceAsString() + "+" + DamageMod + " with a threat range of " + GetThreatRange() + "/x" + CriticalMultiplier;
+            }
+        }
     }
 }

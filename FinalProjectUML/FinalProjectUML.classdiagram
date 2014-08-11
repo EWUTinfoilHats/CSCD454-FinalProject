@@ -601,6 +601,12 @@
               <referencedTypeMoniker Id="48a2a33d-e085-4f02-a810-001cac744158" LastKnownName="String" />
             </type_NamedElement>
           </property>
+          <property Id="d6b7290a-6cf1-4f9c-ad94-8fe905390f75" name="Description" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="51419a36-2c23-48d2-9e85-8abacbeeae59" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="483d350a-7b7c-4ab4-a0aa-c8b8ccfd4762" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
         </ownedAttributes>
       </Interface>
     </logicalClassDesignerModelHasTypes>
@@ -1148,6 +1154,58 @@
             <elementDefinition Id="11b9b841-ec1a-41da-9368-cc85aead49e8" />
           </generalization>
         </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f5ce7d33-210d-43c7-8857-394a6f247589" name="Consumable" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="17a4e9ae-1aa8-495f-a284-b1f045663143" />
+        <suppliersInternal>
+          <interfaceRealization Id="24edd4b3-71dd-4983-bade-3a6974111ae6">
+            <interfaceMoniker Id="2e4a9d17-c747-4737-baff-4520cf717b50" LastKnownName="Item" />
+            <elementDefinition Id="c76e25dc-51a1-43fa-a0ff-74bd52691df8" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="eef5102d-d1ae-4fdd-93b8-d22fbef0bbde" name="Apply" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="89301aac-e853-478f-9884-f484d17aefc8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1eae3236-e085-4b2a-b1d8-d5d6922930b0" name="Entity" direction="In" isUnique="false">
+                  <elementDefinition Id="b9b3f215-c1f6-4122-996f-78910b428a83" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3151791d-d9e6-405c-b200-40d98ec2064d" direction="Return" isUnique="false">
+                  <elementDefinition Id="ebc92d37-f2e0-4756-9365-90eb25572584" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="44b8e789-1be1-482f-904d-6a0d6226e040" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9c609bf3-19a6-445e-9b86-2b1f78eaf3e2" name="HealthPotion" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c8baad0e-7433-4007-ad19-c4dc05157549" />
+        <generalsInternal>
+          <generalization Id="843278fd-ad91-4b93-a5bf-8e30a4acc6cb" isSubstitutable="false">
+            <classMoniker Id="f5ce7d33-210d-43c7-8857-394a6f247589" LastKnownName="Consumable" />
+            <elementDefinition Id="4c0511bb-4d3d-481f-ab99-1761751593d8" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="329a84ea-19f3-466b-8fd4-964662f04238" name="ManaPotion" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a1734949-8ea2-4071-bfea-0a01ff80d6a8" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="125e0839-808d-4ecb-b9ec-6b530b1e6c31" name="HarmingPotion" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="22ac15be-6467-48ad-b671-e89a420054f0" />
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>

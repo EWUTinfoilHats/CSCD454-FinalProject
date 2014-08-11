@@ -14,5 +14,10 @@ namespace CSCD454_FinalProject.Dice
         {
             return instance;
         }
+
+        public override string ToString()
+        {
+            return "D4";
+        }
     }
 }
