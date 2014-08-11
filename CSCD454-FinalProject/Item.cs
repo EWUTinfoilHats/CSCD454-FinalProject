@@ -51,5 +51,13 @@ namespace CSCD454_FinalProject.Items
                 Weight = weight;
             return this;
         }
+
+        public virtual string Description
+        {
+            get
+            {
+                return "A " + Name + " weighing " + Weight + " worth " + Price + "gold.";
+            }
+        }
     }
 }

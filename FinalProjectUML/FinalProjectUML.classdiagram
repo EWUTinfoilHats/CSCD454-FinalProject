@@ -647,6 +647,12 @@
               <referencedTypeMoniker Id="48a2a33d-e085-4f02-a810-001cac744158" LastKnownName="String" />
             </type_NamedElement>
           </property>
+          <property Id="d6b7290a-6cf1-4f9c-ad94-8fe905390f75" name="Description" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="51419a36-2c23-48d2-9e85-8abacbeeae59" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="483d350a-7b7c-4ab4-a0aa-c8b8ccfd4762" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
         </ownedAttributes>
       </Interface>
     </logicalClassDesignerModelHasTypes>
@@ -1370,6 +1376,58 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="bb9a130a-f512-4ed0-a909-08e485060b9c" name="ElementalBurstWeaponEnchantment" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e749b1bc-212d-4a20-9474-f5f50d01c056" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c7e824c8-1dc9-42c9-8804-55f265a23e61" name="Consumable" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="882ba4d2-d925-4ea7-ba78-1817b32001e7" />
+        <suppliersInternal>
+          <interfaceRealization Id="272207a1-f5de-4f63-af4d-8d5a9629d3dc">
+            <interfaceMoniker Id="2e4a9d17-c747-4737-baff-4520cf717b50" LastKnownName="Item" />
+            <elementDefinition Id="764a34c3-3241-40c6-b8da-519c17f81ffc" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="dc7e283d-d642-4387-89bd-011185f103e2" name="Apply" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e8047e01-91e5-4ded-a8a7-5b0f8c195937" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="533abf8f-2c88-4779-878d-7261590dfa0e" name="Entity" direction="In" isUnique="false">
+                  <elementDefinition Id="0dc37e57-f0a6-4d6e-a842-1ffdafe62926" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="279f0817-95f0-465e-a22a-664852568d85" direction="Return" isUnique="false">
+                  <elementDefinition Id="a4fb9f06-cf11-4411-a437-8982af483e68" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="44b8e789-1be1-482f-904d-6a0d6226e040" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b7291e2d-b180-4de2-b15c-1805d484a8da" name="HealthPotion" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f766e733-abae-4d3a-92fc-38c27775802f" />
+        <generalsInternal>
+          <generalization Id="ab89c128-3017-459d-9f07-7d83938a8d6e" isSubstitutable="false">
+            <classMoniker Id="c7e824c8-1dc9-42c9-8804-55f265a23e61" LastKnownName="Consumable" />
+            <elementDefinition Id="4726a370-1255-4338-b5eb-84c9a1a27a32" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="56c1cda1-71df-4a45-99c0-8d6678fe22c5" name="ManaPotion" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="00713574-bec7-4a38-aee0-cc8a3ecbb3fe" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1b044174-22e0-4419-9ab6-5e811178259b" name="HarmingPotion" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="648c94a0-4409-4089-ba71-6e2045fbaf73" />
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>

@@ -1792,6 +1792,24 @@
                 LastKnownLocation="FinalProjectUML.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="51419a36-2c23-48d2-9e85-8abacbeeae59"
+            name="Description"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="f6f5d040-18bd-4066-a288-2ae406257534"
+                LastKnownName="string"
+                LastKnownLocation="FinalProjectUML.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributes>
       </Interface>
     </packageHasNamedElement>
@@ -3797,6 +3815,92 @@
       <class
         Id="e749b1bc-212d-4a20-9474-f5f50d01c056"
         name="ElementalBurstWeaponEnchantment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="882ba4d2-d925-4ea7-ba78-1817b32001e7"
+        name="Consumable"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="764a34c3-3241-40c6-b8da-519c17f81ffc">
+            <interfaceMoniker
+              Id="56a4a2f2-5c0a-412e-91c5-8bd7f10b0f35"
+              LastKnownName="Item"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e8047e01-91e5-4ded-a8a7-5b0f8c195937"
+            name="Apply"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0dc37e57-f0a6-4d6e-a842-1ffdafe62926"
+                  name="Entity"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a4fb9f06-cf11-4411-a437-8982af483e68"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="194be6a7-de89-4f69-a847-60e52a5c0482"
+                      LastKnownName="bool"
+                      LastKnownLocation="FinalProjectUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f766e733-abae-4d3a-92fc-38c27775802f"
+        name="HealthPotion"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="4726a370-1255-4338-b5eb-84c9a1a27a32"
+            isSubstitutable="false">
+            <classMoniker
+              Id="882ba4d2-d925-4ea7-ba78-1817b32001e7"
+              LastKnownName="Consumable"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="00713574-bec7-4a38-aee0-cc8a3ecbb3fe"
+        name="ManaPotion"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="648c94a0-4409-4089-ba71-6e2045fbaf73"
+        name="HarmingPotion"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />

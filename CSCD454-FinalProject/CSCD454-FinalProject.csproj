@@ -54,8 +54,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ArmorEnchantment.cs" />
+    <Compile Include="Consumable.cs" />
     <Compile Include="D0.cs" />
     <Compile Include="D3.cs" />
+    <Compile Include="HarmingPotion.cs" />
+    <Compile Include="HealthPotion.cs" />
+    <Compile Include="ManaPotion.cs" />
     <Compile Include="ElementalBurstWeaponEnchantment.cs" />
     <Compile Include="ElementalWeaponEnchantment.cs" />
     <Compile Include="MasterworkWeapon.cs" />
