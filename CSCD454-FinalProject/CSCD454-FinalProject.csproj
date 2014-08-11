@@ -56,9 +56,13 @@
     <Compile Include="ArmorEnchantment.cs" />
     <Compile Include="D0.cs" />
     <Compile Include="D3.cs" />
+    <Compile Include="ElementalBurstWeaponEnchantment.cs" />
+    <Compile Include="ElementalWeaponEnchantment.cs" />
+    <Compile Include="MasterworkWeapon.cs" />
     <Compile Include="Monster.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Shield.cs" />
+    <Compile Include="SimpleWeaponEnchantment.cs" />
     <Compile Include="Size.cs" />
     <Compile Include="Spell.cs" />
     <Compile Include="Weapon.cs" />

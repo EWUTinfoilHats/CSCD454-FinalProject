@@ -10,9 +10,21 @@ namespace CSCD454_FinalProject.Items
     {
         protected Weapon enchantedWeapon;
 
+        public WeaponEnchantment(Weapon baseWep)
+        {
+            if (!(baseWep is SimpleWeaponEnchantment))
+            {
+                enchantedWeapon = baseWep.GetBaseWeapon();
+            }
+            else
+            {
+                enchantedWeapon = baseWep;
+            }
+        }
+
         public override Weapon GetBaseWeapon()
         {
-            return enchantedWeapon;
+            return enchantedWeapon.GetBaseWeapon();
         }
     }
 }
