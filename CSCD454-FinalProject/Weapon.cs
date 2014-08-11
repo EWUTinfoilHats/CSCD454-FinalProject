@@ -189,7 +189,7 @@ namespace CSCD454_FinalProject.Items
                 damage += strMod;
             }
 
-            return Math.Max((int)Math.Floor(damage), 1);
+            return Math.Max((int)Math.Floor(damage + DamageMod), 1);
         }
 
         public virtual int GetCriticalDamageRoll(int strength, bool isOffhand)
@@ -198,9 +198,30 @@ namespace CSCD454_FinalProject.Items
 
             for (int i = 0; i < CriticalMultiplier; i++)
             {
-                damage += GetDamageRoll(strength, isOffhand);
+                damage += DamageHelper(strength, isOffhand);
             }
             return damage;
+        }
+
+
+        public int ArmorClass
+        {
+            get { return 0; }
+        }
+
+        public int MaxDexMod
+        {
+            get { return 20; }
+        }
+
+        public int ArcaneSpellFailure
+        {
+            get { return 0; }
+        }
+
+        public int ArmorCheckPenalty
+        {
+            get { return 0; }
         }
 
         public virtual string GetDamageDiceAsString()

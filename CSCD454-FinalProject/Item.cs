@@ -13,7 +13,7 @@ namespace CSCD454_FinalProject.Items
             Name = "";
         }
 
-        public string Name
+        public virtual string Name
         {
             get;
             private set;
