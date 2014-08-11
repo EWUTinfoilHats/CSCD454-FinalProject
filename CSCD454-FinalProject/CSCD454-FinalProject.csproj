@@ -57,6 +57,9 @@
     <Compile Include="Consumable.cs" />
     <Compile Include="D0.cs" />
     <Compile Include="D3.cs" />
+    <Compile Include="HarmingPotion.cs" />
+    <Compile Include="HealthPotion.cs" />
+    <Compile Include="ManaPotion.cs" />
     <Compile Include="Monster.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Size.cs" />
