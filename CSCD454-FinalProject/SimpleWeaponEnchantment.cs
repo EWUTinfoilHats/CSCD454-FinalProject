@@ -30,5 +30,13 @@ namespace CSCD454_FinalProject.Items
                 return bonus;
             }
         }
+
+        public override string Name
+        {
+            get
+            {
+                return "+" + bonus + " " + base.Name;
+            }
+        }
     }
 }

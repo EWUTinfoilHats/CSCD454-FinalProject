@@ -23,5 +23,13 @@ namespace CSCD454_FinalProject.Items
         {
             return base.GetCriticalDamageRoll(strength, isOffhand) + D6.GetInstance().Roll();
         }
+
+        public override string Name
+        {
+            get
+            {
+                return "Fiery " + base.Name;
+            }
+        }
     }
 }

@@ -34,5 +34,13 @@ namespace CSCD454_FinalProject.Items
 
             return base.GetCriticalDamageRoll(strength, isOffhand) + bonusDamage;
         }
+
+        public override string Name
+        {
+            get
+            {
+                return "Fiery Burst " + base.Name;
+            }
+        }
     }
 }

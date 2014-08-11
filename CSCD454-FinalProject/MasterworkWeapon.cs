@@ -20,5 +20,13 @@ namespace CSCD454_FinalProject.Items
                 return 1;
             }
         }
+
+        public override string Name
+        {
+            get
+            {
+                return "Masterwork " + base.Name;
+            }
+        }
     }
 }
