@@ -55,7 +55,7 @@ namespace CSCD454_FinalProject.Entitys
         {
             get
             {
-                return innateAC + Armor.ArmorClass + (int)Size + OffHand.ArmorClass + Math.Min(Math.Min(Attribute.GetAbilityMod(attributes[(int)Attributes.Dex]), Armor.MaxDexMod), OffHand.MaxDexMod);
+                return TouchArmorClass() + Armor.ArmorClass + OffHand.ArmorClass;
             }
         }
 
@@ -253,7 +253,7 @@ namespace CSCD454_FinalProject.Entitys
 
         public bool Has2H()
         {
-            throw new NotImplementedException();
+            return MainHand.Is2H;
         }
 
         public bool IsDead()
@@ -263,7 +263,7 @@ namespace CSCD454_FinalProject.Entitys
 
         public int TouchArmorClass()
         {
-            throw new NotImplementedException();
+            return innateAC + (int)Size + Math.Min(Math.Min(Attribute.GetAbilityMod(attributes[(int)Attributes.Dex]), Armor.MaxDexMod), OffHand.MaxDexMod);
         }
 
         public void Update()
