@@ -1430,6 +1430,38 @@
         <elementDefinition Id="648c94a0-4409-4089-ba71-6e2045fbaf73" />
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2f240ecf-9082-4a89-a1f4-3bace9d31432" name="Weapons" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0257d902-1ae7-4002-a1dc-256400d8c6e7" />
+        <ownedAttributesInternal>
+          <property Id="31013a70-9c2e-4265-b62e-94c4550edace" name="shortSword" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bded319d-b535-4c14-bcc9-b8c75b071995" />
+          </property>
+          <property Id="fa5610a7-1f13-4cec-a9d7-6aa6bae9a9a1" name="longSword" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0c0074be-2353-4391-851d-d8008ddd7159" />
+          </property>
+          <property Id="ba6c8818-0c9e-4250-bcb1-4ffab72b57e2" name="etc" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="30707d7f-302e-4f2d-8f55-4e13936bddae" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="762579de-e640-47bf-b11f-b984d4521e21" name="Armors" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3121bb03-560b-4f86-a994-82c586ef220a" />
+        <ownedAttributesInternal>
+          <property Id="cca901a3-0b5a-4843-ba0a-9f94b77cfd8b" name="hideArmor" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3dd10eca-e2e0-4951-ad5a-288fbf1d5a78" />
+          </property>
+          <property Id="7a0b82f1-1b89-4330-b2d4-b797c5e236b8" name="chainShirt" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6205eae4-984a-41d4-be9e-7699b91c0c9e" />
+          </property>
+          <property Id="452c3cb8-ec74-4d84-93a0-210a2a8a6c3e" name="etc" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="53ef5d08-0bd9-4811-9b72-ea4ff5570d8f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="53911808-a4ba-4b85-94c5-49f8ad4c20e0" name="FinalProjectUML">
     <elementDefinition Id="d876a4de-76b5-40d1-9d98-22fcc7663c9e" />

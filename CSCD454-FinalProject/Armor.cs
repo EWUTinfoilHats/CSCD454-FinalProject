@@ -105,5 +105,13 @@ namespace CSCD454_FinalProject.Items
         {
             return this;
         }
+
+        public override string Description
+        {
+            get
+            {
+                return "A " + Name + ": " + ArmorClass + "AC, " + MaxDexMod + " max dex bonus, " + ArmorCheckPenalty + " armor check penalty, " + ArcaneSpellFailure + "% chance of arcane spell failure. Worth: " + Price + "g and weighing " + Weight + "lb";
+            }
+        }
     }
 }

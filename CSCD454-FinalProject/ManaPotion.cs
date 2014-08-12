@@ -4,28 +4,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CSCD454_FinalProject.Entitys;
+using CSCD454_FinalProject.Dice;
 
 namespace CSCD454_FinalProject.Items
 {
     public class ManaPotion : Consumable
     {
-        private int amount;
+        private int level;
 
-        public ManaPotion(int amount) : base()
+        public ManaPotion(int level) : base()
         {
-            this.amount = amount;
+            this.level = level;
         }
 
         public override bool Apply(Entity target)
         {
-            return target.AddMana(amount);
+            Die d6 = D6.GetInstance();
+            int total = 0;
+            for (int i = 0; i < level; i++)
+            {
+                total += d6.Roll();
+            }
+            return target.RemoveHP(total + level);
         }
 
         public override string Description
         {
             get
             {
-                return "A potion that restores " + amount + " mana.";
+                return "A potion that restores " + level + "d6+" + level + " mana.";
             }
         }
     }
