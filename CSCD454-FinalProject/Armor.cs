@@ -110,7 +110,7 @@ namespace CSCD454_FinalProject.Items
         {
             get
             {
-                return "A " + Name + ": " + ArmorClass + "AC, " + MaxDexMod + " max dex bonus, " + ArmorCheckPenalty + " armor check penalty, " + ArcaneSpellFailure + "% chance of arcane spell failure. Worth: " + Price + "g and weighing " + Weight = "lb";
+                return "A " + Name + ": " + ArmorClass + "AC, " + MaxDexMod + " max dex bonus, " + ArmorCheckPenalty + " armor check penalty, " + ArcaneSpellFailure + "% chance of arcane spell failure. Worth: " + Price + "g and weighing " + Weight + "lb";
             }
         }
     }
