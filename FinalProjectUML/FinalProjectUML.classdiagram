@@ -1462,6 +1462,22 @@
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="993dcf2c-0096-4641-88f7-791a2d4258b5" name="MasterworkArmor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d1b2ab57-b74e-4058-ab34-44fc3a906dd2" />
+        <generalsInternal>
+          <generalization Id="fc686952-7e98-4b4a-aaa2-76b2a0375fbf" isSubstitutable="false">
+            <classMoniker Id="952d58a2-1370-460e-88f4-7678ea755c94" LastKnownName="ArmorEnchantment" />
+            <elementDefinition Id="21013599-b2b1-4312-8473-47fbf66b7dac" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6fb5f9ae-dd88-446d-8fc0-f6e07ac1c181" name="BasicArmorEnchantment" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="02e8b187-d626-452d-b13c-7829a2d1ef8f" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="53911808-a4ba-4b85-94c5-49f8ad4c20e0" name="FinalProjectUML">
     <elementDefinition Id="d876a4de-76b5-40d1-9d98-22fcc7663c9e" />

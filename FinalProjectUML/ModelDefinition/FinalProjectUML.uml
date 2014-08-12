@@ -3993,6 +3993,33 @@
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d1b2ab57-b74e-4058-ab34-44fc3a906dd2"
+        name="MasterworkArmor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="21013599-b2b1-4312-8473-47fbf66b7dac"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7c90fcf1-7048-433d-84c5-008a355f752f"
+              LastKnownName="ArmorEnchantment"
+              LastKnownLocation="FinalProjectUML.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="02e8b187-d626-452d-b13c-7829a2d1ef8f"
+        name="BasicArmorEnchantment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

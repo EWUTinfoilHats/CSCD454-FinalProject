@@ -16,7 +16,7 @@ namespace CSCD454_FinalProject.Items
             MaxDexMod = 20;
         }
 
-        public int ArmorClass
+        public virtual int ArmorClass
         {
             get;
             protected set;
@@ -34,7 +34,7 @@ namespace CSCD454_FinalProject.Items
         /// <summary>
         /// Defaults to 20 to indicate no max dex mod
         /// </summary>
-        public int MaxDexMod
+        public virtual int MaxDexMod
         {
             get;
             protected set;
@@ -49,7 +49,7 @@ namespace CSCD454_FinalProject.Items
             return this;
         }
 
-        public int ArcaneSpellFailure
+        public virtual int ArcaneSpellFailure
         {
             get;
             protected set;
@@ -67,7 +67,7 @@ namespace CSCD454_FinalProject.Items
         /// <summary>
         /// Returns 0 or a negative number
         /// </summary>
-        public int ArmorCheckPenalty
+        public virtual int ArmorCheckPenalty
         {
             get;
             protected set;
