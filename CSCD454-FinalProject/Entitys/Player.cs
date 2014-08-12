@@ -25,19 +25,7 @@ namespace CSCD454_FinalProject.Entitys
             set;
         }
 
-        protected int[] BaB
-        {
-            get;
-            set;
-        }
-
         protected DefenseStrategy ThrowStrategy
-        {
-            get;
-            set;
-        }
-
-        protected int[] SavingThrows
         {
             get;
             set;
@@ -47,11 +35,6 @@ namespace CSCD454_FinalProject.Entitys
         {
             get;
             set;
-        }
-
-        public override void Attack(Entity target)
-        {
-            throw new NotImplementedException();
         }
 
         public void AddExperience(int exp)

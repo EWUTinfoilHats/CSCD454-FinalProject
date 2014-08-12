@@ -14,6 +14,11 @@ namespace CSCD454_FinalProject.Items
 
         int GetCriticalDamageRoll(int strength, bool isOffHand);
 
+        bool IsLight
+        {
+            get;
+        }
+
         int AttackMod
         {
             get;
@@ -60,5 +65,7 @@ namespace CSCD454_FinalProject.Items
         {
             get;
         }
+
+        bool IsWeapon();
     }
 }

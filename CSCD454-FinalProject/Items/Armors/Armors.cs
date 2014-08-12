@@ -9,6 +9,8 @@ namespace CSCD454_FinalProject.Items
     public class Armors
     {
         #region Light
+        public static readonly Armor noArmor = (Armor)(new Armor()).SetName("No Armor").SetWeight(0).SetPrice(0);
+
         public static readonly Armor paddedArmor = (Armor)(new Armor()).SetType("light").SetArmorClass(1).SetMaxDexMod(8).SetArmorCheckPenalty(0).SetArcaneSpellFailure(5).SetName("Padded Armor").SetPrice(5).SetWeight(10);
 
         public static readonly Armor leatherArmor = (Armor)(new Armor()).SetType("light").SetArmorClass(2).SetMaxDexMod(6).SetArcaneSpellFailure(10).SetName("Leather Armor").SetPrice(10).SetWeight(15);
