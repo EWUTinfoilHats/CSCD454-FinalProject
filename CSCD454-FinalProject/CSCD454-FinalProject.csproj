@@ -53,55 +53,55 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ArmorEnchantment.cs" />
-    <Compile Include="Armors.cs" />
-    <Compile Include="Consumable.cs" />
-    <Compile Include="Consumables.cs" />
-    <Compile Include="HarmingPotion.cs" />
-    <Compile Include="HealthPotion.cs" />
-    <Compile Include="ManaPotion.cs" />
-    <Compile Include="ElementalBurstWeaponEnchantment.cs" />
-    <Compile Include="ElementalWeaponEnchantment.cs" />
-    <Compile Include="MasterworkArmor.cs" />
-    <Compile Include="MasterworkWeapon.cs" />
-    <Compile Include="BaB10.cs" />
-    <Compile Include="BaB6.cs" />
-    <Compile Include="BaB8.cs" />
-    <Compile Include="Barbarian.cs" />
-    <Compile Include="Bard.cs" />
-    <Compile Include="BaseAttackBonus.cs" />
-    <Compile Include="Cleric.cs" />
-    <Compile Include="D0.cs" />
-    <Compile Include="D3.cs" />
-    <Compile Include="Druid.cs" />
-    <Compile Include="Fighter.cs" />
-    <Compile Include="DefenseStrategy.cs" />
-    <Compile Include="Monk.cs" />
-    <Compile Include="Monster.cs" />
-    <Compile Include="Paladin.cs" />
-    <Compile Include="Player.cs" />
-    <Compile Include="Shield.cs" />
-    <Compile Include="SimpleArmorEnchantment.cs" />
-    <Compile Include="SimpleWeaponEnchantment.cs" />
-    <Compile Include="Ranger.cs" />
-    <Compile Include="Rogue.cs" />
-    <Compile Include="SavingThrows.cs" />
+    <Compile Include="Items\Armors\ArmorEnchantment.cs" />
+    <Compile Include="Items\Armors\Armors.cs" />
+    <Compile Include="Items\Consumables\Consumable.cs" />
+    <Compile Include="Items\Consumables\Consumables.cs" />
+    <Compile Include="Items\Consumables\HarmingPotion.cs" />
+    <Compile Include="Items\Consumables\HealthPotion.cs" />
+    <Compile Include="Items\Consumables\ManaPotion.cs" />
+    <Compile Include="Items\Weapons\ElementalBurstWeaponEnchantment.cs" />
+    <Compile Include="Items\Weapons\ElementalWeaponEnchantment.cs" />
+    <Compile Include="Items\Armors\MasterworkArmor.cs" />
+    <Compile Include="Items\Weapons\MasterworkWeapon.cs" />
+    <Compile Include="Entitys\BAB\BaB10.cs" />
+    <Compile Include="Entitys\BAB\BaB6.cs" />
+    <Compile Include="Entitys\BAB\BaB8.cs" />
+    <Compile Include="Entitys\Classes\Barbarian.cs" />
+    <Compile Include="Entitys\Classes\Bard.cs" />
+    <Compile Include="Entitys\BAB\BaseAttackBonus.cs" />
+    <Compile Include="Entitys\Classes\Cleric.cs" />
+    <Compile Include="Dice\D0.cs" />
+    <Compile Include="Dice\D3.cs" />
+    <Compile Include="Entitys\Classes\Druid.cs" />
+    <Compile Include="Entitys\Classes\Fighter.cs" />
+    <Compile Include="Entitys\Saves\DefenseStrategy.cs" />
+    <Compile Include="Entitys\Classes\Monk.cs" />
+    <Compile Include="Entitys\Monster.cs" />
+    <Compile Include="Entitys\Classes\Paladin.cs" />
+    <Compile Include="Entitys\Player.cs" />
+    <Compile Include="Items\Armors\Shield.cs" />
+    <Compile Include="Items\Armors\SimpleArmorEnchantment.cs" />
+    <Compile Include="Items\Weapons\SimpleWeaponEnchantment.cs" />
+    <Compile Include="Entitys\Classes\Ranger.cs" />
+    <Compile Include="Entitys\Classes\Rogue.cs" />
+    <Compile Include="Entitys\Saves\SavingThrows.cs" />
     <Compile Include="Size.cs" />
-    <Compile Include="Sorcerer.cs" />
+    <Compile Include="Entitys\Classes\Sorcerer.cs" />
     <Compile Include="Spell.cs" />
-    <Compile Include="Throw002.cs" />
-    <Compile Include="Throw020.cs" />
-    <Compile Include="Throw022.cs" />
-    <Compile Include="Throw200.cs" />
-    <Compile Include="Throw202.cs" />
-    <Compile Include="Throw220.cs" />
-    <Compile Include="Throw222.cs" />
-    <Compile Include="Throws.cs" />
-    <Compile Include="Weapon.cs" />
-    <Compile Include="WeaponEnchantment.cs" />
-    <Compile Include="Weapons.cs" />
-    <Compile Include="Wieldable.cs" />
-    <Compile Include="Wizard.cs" />
+    <Compile Include="Entitys\Saves\Throw002.cs" />
+    <Compile Include="Entitys\Saves\Throw020.cs" />
+    <Compile Include="Entitys\Saves\Throw022.cs" />
+    <Compile Include="Entitys\Saves\Throw200.cs" />
+    <Compile Include="Entitys\Saves\Throw202.cs" />
+    <Compile Include="Entitys\Saves\Throw220.cs" />
+    <Compile Include="Entitys\Saves\Throw222.cs" />
+    <Compile Include="Entitys\Saves\Throws.cs" />
+    <Compile Include="Items\Weapons\Weapon.cs" />
+    <Compile Include="Items\Weapons\WeaponEnchantment.cs" />
+    <Compile Include="Items\Weapons\Weapons.cs" />
+    <Compile Include="Items\Wieldable.cs" />
+    <Compile Include="Entitys\Classes\Wizard.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -110,17 +110,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Armor.cs" />
+    <Compile Include="Items\Armors\Armor.cs" />
     <Compile Include="Attributes.cs" />
-    <Compile Include="D10.cs" />
-    <Compile Include="D12.cs" />
-    <Compile Include="D20.cs" />
-    <Compile Include="D4.cs" />
-    <Compile Include="D6.cs" />
-    <Compile Include="D8.cs" />
-    <Compile Include="Die.cs" />
-    <Compile Include="Entity.cs" />
-    <Compile Include="Item.cs" />
+    <Compile Include="Dice\D10.cs" />
+    <Compile Include="Dice\D12.cs" />
+    <Compile Include="Dice\D20.cs" />
+    <Compile Include="Dice\D4.cs" />
+    <Compile Include="Dice\D6.cs" />
+    <Compile Include="Dice\D8.cs" />
+    <Compile Include="Dice\Die.cs" />
+    <Compile Include="Entitys\Entity.cs" />
+    <Compile Include="Items\Item.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -153,6 +153,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
