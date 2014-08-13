@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 using CSCD454_FinalProject.Items;
 using CSCD454_FinalProject.Items.Weapons;
 
+
 namespace CSCD454_FinalProject.Entitys.Enemies
 {
-    class HumanSkeleton : Monster, MonsterPrototype
+    class GelatinousCube : Monster, MonsterPrototype
     {
-        public HumanSkeleton()
+        public GelatinousCube()
         {
-            this.attributes = new int[] { 15, 14, 10, 10, 10, 10 };
-            this.Level = 1;
-            this.HPMax = 8;
+            this.attributes = new int[] { 10, 1, 26, 10, 1, 1 };
+            this.Level = 3;
+            this.HPMax = 50;
             this.HP = HPMax;
-            this.BaB = new int[] { 0 };
-            this.SavingThrows = new int[] { 0, 2, 2 };
+            this.BaB = new int[] { 3 };
+            this.SavingThrows = new int[] { 9, -5, -1 };
             this.SetMainHand(Weapons.lightMace);
-            this.SetArmor(Armors.chainShirt);
-            this.Size = CSCD454_FinalProject.Size.Medium;
+            this.Size = Size.Large;
         }
 
         public Monster Clone()
-        { 
+        {
             return (Monster)this.MemberwiseClone();
         }
     }

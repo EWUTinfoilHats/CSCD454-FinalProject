@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 using CSCD454_FinalProject.Items;
 using CSCD454_FinalProject.Items.Weapons;
 
+
 namespace CSCD454_FinalProject.Entitys.Enemies
 {
-    class FireBeetle : Monster, MonsterPrototype
+    class Choker : Monster, MonsterPrototype
     {
-        public FireBeetle()
+        public Choker()
         {
-            this.attributes = new int[] { 10, 11, 11, 10, 10, 7 };
-            this.Level = 1;
-            this.HPMax = 8;
+            this.attributes = new int[] { 16, 14, 13, 4, 13, 7 };
+            this.Level = 2;
+            this.HPMax = 16;
             this.HP = HPMax;
-            this.BaB = new int[] { 0 };
-            this.SavingThrows = new int[] { 2, 0, 0 };
-            this.SetMainHand(Weapons.dagger);
-            this.SetArmor(Armors.paddedArmor);
+            this.BaB = new int[] { 2 };
+            this.SavingThrows = new int[] { 2, 3, 4 };
+            this.SetMainHand(Weapons.heavyMace);
+            this.SetArmor(Armors.chainShirt);
             this.Size = Size.Small;
         }
 

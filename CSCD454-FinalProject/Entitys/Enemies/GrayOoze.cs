@@ -6,26 +6,26 @@ using System.Threading.Tasks;
 using CSCD454_FinalProject.Items;
 using CSCD454_FinalProject.Items.Weapons;
 
+
 namespace CSCD454_FinalProject.Entitys.Enemies
 {
-    class DireRat : Monster, MonsterPrototype
+    class GrayOoze : Monster, MonsterPrototype
     {
-
-        public DireRat()
+        public GrayOoze()
         {
-            this.attributes = new int[] { 10,17,13,2,13,4 };
-            this.Level = 1;
-            this.HPMax = 5;
+            this.attributes = new int[] { 16, 1, 26, 10, 1, 1 };
+            this.Level = 4;
+            this.HPMax = 50;
             this.HP = HPMax;
             this.BaB = new int[] { 0 };
-            this.SavingThrows = new int[] { 3,5,1 };
-            this.SetMainHand(Weapons.dagger);
-            this.Size = Size.Small;
+            this.SavingThrows = new int[] { 9, -4, -4 };
+            this.SetMainHand(Weapons.lightMace);
+            this.Size = Size.Medium;
         }
 
         public Monster Clone()
         {
-            return (Monster) this.MemberwiseClone();
+            return (Monster)this.MemberwiseClone();
         }
     }
 }

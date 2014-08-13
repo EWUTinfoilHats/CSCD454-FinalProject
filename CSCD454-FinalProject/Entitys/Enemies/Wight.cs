@@ -6,21 +6,22 @@ using System.Threading.Tasks;
 using CSCD454_FinalProject.Items;
 using CSCD454_FinalProject.Items.Weapons;
 
+
 namespace CSCD454_FinalProject.Entitys.Enemies
 {
-    class FireBeetle : Monster, MonsterPrototype
+    class Wight : Monster, MonsterPrototype
     {
-        public FireBeetle()
+        public Wight()
         {
-            this.attributes = new int[] { 10, 11, 11, 10, 10, 7 };
-            this.Level = 1;
-            this.HPMax = 8;
+            this.attributes = new int[] { 12, 12, 10, 11, 13, 15 };
+            this.Level = 3;
+            this.HPMax = 26;
             this.HP = HPMax;
-            this.BaB = new int[] { 0 };
-            this.SavingThrows = new int[] { 2, 0, 0 };
+            this.BaB = new int[] { 3 };
+            this.SavingThrows = new int[] { 3, 2, 5 };
             this.SetMainHand(Weapons.dagger);
-            this.SetArmor(Armors.paddedArmor);
-            this.Size = Size.Small;
+            this.SetArmor(Armors.chainShirt);
+            this.Size = Size.Medium;
         }
 
         public Monster Clone()

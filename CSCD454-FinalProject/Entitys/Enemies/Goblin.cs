@@ -6,20 +6,22 @@ using System.Threading.Tasks;
 using CSCD454_FinalProject.Items;
 using CSCD454_FinalProject.Items.Weapons;
 
+
 namespace CSCD454_FinalProject.Entitys.Enemies
 {
-    class FireBeetle : Monster, MonsterPrototype
+    class Goblin : Monster, MonsterPrototype
     {
-        public FireBeetle()
+        public Goblin()
         {
-            this.attributes = new int[] { 10, 11, 11, 10, 10, 7 };
+            this.attributes = new int[] { 11, 15, 12, 10, 9, 6 };
             this.Level = 1;
-            this.HPMax = 8;
+            this.HPMax = 6;
             this.HP = HPMax;
-            this.BaB = new int[] { 0 };
-            this.SavingThrows = new int[] { 2, 0, 0 };
-            this.SetMainHand(Weapons.dagger);
-            this.SetArmor(Armors.paddedArmor);
+            this.BaB = new int[] { 1 };
+            this.SavingThrows = new int[] { 3, 2, -1 };
+            this.SetMainHand(Weapons.shortSword);
+            this.SetOffHand(Armors.buckler);
+            this.SetArmor(Armors.leatherArmor);
             this.Size = Size.Small;
         }
 

@@ -6,26 +6,27 @@ using System.Threading.Tasks;
 using CSCD454_FinalProject.Items;
 using CSCD454_FinalProject.Items.Weapons;
 
+
 namespace CSCD454_FinalProject.Entitys.Enemies
 {
-    class DireRat : Monster, MonsterPrototype
+    class Cockatrice : Monster, MonsterPrototype
     {
-
-        public DireRat()
+        public Cockatrice()
         {
-            this.attributes = new int[] { 10,17,13,2,13,4 };
-            this.Level = 1;
-            this.HPMax = 5;
+            this.attributes = new int[] { 6, 17, 11, 2, 13, 8 };
+            this.Level = 3;
+            this.HPMax = 27;
             this.HP = HPMax;
-            this.BaB = new int[] { 0 };
-            this.SavingThrows = new int[] { 3,5,1 };
+            this.BaB = new int[] { 5 };
+            this.SavingThrows = new int[] { 4, 7, 2 };
             this.SetMainHand(Weapons.dagger);
+            this.SetArmor(Armors.paddedArmor);
             this.Size = Size.Small;
         }
 
         public Monster Clone()
         {
-            return (Monster) this.MemberwiseClone();
+            return (Monster)this.MemberwiseClone();
         }
     }
 }
