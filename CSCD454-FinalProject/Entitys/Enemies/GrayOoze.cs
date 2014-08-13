@@ -26,7 +26,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
             this.weaponProficiencies.Add(Weapons.lightMace);
         }
 
-        public Monster Clone()
+        public override Monster Clone()
         {
             return (Monster)this.MemberwiseClone();
         }

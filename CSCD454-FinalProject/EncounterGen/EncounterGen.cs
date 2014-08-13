@@ -5,37 +5,46 @@ using System.Text;
 using System.Threading.Tasks;
 using CSCD454_FinalProject.Dice;
 using CSCD454_FinalProject.Entitys;
+using CSCD454_FinalProject.Entitys.Enemies;
 
 namespace CSCD454_FinalProject.EncounterGeneration
 {
     class EncounterGen
     {
-        private  int[] rollTable = new int[] { 0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,4,4,5,5,5,5,5,5,6,6,7,7,8,8,8,8,8,8,8,8,9,9,9,9,10,10,10,10,10,10,11,11,12,12,12,12,13,13,13,13,14,14,14,14,15,15,16,16,16,16,16,16,17,17,17,17,17,17,18,18,18,18,19,19,19,19,20,20,21,21,22,22,23,23,23,23 };
-        private  int[] ChallengeRating = new int[] { 1,1,1,1,1,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4 };
-        private  int[] EnemyNumbers = new int[] { 6,6,6,4,1,6,1,1,12,4,4,1,1,1,1,1,8,6,6,4,4,1,1,1 };//12 represents 2d6 and 8 represents 2d4
-        private  string[] Monster = new string[] { "DireRat","FireBeetle","HumanSkeleton","GiantCentipede","SpiderSwarm","HumanZombie","Choker","SkeletalChampion","Ghouls","GiantSpider","Cockatrice","GelatinousCube","RustMonster","Shadow","Wight","Stirge","Darkmantle","Troglodyte","Bugbear","Vargouilles","GrayOoze","Mimic","Ogre"};
-        private  D100 percentile = D100.GetInstance();
-        int roll;
+        private static int[] rollTable = new int[] { 0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,4,4,5,5,5,5,5,5,6,6,7,7,8,8,8,8,8,8,8,8,9,9,9,9,10,10,10,10,10,10,11,11,12,12,12,12,13,13,13,13,14,14,14,14,15,15,16,16,16,16,16,16,17,17,17,17,17,17,18,18,18,18,19,19,19,19,20,20,21,21,22,22,23,23,23,23 };
+        private static int[] ChallengeRating = new int[] { 1,1,1,1,1,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4 };
+        private static int[] EnemyNumbers = new int[] { 6,6,6,4,1,6,1,1,12,4,4,1,1,1,1,1,8,6,6,4,4,1,1,1 };//12 represents 2d6 and 8 represents 2d4
+        private static string[] Monster = new string[] { "DireRat","FireBeetle","HumanSkeleton","GiantCentipede","SpiderSwarm","HumanZombie","Choker","SkeletalChampion","Ghouls","GiantSpider","Cockatrice","GelatinousCube","RustMonster","Shadow","Wight","Stirge","Darkmantle","Troglodyte","Bugbear","Vargouilles","GrayOoze","Mimic","Ogre"};
+        private static D100 percentile = D100.GetInstance();
+        private Factory monsterFactory = new Factory();
+        private int roll;
 
-        //Factory Reference here
-
-
-        public LinkedList<Monster> GenerateEncounter()
+        public IList<Monster> GenerateEncounter()
         {
             roll = percentile.Roll();
-            LinkedList<Monster> returnVal = new LinkedList<Monster>();
-            //Monster initial = factoryResult("DireRat");
+            Monster initial = monsterFactory.createMonster(Monster[rollTable[roll]]);
 
-            for (int i = 0; i < numberHelper(EnemyNumbers[rollTable[roll]]); i++)
+            IList<Monster> returnVal = new List<Monster>();
+            returnVal.Add(initial);
+
+            for (int i = 0; i < numberHelper(EnemyNumbers[rollTable[roll]]) - 1; i++)
             {
-                //Clone the monster from factory
+                returnVal.Add(initial.Clone());
             }
             return returnVal;
         }
 
-        public int GetCR()
+
+        public int GetCR(string name)
         {
-            return ChallengeRating[roll];
+            for (int i = 0; i < Monster.Length; i++)
+            {
+                if (name.Equals(name, StringComparison.OrdinalIgnoreCase))
+                {
+                    return ChallengeRating[i];
+                }
+            }
+            return 0;
         }
 
         private int numberHelper(int n) //All "MAGIC" numbers represent number of potential monsters in encounter
