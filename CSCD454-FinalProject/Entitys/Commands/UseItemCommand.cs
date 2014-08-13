@@ -13,7 +13,9 @@ namespace CSCD454_FinalProject.Entitys.Commands
         public override void Do(Entity target)
         {
             //TODO add item removal logic once Inventory is in place
-            item.Apply(target);
+            if (item.Apply(target))
+                issuer.RemoveItem(item);
+
         }
     }
 }

@@ -10,7 +10,6 @@ namespace CSCD454_FinalProject.Entitys
 {
     public abstract class Player : Entity
     {
-        protected IList<Item> inventory;
         protected ISet<string> weaponProficiencies;
         protected ISet<string> armorProfinciencies;
 
