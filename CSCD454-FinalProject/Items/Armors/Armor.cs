@@ -8,7 +8,7 @@ namespace CSCD454_FinalProject.Items
 {
     public class Armor : Item
     {
-        public static readonly IList<string> ARMOR_TYPES = new string[] { "light", "medium", "heavy"};
+        public static readonly IList<string> ARMOR_TYPES = new string[] { "light", "medium", "heavy", "shield"};
 
         public Armor()
         {

@@ -10,7 +10,7 @@ namespace CSCD454_FinalProject.Items
     {
         public Shield() : base()
         {
-
+            SetType("shield");
         }
 
         public Wieldable GetBaseWieldable()

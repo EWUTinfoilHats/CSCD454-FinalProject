@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSCD454_FinalProject.Items
 {
-    public interface Wieldable
+    public interface Wieldable : Item
     {
         Wieldable GetBaseWieldable();
 
