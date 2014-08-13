@@ -9,7 +9,7 @@ using CSCD454_FinalProject.UI;
 using CSCD454_FinalProject.Dice;
 using CSCD454_FinalProject.Entitys.Commands;
 
-namespace CSCD454_FinalProject
+namespace CSCD454_FinalProject.Combat
 {
     public class Encounter
     {
@@ -29,6 +29,7 @@ namespace CSCD454_FinalProject
         public IList<Item> Fight()
         {
             IList<Entity> combatList = new List<Entity>();
+            CombatGroup combatGroup = new CombatGroup(playerParty, monsterParty);
             foreach (var e in playerParty)
             {
                 e.SetInitiative();
@@ -49,7 +50,8 @@ namespace CSCD454_FinalProject
                 {
                     Entity e = combatQueue.Dequeue();
                     EntityCommand action = e.GetAction();
-                    action.Do(e.GetTarget(combatList));
+                    e.GetTarget(combatGroup);
+                    action.Do(combatGroup);
                     e.UIDisplayHook();
                 }
             }

@@ -343,9 +343,9 @@ namespace CSCD454_FinalProject.Entitys
             ui.DisplayHook();
         }
 
-        public Entity GetTarget(IList<Entity> targets)
+        public void GetTarget(CombatGroup targets)
         {
-            return ui.GetTarget(targets);
+            ui.GetTarget(targets);
         }
     
         public void PushUIString(string msg)

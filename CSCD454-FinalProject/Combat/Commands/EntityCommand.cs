@@ -8,6 +8,6 @@
             this.issuer = issuer;
         }
 
-        public abstract void Do(Entity target);
+        public abstract void Do(CombatGroup targets);
     }
 }
