@@ -8,7 +8,7 @@ using CSCD454_FinalProject.Items.Weapons;
 
 namespace CSCD454_FinalProject.Entitys
 {
-    public abstract class Entity
+    public abstract class Entity : IComparable<Entity>
     {
         protected IList<int> attributes;
         public static readonly int innateAC = 10;
@@ -283,6 +283,17 @@ namespace CSCD454_FinalProject.Entitys
                 return new int[] { -6, -10 };
             }
             return new int[] { 0, 0 };
+        }
+
+        /// <summary>
+        /// Compares by initiative.
+        /// Sorts such that higher is better
+        /// </summary>
+        /// <param name="other"></param>
+        /// <returns></returns>
+        public int CompareTo(Entity other)
+        {
+            return other.Initiative - this.Initiative;
         }
     }
 }
