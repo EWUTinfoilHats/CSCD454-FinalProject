@@ -13,6 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public Vargouille()
         {
+            this.name = "Vargouille";
             this.attributes = new int[] { 10, 13, 13, 5, 12, 8 };
             this.Level = 2;
             this.HPMax = 19;

@@ -13,6 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public GrayOoze()
         {
+            this.name = "Gray Ooze";
             this.attributes = new int[] { 16, 1, 26, 10, 1, 1 };
             this.Level = 4;
             this.HPMax = 50;

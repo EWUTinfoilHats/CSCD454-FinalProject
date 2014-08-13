@@ -13,6 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public Goblin()
         {
+            this.name = "Goblin";
             this.attributes = new int[] { 11, 15, 12, 10, 9, 6 };
             this.Level = 1;
             this.HPMax = 6;

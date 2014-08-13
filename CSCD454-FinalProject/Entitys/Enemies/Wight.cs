@@ -13,6 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public Wight()
         {
+            this.name = "Wight";
             this.attributes = new int[] { 12, 12, 10, 11, 13, 15 };
             this.Level = 3;
             this.HPMax = 26;

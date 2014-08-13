@@ -13,6 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public Darkmantle()
         {
+            this.name = "Dark Mantle";
             this.attributes = new int[] { 11, 15, 14, 2, 11, 10 };
             this.Level = 1;
             this.HPMax = 15;

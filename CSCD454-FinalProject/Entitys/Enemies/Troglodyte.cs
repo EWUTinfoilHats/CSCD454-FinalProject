@@ -13,6 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public Troglodyte()
         {
+            this.name = "Troglodyte";
             this.attributes = new int[] { 12, 9, 14, 8, 11, 11 };
             this.Level = 1;
             this.HPMax = 13;

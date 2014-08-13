@@ -13,6 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public Mimic()
         {
+            this.name = "Mimic";
             this.attributes = new int[] { 19, 12, 17, 10, 13, 10 };
             this.Level = 4;
             this.HPMax = 52;

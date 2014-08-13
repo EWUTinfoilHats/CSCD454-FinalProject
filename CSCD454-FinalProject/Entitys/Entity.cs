@@ -39,7 +39,13 @@ namespace CSCD454_FinalProject.Entitys
                 inventory = value;
             }
         }
-
+	
+        public string name
+        {
+            get;
+            protected set;
+        }
+        
         public virtual bool AddItem(Item item)
         {
             inventory.Add(item);

@@ -13,6 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public RustMonster()
         {
+            this.name = "Rust Monster";
             this.attributes = new int[] { 10, 17, 13, 2, 13, 8 };
             this.Level = 3;
             this.HPMax = 27;
