@@ -8,5 +8,6 @@ namespace CSCD454_FinalProject.Entitys
 {
     public abstract class Monster : Entity
     {
+
     }
 }

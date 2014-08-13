@@ -8,6 +8,5 @@ namespace CSCD454_FinalProject.UI
 {
     public interface MonsterAI : UserInteraction
     {
-
     }
 }

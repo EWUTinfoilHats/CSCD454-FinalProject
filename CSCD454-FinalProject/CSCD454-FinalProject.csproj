@@ -106,6 +106,8 @@
     <Compile Include="Items\Weapons\Weapons.cs" />
     <Compile Include="Items\Wieldable.cs" />
     <Compile Include="Entitys\Classes\Wizard.cs" />
+    <Compile Include="UI\GMonsterAI.cs" />
+    <Compile Include="UI\GUserInteraction.cs" />
     <Compile Include="UI\MonsterAI.cs" />
     <Compile Include="UI\UserInteraction.cs" />
     <Page Include="MainWindow.xaml">
