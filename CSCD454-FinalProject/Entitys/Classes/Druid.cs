@@ -22,6 +22,11 @@ namespace CSCD454_FinalProject.Entitys
             this.HP = HPMax;
             this.BaB = BaBStrat.getBaB(Level);
             this.SavingThrows = ThrowStrategy.getThrows(Level);
+            this.weaponProficiencies = new HashSet<string>();
+            this.armorProfinciencies = new HashSet<string>();
+            weaponProficiencies.UnionWith(new string[] { "Club", "Dagger", "Dart", "Quarterstaff", "Scimitar", "Scythe", "Sickle", "Shortspear", "Sling", "Spear" });
+            armorProfinciencies.UnionWith(new string[] { "Hide Armor", "Padded Armor", "Leather Armor" });
+            castingStat = Attributes.Wis;
         }
     }
 }

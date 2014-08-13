@@ -23,6 +23,14 @@ namespace CSCD454_FinalProject.Entitys
             this.HP = HPMax;
             this.BaB = BaBStrat.getBaB(Level);
             this.SavingThrows = ThrowStrategy.getThrows(Level);
+            this.weaponProficiencies = new HashSet<string>();
+            this.armorProfinciencies = new HashSet<string>();
+            this.weaponProficiencies.UnionWith(new string[] { "Club", "Light Crossbow", "Heavy Crossbow", "Dagger", "Handaxe", "Javelin", "Kama", "Nunchaku", "Quarterstaff", "Sai", "Shortspear", "Shuriken", "Siangham", "Sling", "Spear" });
+        }
+
+        public override int TouchArmorClass()
+        {
+            return base.TouchArmorClass() + Attribute.GetAbilityMod(attributes[(int)Attributes.Wis]);
         }
     }
 }
