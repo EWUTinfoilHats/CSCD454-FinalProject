@@ -53,6 +53,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Encounter.cs" />
+    <Compile Include="Entitys\Commands\AttackCommand.cs" />
+    <Compile Include="Entitys\Commands\EntityCommand.cs" />
+    <Compile Include="Entitys\Commands\UseItemCommand.cs" />
     <Compile Include="Items\Armors\ArmorEnchantment.cs" />
     <Compile Include="Items\Armors\Armors.cs" />
     <Compile Include="Items\Consumables\Consumable.cs" />
@@ -102,6 +106,8 @@
     <Compile Include="Items\Weapons\Weapons.cs" />
     <Compile Include="Items\Wieldable.cs" />
     <Compile Include="Entitys\Classes\Wizard.cs" />
+    <Compile Include="UI\MonsterAI.cs" />
+    <Compile Include="UI\UserInteraction.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using CSCD454_FinalProject.Items;
 using CSCD454_FinalProject.Items.Weapons;
+using CSCD454_FinalProject.UI;
+using CSCD454_FinalProject.Entitys.Commands;
 
 namespace CSCD454_FinalProject.Entitys
 {
@@ -12,6 +14,7 @@ namespace CSCD454_FinalProject.Entitys
     {
         protected IList<int> attributes;
         public static readonly int innateAC = 10;
+        protected UserInteraction ui;
 
         //protected IList<Spell> spells;
 
@@ -121,6 +124,12 @@ namespace CSCD454_FinalProject.Entitys
             protected set;
         }
 
+        public void SetInitiative()
+        {
+            Dice.Die d6 = Dice.D6.GetInstance();
+            Initiative = d6.Roll() + Attribute.GetAbilityMod(attributes[(int)Attributes.Dex]);
+        }
+
         public int Level
         {
             get;
@@ -190,6 +199,10 @@ namespace CSCD454_FinalProject.Entitys
 
         public virtual void Attack(Entity target)
         {
+            if (IsDead())
+            {
+                return;
+            }
             //Mainhand
             foreach(int bonus in BaB)
             {
@@ -294,6 +307,31 @@ namespace CSCD454_FinalProject.Entitys
         public int CompareTo(Entity other)
         {
             return other.Initiative - this.Initiative;
+        }
+
+        public int GetUserInt()
+        {
+            return ui.GetInt();
+        }
+
+        public void UIDisplayHook()
+        {
+            ui.DisplayHook();
+        }
+
+        public Entity GetTarget(IList<Entity> targets)
+        {
+            return ui.GetTarget(targets);
+        }
+    
+        public void PushUIString(string msg)
+        {
+            ui.PushString(msg);
+        }
+
+        public EntityCommand GetAction()
+        {
+            return ui.GetAction();
         }
     }
 }
