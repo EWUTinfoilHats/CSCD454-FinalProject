@@ -58,6 +58,12 @@
     <Compile Include="Combat\Commands\AttackCommand.cs" />
     <Compile Include="Combat\Commands\EntityCommand.cs" />
     <Compile Include="Combat\Commands\UseItemCommand.cs" />
+    <Compile Include="Dice\D100.cs" />
+    <Compile Include="EncounterGen\EncounterGen.cs" />
+    <Compile Include="Entitys\Enemies\DireRat.cs" />
+    <Compile Include="Entitys\Enemies\FireBeetle.cs" />
+    <Compile Include="Entitys\Enemies\HumanSkeleton.cs" />
+    <Compile Include="Entitys\Enemies\MonsterPrototype.cs" />
     <Compile Include="Items\Armors\ArmorEnchantment.cs" />
     <Compile Include="Items\Armors\Armors.cs" />
     <Compile Include="Items\Consumables\Consumable.cs" />
