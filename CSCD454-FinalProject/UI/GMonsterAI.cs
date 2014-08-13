@@ -12,7 +12,10 @@ namespace CSCD454_FinalProject.UI
             IList<Entity> players = targets.Players;
             int count = players.Count;
             Random rand = new Random();
-            targets.SetTarget(players[rand.Next(count)]);
+            int choice = rand.Next(count);
+            while (!players[choice].IsDead())
+                choice = rand.Next(count);
+            targets.SetTarget(players[choice]);
         }
 
         public override EntityCommand GetAction(Entity issuer)
