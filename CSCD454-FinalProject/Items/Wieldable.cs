@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSCD454_FinalProject.Items
 {
-    public interface Wieldable : Item
+    public interface Wieldable
     {
         Wieldable GetBaseWieldable();
 
@@ -67,5 +67,10 @@ namespace CSCD454_FinalProject.Items
         }
 
         bool IsWeapon();
+
+        string Name
+        {
+            get;
+        }
     }
 }

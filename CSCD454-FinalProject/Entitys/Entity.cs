@@ -34,7 +34,10 @@ namespace CSCD454_FinalProject.Entitys
             {
                 return new List<Item>(inventory);
             }
-            protected set;
+            protected set
+            {
+                inventory = value;
+            }
         }
 
         public virtual bool AddItem(Item item)
