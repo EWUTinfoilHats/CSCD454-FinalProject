@@ -13,7 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public Choker()
         {
-            this.name = "Choker";
+            this.Name = "Choker";
             this.attributes = new int[] { 16, 14, 13, 4, 13, 7 };
             this.Level = 2;
             this.HPMax = 16;

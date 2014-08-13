@@ -13,7 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public Shadow()
         {
-            this.name = "Shadow";
+            this.Name = "Shadow";
             this.attributes = new int[] { 10, 14, 10, 6, 12, 15 };
             this.Level = 3;
             this.HPMax = 19;

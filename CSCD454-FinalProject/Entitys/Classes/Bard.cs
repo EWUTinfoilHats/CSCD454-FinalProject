@@ -23,6 +23,11 @@ namespace CSCD454_FinalProject.Entitys
             this.HP = HPMax;
             this.BaB = BaBStrat.getBaB(Level);
             this.SavingThrows = ThrowStrategy.getThrows(Level);
+            this.weaponProficiencies = new HashSet<string>();
+            this.armorProfinciencies = new HashSet<string>();
+            weaponProficiencies.UnionWith(new string[] { "simple", "Longsword", "Rapier", "Sap", "Short Sword", "Shortbow" });
+            armorProfinciencies.UnionWith(new string[] { "light", "shield" });
+            castingStat = Attributes.Cha;
         }
     }
 }

@@ -16,6 +16,7 @@ namespace CSCD454_FinalProject.Entitys
         protected IList<int> attributes;
         public static readonly int innateAC = 10;
         protected UserInteraction ui;
+        protected Attributes castingStat;
 
         //protected IList<Spell> spells;
 
@@ -26,6 +27,7 @@ namespace CSCD454_FinalProject.Entitys
             Armor = Armors.noArmor;
             inventory = new List<Item>();
             attributes = new int[6];
+            castingStat = Attributes.Int;
         }
 
         public IList<Item> Inventory
@@ -40,15 +42,26 @@ namespace CSCD454_FinalProject.Entitys
             }
         }
 	
-        public string name
+        public string Name
         {
             get;
             protected set;
+        }
+
+        public void SetName(string name)
+        {
+            Name = name;
         }
         
         public virtual bool AddItem(Item item)
         {
             inventory.Add(item);
+            return true;
+        }
+
+        public virtual bool AddItems(IList<Item> items)
+        {
+            inventory = (IList<Item>)inventory.Concat(items);
             return true;
         }
 
@@ -306,7 +319,7 @@ namespace CSCD454_FinalProject.Entitys
             return HP <= 0;
         }
 
-        public int TouchArmorClass()
+        public virtual int TouchArmorClass()
         {
             return innateAC + (int)Size + Math.Min(Math.Min(Attribute.GetAbilityMod(attributes[(int)Attributes.Dex]), Armor.MaxDexMod), OffHand.MaxDexMod);
         }
@@ -362,6 +375,11 @@ namespace CSCD454_FinalProject.Entitys
         public EntityCommand GetAction()
         {
             return ui.GetAction(this);
+        }
+
+        public virtual void SetUI(UserInteraction ui)
+        {
+            this.ui = ui;
         }
     }
 }

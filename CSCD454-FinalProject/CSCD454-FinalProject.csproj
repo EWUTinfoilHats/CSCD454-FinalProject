@@ -86,6 +86,8 @@
     <Compile Include="Entitys\Enemies\HumanSkeleton.cs" />
     <Compile Include="Entitys\Enemies\MonsterPrototype.cs" />
     <Compile Include="Entitys\Factory.cs" />
+    <Compile Include="Factories\AbstractCharacterFactory.cs" />
+    <Compile Include="Factories\DefaultCharacterFactory.cs" />
     <Compile Include="Items\Armors\ArmorEnchantment.cs" />
     <Compile Include="Items\Armors\Armors.cs" />
     <Compile Include="Items\Consumables\Consumable.cs" />
@@ -148,7 +150,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Armors\Armor.cs" />
-    <Compile Include="Attributes.cs" />
+    <Compile Include="Entitys\Attributes.cs" />
     <Compile Include="Dice\D10.cs" />
     <Compile Include="Dice\D12.cs" />
     <Compile Include="Dice\D20.cs" />
