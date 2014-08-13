@@ -13,9 +13,9 @@ namespace CSCD454_FinalProject.Entitys.Commands
 
         }
 
-        public override void Do(Entity target)
+        public override void Do(CombatGroup targets)
         {
-            issuer.Attack(target);
+            issuer.Attack(targets.Target);
         }
     }
 }

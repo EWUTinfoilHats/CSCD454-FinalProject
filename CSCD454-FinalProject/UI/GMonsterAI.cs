@@ -7,11 +7,12 @@ namespace CSCD454_FinalProject.UI
 {
     public class GMonsterAI : GUserInteraction, MonsterAI
     {
-        public override Entity GetTarget(IList<Entity> targets)
+        public override void GetTarget(CombatGroup targets)
         {
-            int count = targets.Count;
+            IList<Entity> players = targets.Players;
+            int count = players.Count;
             Random rand = new Random();
-            return targets[rand.Next(count)];
+            targets.SetTarget(players[rand.Next(count)]);
         }
 
         public override EntityCommand GetAction(Entity issuer)

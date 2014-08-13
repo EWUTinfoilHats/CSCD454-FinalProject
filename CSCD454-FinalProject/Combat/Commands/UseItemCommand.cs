@@ -10,10 +10,10 @@ namespace CSCD454_FinalProject.Entitys.Commands
             this.item = item;
         }
 
-        public override void Do(Entity target)
+        public override void Do(CombatGroup targets)
         {
             //TODO add item removal logic once Inventory is in place
-            if (item.Apply(target))
+            if (item.Apply(targets.Target))
                 issuer.RemoveItem(item);
 
         }

@@ -53,10 +53,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Encounter.cs" />
-    <Compile Include="Entitys\Commands\AttackCommand.cs" />
-    <Compile Include="Entitys\Commands\EntityCommand.cs" />
-    <Compile Include="Entitys\Commands\UseItemCommand.cs" />
+    <Compile Include="Combat\CombatGroup.cs" />
+    <Compile Include="Combat\Encounter.cs" />
+    <Compile Include="Combat\Commands\AttackCommand.cs" />
+    <Compile Include="Combat\Commands\EntityCommand.cs" />
+    <Compile Include="Combat\Commands\UseItemCommand.cs" />
     <Compile Include="Items\Armors\ArmorEnchantment.cs" />
     <Compile Include="Items\Armors\Armors.cs" />
     <Compile Include="Items\Consumables\Consumable.cs" />

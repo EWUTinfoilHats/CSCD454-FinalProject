@@ -28,7 +28,7 @@ namespace CSCD454_FinalProject.UI
             throw new NotImplementedException();
         }
 
-        public virtual Entity GetTarget(IList<Entity> targets)
+        public virtual void GetTarget(CombatGroup targets)
         {
             throw new NotImplementedException();
         }
