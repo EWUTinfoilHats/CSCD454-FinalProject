@@ -22,6 +22,8 @@ namespace CSCD454_FinalProject.Entitys.Enemies
             this.SetMainHand(Weapons.heavyMace);
             this.SetArmor(Armors.chainShirt);
             this.Size = Size.Small;
+            this.weaponProficiencies = new SortedSet<Weapon>();
+            this.weaponProficiencies.Add(Weapons.heavyMace);
         }
 
         public Monster Clone()

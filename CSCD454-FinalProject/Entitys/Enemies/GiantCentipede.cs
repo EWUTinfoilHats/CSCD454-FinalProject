@@ -23,6 +23,8 @@ namespace CSCD454_FinalProject.Entitys.Enemies
             this.SetMainHand(Weapons.lightMace);
             this.SetArmor(Armors.leatherArmor);
             this.Size = CSCD454_FinalProject.Size.Medium;
+            this.weaponProficiencies = new SortedSet<Weapon>();
+            this.weaponProficiencies.Add(Weapons.lightMace);
         }
 
         public Monster Clone()

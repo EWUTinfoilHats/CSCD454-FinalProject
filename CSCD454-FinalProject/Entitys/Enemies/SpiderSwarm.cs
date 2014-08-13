@@ -21,6 +21,8 @@ namespace CSCD454_FinalProject.Entitys.Enemies
             this.SavingThrows = new int[] { 3, 3, 0 };
             this.SetMainHand(Weapons.lightMace);
             this.Size = CSCD454_FinalProject.Size.Diminutive;
+            this.weaponProficiencies = new SortedSet<Weapon>();
+            this.weaponProficiencies.Add(Weapons.lightMace);
         }
 
         public Monster Clone()

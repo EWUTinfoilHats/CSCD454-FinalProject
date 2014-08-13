@@ -22,6 +22,8 @@ namespace CSCD454_FinalProject.Entitys.Enemies
             this.SetMainHand(Weapons.dagger);
             this.SetArmor(Armors.leatherArmor);
             this.Size = Size.Tiny;
+            this.weaponProficiencies = new SortedSet<Weapon>();
+            this.weaponProficiencies.Add(Weapons.dagger);
         }
 
         public Monster Clone()

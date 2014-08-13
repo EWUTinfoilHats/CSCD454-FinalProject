@@ -23,6 +23,8 @@ namespace CSCD454_FinalProject.Entitys.Enemies
             this.SetOffHand(Armors.heavyWoodenShield);
             this.SetArmor(Armors.halfPlate);
             this.Size = Size.Medium;
+            this.weaponProficiencies = new SortedSet<Weapon>();
+            this.weaponProficiencies.Add(Weapons.heavyMace);
         }
 
         public Monster Clone()
