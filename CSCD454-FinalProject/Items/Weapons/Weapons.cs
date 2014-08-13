@@ -7,7 +7,7 @@ using CSCD454_FinalProject.Dice;
 
 namespace CSCD454_FinalProject.Items.Weapons
 {
-    class Weapons
+    public class Weapons
     {
         private static readonly Die[] d3 = new Die[] { D3.GetInstance() };
         private static readonly Die[] d4 = new Die[] { D4.GetInstance() };

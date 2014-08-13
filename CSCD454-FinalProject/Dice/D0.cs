@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSCD454_FinalProject.Dice
 {
-    class D0 : Die
+    public class D0 : Die
     {
         private static D0 instance = new D0();
 
