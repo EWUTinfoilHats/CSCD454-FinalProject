@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CSCD454_FinalProject.Items;
 using CSCD454_FinalProject.Items.Weapons;
 using CSCD454_FinalProject.UI;
+using CSCD454_FinalProject.Entitys.Commands;
 
 namespace CSCD454_FinalProject.Entitys
 {
@@ -326,6 +327,11 @@ namespace CSCD454_FinalProject.Entitys
         public void PushUIString(string msg)
         {
             ui.PushString(msg);
+        }
+
+        public EntityCommand GetAction()
+        {
+            return ui.GetAction();
         }
     }
 }

@@ -7,6 +7,7 @@ using CSCD454_FinalProject.Items;
 using CSCD454_FinalProject.Entitys;
 using CSCD454_FinalProject.UI;
 using CSCD454_FinalProject.Dice;
+using CSCD454_FinalProject.Entitys.Commands;
 
 namespace CSCD454_FinalProject
 {
@@ -47,8 +48,8 @@ namespace CSCD454_FinalProject
                 while(combatQueue.Count != 0)
                 {
                     Entity e = combatQueue.Dequeue();
-                    //TODO let them do things other than attack, probably use Commands
-                    e.Attack(e.GetTarget(combatList));
+                    EntityCommand action = e.GetAction();
+                    action.Do(e.GetTarget(combatList));
                     e.UIDisplayHook();
                 }
             }
