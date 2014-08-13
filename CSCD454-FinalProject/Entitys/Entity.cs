@@ -12,6 +12,7 @@ namespace CSCD454_FinalProject.Entitys
 {
     public abstract class Entity : IComparable<Entity>
     {
+        protected IList<Item> inventory;
         protected IList<int> attributes;
         public static readonly int innateAC = 10;
         protected UserInteraction ui;
@@ -23,18 +24,40 @@ namespace CSCD454_FinalProject.Entitys
             MainHand = Weapons.emptyHand;
             OffHand = Weapons.emptyHand;
             Armor = Armors.noArmor;
+            inventory = new List<Item>();
+            attributes = new int[6];
         }
 
-        protected int[] BaB
+        public IList<Item> Inventory
         {
-            get;
-            set;
+            get
+            {
+                return new List<Item>(inventory);
+            }
+            protected set;
         }
 
-        protected int[] SavingThrows
+        public virtual bool AddItem(Item item)
+        {
+            inventory.Add(item);
+            return true;
+        }
+
+        public virtual bool RemoveItem(Item item)
+        {
+            return inventory.Remove(item);
+        }
+
+        public int[] BaB
         {
             get;
-            set;
+            protected set;
+        }
+
+        public int[] SavingThrows
+        {
+            get;
+            protected set;
         }
 
         public Armor Armor
@@ -287,15 +310,13 @@ namespace CSCD454_FinalProject.Entitys
         public virtual int[] GetTWFBonus()
         {
             //TODO support for TWF feats
-            if(OffHand.IsWeapon() && OffHand.IsLight)
+            if (OffHand == Weapons.emptyHand || !OffHand.IsWeapon())
+                return new int[] { 0, 0 };
+            if (OffHand.IsLight)
             {
                 return new int[] { -4, -8 };
             }
-            else if(OffHand.IsWeapon())
-            {
-                return new int[] { -6, -10 };
-            }
-            return new int[] { 0, 0 };
+            return new int[] { -6, -10 };
         }
 
         /// <summary>
