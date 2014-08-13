@@ -52,5 +52,18 @@ namespace CSCD454_FinalProject.Items
         {
             return false;
         }
+
+        public bool IsLight
+        {
+            get
+            {
+                return false;
+            }
+        }
+
+        public bool IsWeapon()
+        {
+            return false;
+        }
     }
 }

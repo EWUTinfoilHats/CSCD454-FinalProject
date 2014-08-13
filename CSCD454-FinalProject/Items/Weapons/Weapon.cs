@@ -269,5 +269,13 @@ namespace CSCD454_FinalProject.Items
                 return "A " + Name + " that deals " + GetDamageDiceAsString() + "+" + DamageMod + " with a threat range of " + GetThreatRange() + "/x" + CriticalMultiplier;
             }
         }
+
+
+
+
+        public bool IsWeapon()
+        {
+            return true;
+        }
     }
 }

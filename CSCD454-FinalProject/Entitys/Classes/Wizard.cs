@@ -24,10 +24,5 @@ namespace CSCD454_FinalProject.Entitys
             this.BaB = BaBStrat.getBaB(Level);
             this.SavingThrows = ThrowStrategy.getThrows(Level);
         }
-
-        public override void Attack(Entity target)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
