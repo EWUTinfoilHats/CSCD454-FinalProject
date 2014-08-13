@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSCD454_FinalProject.Entitys
 {
-    class Throw200 : Throws, DefenseStrategy
+    public class Throw200 : Throws, DefenseStrategy
     {
         public int[] getThrows(int level)
         {

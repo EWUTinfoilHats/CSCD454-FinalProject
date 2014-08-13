@@ -2,7 +2,7 @@
 
 namespace CSCD454_FinalProject.Dice
 {
-    class D6 : Die
+    public class D6 : Die
     {
         private static D6 instance = new D6();
 
