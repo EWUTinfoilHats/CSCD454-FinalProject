@@ -355,7 +355,7 @@ namespace CSCD454_FinalProject.Entitys
 
         public EntityCommand GetAction()
         {
-            return ui.GetAction();
+            return ui.GetAction(this);
         }
     }
 }
