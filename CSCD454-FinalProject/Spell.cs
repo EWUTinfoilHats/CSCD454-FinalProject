@@ -7,33 +7,28 @@ using CSCD454_FinalProject.Entitys;
 
 namespace CSCD454_FinalProject.Spells
 {
-    public abstract class Spell
+    public interface Spell
     {
-        public int Duration
+        int Duration
         {
             get;
-            protected set;
         }
 
-        public int Level
+        int Level
         {
             get;
-            protected set;
         }
 
-        public int ManaCost
+        int ManaCost
         {
             get;
-            protected set;
         }
 
-        public string Name
+        string Name
         {
             get;
-            protected set;
         }
 
-        public abstract void CastAt(Entity target);
-        public abstract void CastAt(IList<Entity> targets);
+        void CastAt(CombatGroup targets);
     }
 }
