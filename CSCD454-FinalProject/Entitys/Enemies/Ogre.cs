@@ -13,7 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public Ogre()
         {
-            this.name = "Ogre";
+            this.Name = "Ogre";
             this.attributes = new int[] { 21, 8, 15, 6, 10, 7 };
             this.Level = 3;
             this.HPMax = 30;

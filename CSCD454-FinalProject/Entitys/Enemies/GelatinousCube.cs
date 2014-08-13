@@ -13,7 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public GelatinousCube()
         {
-            this.name = "Gelatinous Cube";
+            this.Name = "Gelatinous Cube";
             this.attributes = new int[] { 10, 1, 26, 10, 1, 1 };
             this.Level = 3;
             this.HPMax = 50;

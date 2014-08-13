@@ -42,15 +42,26 @@ namespace CSCD454_FinalProject.Entitys
             }
         }
 	
-        public string name
+        public string Name
         {
             get;
             protected set;
+        }
+
+        public void SetName(string name)
+        {
+            Name = name;
         }
         
         public virtual bool AddItem(Item item)
         {
             inventory.Add(item);
+            return true;
+        }
+
+        public virtual bool AddItems(IList<Item> items)
+        {
+            inventory = (IList<Item>)inventory.Concat(items);
             return true;
         }
 
