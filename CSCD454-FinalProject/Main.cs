@@ -10,7 +10,12 @@ namespace CSCD454_FinalProject
     {
         public static void Main(string[] args)
         {
-            
+            bool playAgain = false;
+            do
+            {
+                Game game = new Game(new UI.TUserInteraction());
+
+            } while (playAgain);
         }
     }
 }

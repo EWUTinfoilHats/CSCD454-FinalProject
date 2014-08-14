@@ -11,7 +11,10 @@ namespace CSCD454_FinalProject.Maze
     {
         public Encounter encounter
         {
-            get;
+            get
+            {
+                return encounter;
+            }
             protected set
             {
                 encounter = value;

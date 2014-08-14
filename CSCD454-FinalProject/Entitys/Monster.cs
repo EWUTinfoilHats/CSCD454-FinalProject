@@ -12,6 +12,11 @@ namespace CSCD454_FinalProject.Entitys
     {
         protected ISet<Weapon> weaponProficiencies;
 
+        public Monster()
+        {
+            ui = new UI.TMonsterAI();
+        }
+
         public abstract Monster Clone();
     }
 }

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace CSCD454_FinalProject.UI
 {
-    public class GMonsterAI : GUserInteraction, MonsterAI
+    public class TMonsterAI : TUserInteraction, MonsterAI
     {
         public override void GetTarget(CombatGroup targets)
         {

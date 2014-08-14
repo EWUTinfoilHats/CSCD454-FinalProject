@@ -30,12 +30,7 @@ namespace CSCD454_FinalProject.Combat
         {
             IList<Entity> combatList = new List<Entity>();
             CombatGroup combatGroup = new CombatGroup(playerParty, monsterParty);
-            foreach (var e in playerParty)
-            {
-                e.SetInitiative();
-                combatList.Add(e);
-            }
-            foreach (var e in monsterParty)
+            foreach (var e in combatGroup)
             {
                 e.SetInitiative();
                 combatList.Add(e);
