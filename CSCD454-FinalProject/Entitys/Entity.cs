@@ -44,6 +44,20 @@ namespace CSCD454_FinalProject.Entitys
                 inventory = value;
             }
         }
+
+        public IList<Consumable> Consumables
+        {
+            get
+            {
+                IList<Consumable> tmp = new List<Consumable>();
+                foreach(var i in inventory)
+                {
+                    if (i is Consumable)
+                        tmp.Add((Consumable)i);
+                }
+                return tmp;
+            }
+        }
 	
         public string Name
         {
@@ -445,6 +459,14 @@ namespace CSCD454_FinalProject.Entitys
         public virtual void SetUI(UserInteraction ui)
         {
             this.ui = ui;
+        }
+
+        public virtual string Description
+        {
+            get
+            {
+                return Name + " " + HP + "/" + HPMax + "hp\t" + Mana + "/" + ManaMax + " mana.";
+            }
         }
     }
 }
