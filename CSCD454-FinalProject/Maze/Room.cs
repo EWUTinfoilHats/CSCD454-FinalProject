@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CSCD454_FinalProject.Combat;
+using CSCD454_FinalProject.Entitys;
+using CSCD454_FinalProject.EncounterGeneration;
+using CSCD454_FinalProject.Items;
 
 namespace CSCD454_FinalProject.Maze
 {
@@ -11,20 +14,49 @@ namespace CSCD454_FinalProject.Maze
     {
         public Encounter encounter
         {
+            get;
+            protected set;
+        }
+
+        public Room(Boolean encounter)
+        {
+            this.hasEncounter = encounter;
+        }
+
+        private Boolean hasEncounter
+        {
+            get;
+            set;
+        }
+
+        private Boolean _visited = false;
+        private Boolean Visited
+        {
             get
             {
-                return encounter;
+                return _visited;
             }
-            protected set
+            set
             {
-                encounter = value;
+                _visited = value;
             }
         }
 
-        public Boolean hasEncounter
+
+        public IList<Item> onEnter(IList<Entity> party)
         {
-            get;
-            protected set;
+            if (this.hasEncounter && !Visited)
+            {
+                Visited = true;
+                EncounterGen generator = new EncounterGen(party);
+                encounter = generator.GenerateEncounter();
+                return encounter.Fight();
+            }
+            else
+            {
+                Visited = true;
+                return new Item[0];
+            }
         }
     }
 }

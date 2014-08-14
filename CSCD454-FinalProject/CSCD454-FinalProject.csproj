@@ -77,7 +77,6 @@
     <Compile Include="Dice\D100.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Main.cs" />
-    <Compile Include="Maze\DungeonMaze.cs" />
     <Compile Include="EncounterGen\EncounterGen.cs" />
     <Compile Include="Entitys\Enemies\Bugbear.cs" />
     <Compile Include="Entitys\Enemies\Choker.cs" />
@@ -142,6 +141,8 @@
     <Compile Include="Entitys\Classes\Ranger.cs" />
     <Compile Include="Entitys\Classes\Rogue.cs" />
     <Compile Include="Entitys\Saves\SavingThrows.cs" />
+    <Compile Include="Maze\DungeonMaze.cs" />
+    <Compile Include="Maze\MazeTraversal.cs" />
     <Compile Include="Maze\Room.cs" />
     <Compile Include="Size.cs" />
     <Compile Include="Entitys\Classes\Sorcerer.cs" />
