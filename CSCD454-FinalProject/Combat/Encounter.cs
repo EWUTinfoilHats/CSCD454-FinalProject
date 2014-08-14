@@ -8,6 +8,7 @@ using CSCD454_FinalProject.Entitys;
 using CSCD454_FinalProject.UI;
 using CSCD454_FinalProject.Dice;
 using CSCD454_FinalProject.Entitys.Commands;
+using CSCD454_FinalProject.Factories;
 
 namespace CSCD454_FinalProject.Combat
 {
@@ -54,8 +55,8 @@ namespace CSCD454_FinalProject.Combat
             }
             if (AllDead(monsterParty))
             {
-                //TODO actual loot generation
-                return new Item[] { Items.Weapons.Weapons.longsword };
+                AbstractLootFactory lootFactory = new DefaultLootFactory();
+                return lootFactory.GenerateLoot(challengeRating);
             }
             return new Item[0];
         }
