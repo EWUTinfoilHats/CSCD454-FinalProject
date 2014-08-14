@@ -38,13 +38,7 @@ namespace CSCD454_FinalProject.EncounterGeneration
             {
                 returnVal.Add(initial.Clone());
             }
-            return new Encounter(players, (IList<Entity>)returnVal);
-        }
-
-
-        public int GetCR(string name)
-        {
-            return ChallengeRating[Monster.IndexOf(name)];
+            return new Encounter(players, (IList<Entity>)returnVal, ChallengeRating[rollTable[roll]]);
         }
 
         private int numberHelper(int n) //All "MAGIC" numbers represent number of potential monsters in encounter

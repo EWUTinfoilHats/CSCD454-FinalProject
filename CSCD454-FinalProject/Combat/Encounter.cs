@@ -15,11 +15,13 @@ namespace CSCD454_FinalProject.Combat
     {
         private IList<Entity> playerParty;
         private IList<Entity> monsterParty;
+        private int challengeRating;
 
-        public Encounter(IList<Entity> players, IList<Entity> monsters)
+        public Encounter(IList<Entity> players, IList<Entity> monsters, int cR)
         {
             playerParty = players;
             monsterParty = monsters;
+            challengeRating = cR;
         }
 
         /// <summary>
