@@ -30,7 +30,7 @@ namespace CSCD454_FinalProject.Entitys
             attributes = new int[6];
             castingStat = Attributes.Int;
             Mana = ManaMax;
-            SpellList = new List<ISpell>();
+            spells = new List<ISpell>();
         }
 
         public IList<Item> Inventory
@@ -124,10 +124,6 @@ namespace CSCD454_FinalProject.Entitys
             {
                 return spells;
             }
-            protected set
-            {
-                spells = value;
-            }
         }
 
         public void AddSpell(ISpell spell)
@@ -140,8 +136,7 @@ namespace CSCD454_FinalProject.Entitys
         {
             foreach(ISpell s in spells)
             {
-                if (CanLearnSpell(s))
-                    spells.Add(s);
+                AddSpell(s);
             }
         }
 
