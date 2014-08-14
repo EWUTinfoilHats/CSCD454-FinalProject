@@ -14,7 +14,11 @@ namespace CSCD454_FinalProject
             do
             {
                 Game game = new Game(new UI.TUserInteraction());
-
+                game.Play();
+                Console.Write("Would you like to play again? (y/n): ");
+                char result = (char)Console.Read();
+                if (result == 'y' || result == 'Y')
+                    playAgain = true;
             } while (playAgain);
         }
     }
