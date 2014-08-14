@@ -39,8 +39,9 @@ Sorcerer
 Wizard");
                 ui.PushString("Please enter the name of the class you would like to add to your party: ");
                 string ans = ui.GetString().Split()[0].Trim();
-                playerParty.Add(charFactory.CreateCharacter(ans, ui));
-                ui.PushStringLine("");
+                Entity player = charFactory.CreateCharacter(ans, ui);
+                playerParty.Add(player);
+                ui.PushStringLine("Added 1 " + player.GetType().Name);
             }
             maze = new MazeTraversal(playerParty);
         }
@@ -290,6 +291,7 @@ Wizard");
                 ui.PushStringLine("Please Select a player to give the item to.");
                 Entity target = ui.GetTarget(playerParty);
                 target.AddItem(item);
+                ui.PushStringLine("");
             }
         }
     }
