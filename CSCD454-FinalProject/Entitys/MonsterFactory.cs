@@ -7,7 +7,7 @@ using CSCD454_FinalProject.Entitys.Enemies;
 
 namespace CSCD454_FinalProject.Entitys
 {
-    class Factory
+    class MonsterFactory
     {
         public Monster createMonster(String name){
 

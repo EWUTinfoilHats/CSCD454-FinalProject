@@ -25,7 +25,13 @@ namespace CSCD454_FinalProject.Items
             {
                 total += d6.Roll();
             }
-            return target.RemoveHP(total + level);
+            total += level;
+            if(target.AddHP(total))
+            {
+                target.PushUIString("Used Healing potion on " + target.Name + " for " + total + "hp.");
+                return true;
+            }
+            return false;
         }
 
         public override string Description

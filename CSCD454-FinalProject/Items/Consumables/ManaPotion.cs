@@ -25,7 +25,13 @@ namespace CSCD454_FinalProject.Items
             {
                 total += d6.Roll();
             }
-            return target.RemoveHP(total + level);
+            total += level;
+            if (target.AddMana(total))
+            {
+                target.PushUIString(target.Name + " recovered " + total + " mana.");
+                return true;
+            }
+            return false;
         }
 
         public override string Description

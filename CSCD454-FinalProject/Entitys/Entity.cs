@@ -161,7 +161,7 @@ namespace CSCD454_FinalProject.Entitys
 
         public bool AddMana(int amount)
         {
-            if (Mana == ManaMax)
+            if (Mana == ManaMax || IsDead())
                 return false;
             Mana = Math.Min(Mana + amount, ManaMax);
             return true;
@@ -312,18 +312,26 @@ namespace CSCD454_FinalProject.Entitys
         {
             Dice.Die d20 = Dice.D20.GetInstance();
             int attack = d20.Roll();
+            int damage = 0;
             if (attack == 1)//instant miss
+            {
+                ui.PushString(Name + " missed " + target.Name);
                 return;
+            }
             else if (attack == 20)//instant hit + threat
             {
                 attack = d20.Roll() + GetAttackBonus(offhand, BaB);
                 if (attack < target.ArmorClass)//nocrit
                 {
-                    target.RemoveHP(weapon.GetDamageRoll(attributes[(int)Attributes.Str], false));
+                    damage = weapon.GetDamageRoll(attributes[(int)Attributes.Str], offhand);
+                    target.RemoveHP(damage);
+                    ui.PushString(Name + " hit " + target.Name + " for " + damage + " hp.");
                 }
                 else //crit
                 {
-                    target.RemoveHP(weapon.GetCriticalDamageRoll(attributes[(int)Attributes.Str], false));
+                    damage = weapon.GetCriticalDamageRoll(attributes[(int)Attributes.Str], offhand);
+                    target.RemoveHP(damage);
+                    ui.PushString(Name + " crit " + target.Name + " for " + damage + " hp.");
                 }
             }
             else
@@ -331,22 +339,31 @@ namespace CSCD454_FinalProject.Entitys
                 attack += GetAttackBonus(offhand, BaB);
 
                 if (attack < target.ArmorClass)//miss
+                {
+                    ui.PushString(Name + " missed " + target.Name);
                     return;
+                }
                 if (weapon.IsInThreatRange(attack))//attack is critical threat
                 {
                     attack = d20.Roll() + GetAttackBonus(offhand, BaB);
                     if (attack < target.ArmorClass)//nocrit
                     {
-                        target.RemoveHP(weapon.GetDamageRoll(attributes[(int)Attributes.Str], false));
+                        damage = weapon.GetDamageRoll(attributes[(int)Attributes.Str], offhand);
+                        target.RemoveHP(damage);
+                        ui.PushString(Name + " hit " + target.Name + " for " + damage + " hp.");
                     }
                     else //crit
                     {
-                        target.RemoveHP(weapon.GetCriticalDamageRoll(attributes[(int)Attributes.Str], false));
+                        damage = weapon.GetCriticalDamageRoll(attributes[(int)Attributes.Str], offhand);
+                        target.RemoveHP(damage);
+                        ui.PushString(Name + " crit " + target.Name + " for " + damage + " hp.");
                     }
                 }
                 else
                 {
-                    target.RemoveHP(weapon.GetDamageRoll(attributes[(int)Attributes.Str], false));
+                    damage = weapon.GetDamageRoll(attributes[(int)Attributes.Str], offhand);
+                    target.RemoveHP(damage);
+                    ui.PushString(Name + " hit " + target.Name + " for " + damage + " hp.");
                 }
             }
         }

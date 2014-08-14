@@ -17,7 +17,10 @@ namespace CSCD454_FinalProject.Spells
         public override void CastAt(CombatGroup targets, Entity caster)
         {
             if (Type.DidFizzle(caster))
+            {
+                caster.PushUIString(caster.Name + " fizzled " + Name);
                 return;
+            }
 
             caster.RemoveMana(ManaCost);
             IList<Entity> actualTargets;
@@ -32,7 +35,8 @@ namespace CSCD454_FinalProject.Spells
             int damage = GetDamage(caster);
             foreach(Entity e in actualTargets)
             {
-                e.RemoveHP(damage);
+                targets.Target.RemoveHP(damage);
+                caster.PushUIString(caster.Name + " did " + damage + " damage to " + targets.Target.Name);
             }
         }
     }
