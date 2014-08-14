@@ -112,7 +112,7 @@ namespace Tests
 
     class TestSpell : OffensiveSTSpell
     {
-        public TestSpell() : base("Test Spell", 0, 1, new ArcaneSpell())
+        public TestSpell() : base("Test Spell", 0, new ArcaneSpell())
         {
             DamageDice = new Die[] { D6.GetInstance() };
             DamageBonus = 1;

@@ -55,7 +55,10 @@ namespace CSCD454_FinalProject.Spells
 
         public virtual string Description
         {
-            get;
+            get
+            {
+                return "";
+            }
         }
     }
 }

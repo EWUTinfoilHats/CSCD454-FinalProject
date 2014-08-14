@@ -37,7 +37,7 @@ namespace CSCD454_FinalProject.Spells
 
         void CastAt(CombatGroup targets, Entity Caster);
 
-        public string Description
+        string Description
         {
             get;
         }

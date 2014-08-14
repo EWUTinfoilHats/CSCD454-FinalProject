@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CSCD454_FinalProject.Dice;
 using CSCD454_FinalProject.Items;
 using System.Collections;
+using CSCD454_FinalProject.Spells.ArcaneSpells;
 
 namespace CSCD454_FinalProject.Entitys
 {
