@@ -22,21 +22,23 @@ namespace CSCD454_FinalProject.Spells
                 return;
             }
 
-            caster.RemoveMana(ManaCost);
-            IList<Entity> actualTargets;
-            if (targets.Players.Contains(targets.Target))
+            if (caster.RemoveMana(ManaCost))
             {
-                actualTargets = targets.Players;
-            }
-            else
-            {
-                actualTargets = targets.Monsters;
-            }
-            int damage = GetDamage(caster);
-            foreach(Entity e in actualTargets)
-            {
-                e.RemoveHP(damage);
-                caster.PushUIString(caster.Name + " did " + damage + " damage to " + e.Name);
+                IList<Entity> actualTargets;
+                if (targets.Players.Contains(targets.Target))
+                {
+                    actualTargets = targets.Players;
+                }
+                else
+                {
+                    actualTargets = targets.Monsters;
+                }
+                int damage = GetDamage(caster);
+                foreach (Entity e in actualTargets)
+                {
+                    e.RemoveHP(damage);
+                    caster.PushUIString(caster.Name + " did " + damage + " damage to " + e.Name);
+                }
             }
         }
     }

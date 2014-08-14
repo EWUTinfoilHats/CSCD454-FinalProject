@@ -35,7 +35,7 @@ namespace CSCD454_FinalProject.Items
         {
             get
             {
-                return "+" + bonus + " " + base.Name;
+                return "+" + bonus + " " + enchantedArmor.Name;
             }
         }
     }

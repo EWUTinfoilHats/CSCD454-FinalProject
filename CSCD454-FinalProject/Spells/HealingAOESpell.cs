@@ -19,21 +19,23 @@ namespace CSCD454_FinalProject.Spells
             if (Type.DidFizzle(caster))
                 return;
 
-            caster.RemoveMana(ManaCost);
-            IList<Entity> actualTargets;
-            if (targets.Players.Contains(targets.Target))
+            if (caster.RemoveMana(ManaCost))
             {
-                actualTargets = targets.Players;
-            }
-            else
-            {
-                actualTargets = targets.Monsters;
-            }
-            int healing = GetHealing(caster);
-            foreach (Entity e in actualTargets)
-            {
-                e.AddHP(healing);
-                caster.PushUIString(e.Name + " healed " + healing + "hp by " + caster.Name);
+                IList<Entity> actualTargets;
+                if (targets.Players.Contains(targets.Target))
+                {
+                    actualTargets = targets.Players;
+                }
+                else
+                {
+                    actualTargets = targets.Monsters;
+                }
+                int healing = GetHealing(caster);
+                foreach (Entity e in actualTargets)
+                {
+                    e.AddHP(healing);
+                    caster.PushUIString(e.Name + " healed " + healing + "hp by " + caster.Name);
+                }
             }
         }
     }

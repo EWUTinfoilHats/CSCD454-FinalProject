@@ -25,7 +25,7 @@ namespace CSCD454_FinalProject.Items
         {
             get
             {
-                return "Masterwork " + base.Name;
+                return "Masterwork " + enchantedWeapon.Name;
             }
         }
     }

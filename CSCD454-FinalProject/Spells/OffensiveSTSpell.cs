@@ -50,10 +50,12 @@ namespace CSCD454_FinalProject.Spells
                 return;
             }
 
-            caster.RemoveMana(ManaCost);
-            int damage = GetDamage(caster);
-            targets.Target.RemoveHP(damage);
-            caster.PushUIString(caster.Name + " did " + damage + " damage to " + targets.Target.Name);
+            if (caster.RemoveMana(ManaCost))
+            {
+                int damage = GetDamage(caster);
+                targets.Target.RemoveHP(damage);
+                caster.PushUIString(caster.Name + " did " + damage + " damage to " + targets.Target.Name);
+            }
         }
 
         public override string Description

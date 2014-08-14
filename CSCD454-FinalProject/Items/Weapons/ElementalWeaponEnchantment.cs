@@ -28,7 +28,7 @@ namespace CSCD454_FinalProject.Items
         {
             get
             {
-                return "Fiery " + base.Name;
+                return "Fiery " + enchantedWeapon.Name;
             }
         }
     }

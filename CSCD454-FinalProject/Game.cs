@@ -103,6 +103,10 @@ Wizard");
             Entity player = ui.GetTarget(playerParty);
             IList<Item> inventory = player.Inventory;
 
+            ui.PushStringLine("Main Hand: " + player.MainHand.Name);
+            ui.PushStringLine("OffHand: " + player.OffHand.Name);
+            ui.PushStringLine("Armor: " + player.Armor.Name);
+
             int i = 1;
             foreach(var item in inventory)
             {

@@ -49,10 +49,13 @@ namespace CSCD454_FinalProject.Spells
                 caster.PushUIString(caster.Name + " fizzled " + Name);
                 return;
             }
-            caster.RemoveMana(ManaCost);
-            int healing = GetHealing(caster);
-            targets.Target.AddHP(healing);
-            caster.PushUIString(targets.Target.Name + " healed " + healing + "hp by " + caster.Name);
+
+            if (caster.RemoveMana(ManaCost))
+            {
+                int healing = GetHealing(caster);
+                targets.Target.AddHP(healing);
+                caster.PushUIString(targets.Target.Name + " healed " + healing + "hp by " + caster.Name);
+            }
         }
 
         public override string Description

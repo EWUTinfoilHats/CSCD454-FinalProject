@@ -63,6 +63,8 @@ namespace CSCD454_FinalProject.Entitys
 
         protected override void incLevel(int expLvl)
         {
+            if (IsDead())
+                return;
             while (this.Level < expLvl)
             {
                 this.Level++;
