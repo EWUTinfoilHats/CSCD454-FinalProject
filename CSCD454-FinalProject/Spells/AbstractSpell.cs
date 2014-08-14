@@ -8,9 +8,13 @@ namespace CSCD454_FinalProject.Spells
 {
     public abstract class AbstractSpell : ISpell
     {
-        public AbstractSpell(string name, int manaCost, int level, SpellType type)
+        protected int maxLevel = 0;
+        public AbstractSpell(string name, int level, SpellType type)
         {
-
+            Name = name;
+            Level = level;
+            Type = type;
+            ManaCost = 5 + level * 5;
         }
 
         public int Duration
@@ -42,6 +46,16 @@ namespace CSCD454_FinalProject.Spells
             private set;
         }
 
+        public virtual int GetLevel(Entitys.Entity caster)
+        {
+            return 1;
+        }
+
         public abstract void CastAt(CombatGroup targets, Entitys.Entity Caster);
+
+        public virtual string Description
+        {
+            get;
+        }
     }
 }

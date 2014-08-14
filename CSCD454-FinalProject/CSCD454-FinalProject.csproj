@@ -125,6 +125,11 @@
     <Compile Include="Entitys\Classes\Sorcerer.cs" />
     <Compile Include="Spells\AbstractSpell.cs" />
     <Compile Include="Spells\ArcaneSpell.cs" />
+    <Compile Include="Spells\ArcaneSpells\AcidSplash.cs" />
+    <Compile Include="Spells\ArcaneSpells\BurningHands.cs" />
+    <Compile Include="Spells\ArcaneSpells\MagicMissle.cs" />
+    <Compile Include="Spells\ArcaneSpells\RayOfFrost.cs" />
+    <Compile Include="Spells\ArcaneSpells\ScorchingRay.cs" />
     <Compile Include="Spells\HealingSTSpell.cs" />
     <Compile Include="Spells\DivineSpell.cs" />
     <Compile Include="Spells\HealingAOESpell.cs" />
@@ -202,6 +207,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entitys\Enemies\MonsterFactory\" />
+    <Folder Include="Spells\DivineSpells\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

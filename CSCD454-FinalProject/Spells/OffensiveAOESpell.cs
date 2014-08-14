@@ -9,7 +9,7 @@ namespace CSCD454_FinalProject.Spells
 {
     public abstract class OffensiveAOESpell : OffensiveSTSpell
     {
-        public OffensiveAOESpell(string name, int manaCost, int level, SpellType type) : base(name, manaCost, level, type)
+        public OffensiveAOESpell(string name, int level, SpellType type) : base(name, level, type)
         {
 
         }
@@ -19,14 +19,15 @@ namespace CSCD454_FinalProject.Spells
             if (Type.DidFizzle(caster))
                 return;
 
+            caster.RemoveMana(ManaCost);
             IList<Entity> actualTargets;
-            if (targets.Players.Contains(caster))
+            if (targets.Players.Contains(targets.Target))
             {
-                actualTargets = targets.Monsters;
+                actualTargets = targets.Players;
             }
             else
             {
-                actualTargets = targets.Players;
+                actualTargets = targets.Monsters;
             }
             int damage = GetDamage(caster);
             foreach(Entity e in actualTargets)

@@ -7,6 +7,7 @@ using CSCD454_FinalProject.Items;
 using CSCD454_FinalProject.Items.Weapons;
 using CSCD454_FinalProject.UI;
 using CSCD454_FinalProject.Entitys.Commands;
+using CSCD454_FinalProject.Spells;
 
 namespace CSCD454_FinalProject.Entitys
 {
@@ -18,7 +19,7 @@ namespace CSCD454_FinalProject.Entitys
         protected UserInteraction ui;
         protected Attributes castingStat;
 
-        //protected IList<Spell> spells;
+        protected IList<ISpell> spells;
 
         public Entity()
         {
@@ -28,6 +29,8 @@ namespace CSCD454_FinalProject.Entitys
             inventory = new List<Item>();
             attributes = new int[6];
             castingStat = Attributes.Int;
+            Mana = ManaMax;
+            SpellList = new List<ISpell>();
         }
 
         public IList<Item> Inventory
@@ -115,16 +118,50 @@ namespace CSCD454_FinalProject.Entitys
             }
         }
 
+        public IList<ISpell> SpellList
+        {
+            get
+            {
+                return spells;
+            }
+            protected set
+            {
+                spells = value;
+            }
+        }
+
+        public void AddSpell(ISpell spell)
+        {
+            if(CanLearnSpell(spell))
+                spells.Add(spell);
+        }
+
+        public void AddSpells(IList<ISpell> spells)
+        {
+            foreach(ISpell s in spells)
+            {
+                if (CanLearnSpell(s))
+                    spells.Add(s);
+            }
+        }
+
+        public virtual bool CanLearnSpell(ISpell spell)
+        {
+            return true;
+        }
+
         public int Mana
         {
             get;
             protected set;
         }
 
-        public int ManaMax
+        public virtual int ManaMax
         {
-            get;
-            protected set;
+            get
+            {
+                return 50 + 25 * (Level - 1);
+            }
         }
 
         public bool AddMana(int amount)

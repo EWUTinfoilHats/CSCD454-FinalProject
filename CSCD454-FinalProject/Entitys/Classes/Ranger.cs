@@ -28,6 +28,7 @@ namespace CSCD454_FinalProject.Entitys
             weaponProficiencies.UnionWith(new string[] { "simple", "martial" });
             armorProfinciencies.UnionWith(new string[] { "light", "medium", "shield" });
             castingStat = Attributes.Wis;
+            AddSpells(new Spells.ISpell[] { new CureWounds(), new InflictWounds() });
         }
 
         public override int CastingLevel
