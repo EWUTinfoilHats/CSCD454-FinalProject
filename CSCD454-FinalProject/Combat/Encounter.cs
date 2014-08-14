@@ -8,6 +8,7 @@ using CSCD454_FinalProject.Entitys;
 using CSCD454_FinalProject.UI;
 using CSCD454_FinalProject.Dice;
 using CSCD454_FinalProject.Entitys.Commands;
+using CSCD454_FinalProject.Factories;
 
 namespace CSCD454_FinalProject.Combat
 {
@@ -15,11 +16,13 @@ namespace CSCD454_FinalProject.Combat
     {
         private IList<Entity> playerParty;
         private IList<Entity> monsterParty;
+        private int challengeRating;
 
-        public Encounter(IList<Entity> players, IList<Entity> monsters)
+        public Encounter(IList<Entity> players, IList<Entity> monsters, int cR)
         {
             playerParty = players;
             monsterParty = monsters;
+            challengeRating = cR;
         }
 
         /// <summary>
@@ -52,8 +55,8 @@ namespace CSCD454_FinalProject.Combat
             }
             if (AllDead(monsterParty))
             {
-                //TODO actual loot generation
-                return new Item[] { Items.Weapons.Weapons.longsword };
+                AbstractLootFactory lootFactory = new DefaultLootFactory();
+                return lootFactory.GenerateLoot(challengeRating);
             }
             return new Item[0];
         }
