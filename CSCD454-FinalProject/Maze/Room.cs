@@ -27,17 +27,32 @@ namespace CSCD454_FinalProject.Maze
             this.hasEncounter = encounter;
         }
 
-        public Boolean hasEncounter
+        private Boolean hasEncounter
         {
             get;
-            protected set;
+            set;
         }
+
+        private Boolean _visited = false;
+        private Boolean Visited
+        {
+            get
+            {
+                return _visited;
+            }
+            set
+            {
+                _visited = value;
+            }
+        }
+
 
         public void onEnter(IList<Player> party)
         {
-            if (this.hasEncounter)
+            if (this.hasEncounter && !Visited)
             {
                 //trigger combat
+                Visited = true;
             }
             else
             {
