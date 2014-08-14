@@ -7,6 +7,7 @@ using CSCD454_FinalProject.Items;
 using CSCD454_FinalProject.Items.Weapons;
 using CSCD454_FinalProject.UI;
 using CSCD454_FinalProject.Entitys.Commands;
+using CSCD454_FinalProject.Spells;
 
 namespace CSCD454_FinalProject.Entitys
 {
@@ -16,8 +17,9 @@ namespace CSCD454_FinalProject.Entitys
         protected IList<int> attributes;
         public static readonly int innateAC = 10;
         protected UserInteraction ui;
+        protected Attributes castingStat;
 
-        //protected IList<Spell> spells;
+        protected IList<ISpell> spells;
 
         public Entity()
         {
@@ -26,6 +28,9 @@ namespace CSCD454_FinalProject.Entitys
             Armor = Armors.noArmor;
             inventory = new List<Item>();
             attributes = new int[6];
+            castingStat = Attributes.Int;
+            Mana = ManaMax;
+            spells = new List<ISpell>();
         }
 
         public IList<Item> Inventory
@@ -40,15 +45,26 @@ namespace CSCD454_FinalProject.Entitys
             }
         }
 	
-        public string name
+        public string Name
         {
             get;
             protected set;
+        }
+
+        public void SetName(string name)
+        {
+            Name = name;
         }
         
         public virtual bool AddItem(Item item)
         {
             inventory.Add(item);
+            return true;
+        }
+
+        public virtual bool AddItems(IList<Item> items)
+        {
+            inventory = (IList<Item>)inventory.Concat(items);
             return true;
         }
 
@@ -94,16 +110,53 @@ namespace CSCD454_FinalProject.Entitys
             }
         }
 
+        public virtual int ArcaneSpellFailureChance
+        {
+            get
+            {
+                return Armor.ArcaneSpellFailure + OffHand.ArcaneSpellFailure;
+            }
+        }
+
+        public IList<ISpell> SpellList
+        {
+            get
+            {
+                return spells;
+            }
+        }
+
+        public void AddSpell(ISpell spell)
+        {
+            if(CanLearnSpell(spell))
+                spells.Add(spell);
+        }
+
+        public void AddSpells(IList<ISpell> spells)
+        {
+            foreach(ISpell s in spells)
+            {
+                AddSpell(s);
+            }
+        }
+
+        public virtual bool CanLearnSpell(ISpell spell)
+        {
+            return true;
+        }
+
         public int Mana
         {
             get;
             protected set;
         }
 
-        public int ManaMax
+        public virtual int ManaMax
         {
-            get;
-            protected set;
+            get
+            {
+                return 50 + 25 * (Level - 1);
+            }
         }
 
         public bool AddMana(int amount)
@@ -166,6 +219,14 @@ namespace CSCD454_FinalProject.Entitys
         {
             get;
             protected set;
+        }
+
+        public virtual int CastingLevel
+        {
+            get
+            {
+                return 0;
+            }
         }
 
         public Weapon MainHand
@@ -306,7 +367,7 @@ namespace CSCD454_FinalProject.Entitys
             return HP <= 0;
         }
 
-        public int TouchArmorClass()
+        public virtual int TouchArmorClass()
         {
             return innateAC + (int)Size + Math.Min(Math.Min(Attribute.GetAbilityMod(attributes[(int)Attributes.Dex]), Armor.MaxDexMod), OffHand.MaxDexMod);
         }
@@ -362,6 +423,11 @@ namespace CSCD454_FinalProject.Entitys
         public EntityCommand GetAction()
         {
             return ui.GetAction(this);
+        }
+
+        public virtual void SetUI(UserInteraction ui)
+        {
+            this.ui = ui;
         }
     }
 }

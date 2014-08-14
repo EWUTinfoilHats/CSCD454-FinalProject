@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CSCD454_FinalProject.Dice;
 using CSCD454_FinalProject.Items;
 using System.Collections;
+using CSCD454_FinalProject.Spells.DivineSpells;
 
 namespace CSCD454_FinalProject.Entitys
 {
@@ -23,6 +24,20 @@ namespace CSCD454_FinalProject.Entitys
             this.HP = HPMax;
             this.BaB = BaBStrat.getBaB(Level);
             this.SavingThrows = ThrowStrategy.getThrows(Level);
+            this.weaponProficiencies = new HashSet<string>();
+            this.armorProfinciencies = new HashSet<string>();
+            weaponProficiencies.Add("simple");
+            armorProfinciencies.UnionWith(new string[] { "light", "medium", "shield" });
+            castingStat = Attributes.Wis;
+            AddSpells(new Spells.ISpell[] { new CureWounds(), new InflictWounds() });
+        }
+
+        public override int CastingLevel
+        {
+            get
+            {
+                return Level;
+            }
         }
     }
 }

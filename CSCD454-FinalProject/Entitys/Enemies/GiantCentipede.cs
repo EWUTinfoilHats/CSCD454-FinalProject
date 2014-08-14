@@ -14,7 +14,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
 
         public GiantCentipede()
         {
-            this.name = "Giant Centipede";
+            this.Name = "Giant Centipede";
             this.attributes = new int[] { 9, 15, 12, 10, 10, 2 };
             this.Level = 1;
             this.HPMax = 5;

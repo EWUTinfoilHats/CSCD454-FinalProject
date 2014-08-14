@@ -13,7 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public Zombie()
         {
-            this.name = "Zombie";
+            this.Name = "Zombie";
             this.attributes = new int[] { 17, 10, 10, 10, 10, 10 };
             this.Level = 1;
             this.HPMax = 12;

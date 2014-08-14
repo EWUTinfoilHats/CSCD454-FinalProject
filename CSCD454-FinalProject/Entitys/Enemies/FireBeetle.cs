@@ -12,7 +12,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public FireBeetle()
         {
-            this.name = "Fire Beetle";
+            this.Name = "Fire Beetle";
             this.attributes = new int[] { 10, 11, 11, 10, 10, 7 };
             this.Level = 1;
             this.HPMax = 8;

@@ -13,7 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public SkeletalChampion()
         {
-            this.name = "Skeletal Champion";
+            this.Name = "Skeletal Champion";
             this.attributes = new int[] { 18, 13, 10, 9, 10, 12 };
             this.Level = 2;
             this.HPMax = 17;

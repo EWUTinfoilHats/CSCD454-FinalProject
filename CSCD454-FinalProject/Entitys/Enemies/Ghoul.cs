@@ -13,7 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public Ghoul()
         {
-            this.name = "Ghoul";
+            this.Name = "Ghoul";
             this.attributes = new int[] { 13, 15, 10, 13, 14, 14 };
             this.Level = 1;
             this.HPMax = 13;

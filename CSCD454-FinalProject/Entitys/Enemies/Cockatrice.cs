@@ -13,7 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public Cockatrice()
         {
-            this.name = "Cockatrice";
+            this.Name = "Cockatrice";
             this.attributes = new int[] { 6, 17, 11, 2, 13, 8 };
             this.Level = 3;
             this.HPMax = 27;

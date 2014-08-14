@@ -13,7 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public Stirge()
         {
-            this.name = "Stirge";
+            this.Name = "Stirge";
             this.attributes = new int[] { 3, 19, 10, 1, 12, 6 };
             this.Level = 1;
             this.HPMax = 5;

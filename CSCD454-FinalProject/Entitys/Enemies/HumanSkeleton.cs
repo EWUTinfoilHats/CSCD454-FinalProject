@@ -12,7 +12,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public HumanSkeleton()
         {
-            this.name = "Human Skeleton";
+            this.Name = "Human Skeleton";
             this.attributes = new int[] { 15, 14, 10, 10, 10, 10 };
             this.Level = 1;
             this.HPMax = 8;

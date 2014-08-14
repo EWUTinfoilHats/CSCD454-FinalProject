@@ -13,7 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public Bugbear()
         {
-            this.name = "BugBear";
+            this.Name = "BugBear";
             this.attributes = new int[] { 16, 13, 13, 10, 10, 9 };
             this.Level = 2;
             this.HPMax = 16;

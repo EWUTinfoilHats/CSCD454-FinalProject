@@ -13,7 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
 
         public DireRat()
         {
-            this.name = "Dire Rat";
+            this.Name = "Dire Rat";
             this.attributes = new int[] { 10,17,13,2,13,4 };
             this.Level = 1;
             this.HPMax = 5;

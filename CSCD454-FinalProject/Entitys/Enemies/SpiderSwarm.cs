@@ -13,7 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
 
         public SpiderSwarm()
         {
-            this.name = "Spider Swarm";
+            this.Name = "Spider Swarm";
             this.attributes = new int[] { 10, 17, 10, 10, 10, 2 };
             this.Level = 1;
             this.HPMax = 9;

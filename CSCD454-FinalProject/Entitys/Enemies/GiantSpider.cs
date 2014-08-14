@@ -13,7 +13,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
     {
         public GiantSpider()
         {
-            this.name = "Giant Spider";
+            this.Name = "Giant Spider";
             this.attributes = new int[] { 11, 17, 12, 10, 10, 2 };
             this.Level = 1;
             this.HPMax = 16;

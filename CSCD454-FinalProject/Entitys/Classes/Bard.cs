@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using CSCD454_FinalProject.Dice;
 using CSCD454_FinalProject.Items;
 using System.Collections;
+using CSCD454_FinalProject.Spells;
+using CSCD454_FinalProject.Spells.ArcaneSpells;
+using CSCD454_FinalProject.Spells.DivineSpells;
 
 namespace CSCD454_FinalProject.Entitys
 {
@@ -23,6 +26,32 @@ namespace CSCD454_FinalProject.Entitys
             this.HP = HPMax;
             this.BaB = BaBStrat.getBaB(Level);
             this.SavingThrows = ThrowStrategy.getThrows(Level);
+            this.weaponProficiencies = new HashSet<string>();
+            this.armorProfinciencies = new HashSet<string>();
+            weaponProficiencies.UnionWith(new string[] { "simple", "Longsword", "Rapier", "Sap", "Short Sword", "Shortbow" });
+            armorProfinciencies.UnionWith(new string[] { "light", "shield" });
+            castingStat = Attributes.Cha;
+            AddSpells(new ISpell[] { new AcidSplash(), new BurningHands(), new RayOfFrost(), new CureWounds() });
+        }
+
+        public override int CastingLevel
+        {
+            get
+            {
+                return Level;
+            }
+        }
+
+        public override int ArcaneSpellFailureChance
+        {
+            get
+            {
+                if(!Armor.GetType().Equals("light"))
+                {
+                    return base.ArcaneSpellFailureChance;
+                }
+                return OffHand.ArcaneSpellFailure;
+            }
         }
     }
 }
