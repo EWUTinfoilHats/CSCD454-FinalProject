@@ -27,7 +27,7 @@ namespace CSCD454_FinalProject.Entitys.Enemies
             this.weaponProficiencies.Add(Weapons.unarmedStrike);
         }
 
-        public Monster Clone()
+        public override Monster Clone()
         {
             return (Monster)this.MemberwiseClone();
         }
