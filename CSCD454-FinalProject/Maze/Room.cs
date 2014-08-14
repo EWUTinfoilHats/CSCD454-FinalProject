@@ -14,14 +14,8 @@ namespace CSCD454_FinalProject.Maze
     {
         public Encounter encounter
         {
-            get
-            {
-                return encounter;
-            }
-            protected set
-            {
-                encounter = value;
-            }
+            get;
+            protected set;
         }
 
         public Room(Boolean encounter)
