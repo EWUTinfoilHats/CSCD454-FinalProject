@@ -45,27 +45,27 @@ namespace CSCD454_FinalProject.Maze
 
         public IList<Item> move(String direction)
         {
-            switch (direction.ToLower())
+            switch (direction.ToLower()[0])
             {
-                case "up":
+                case 'u':
                     if (moveUp)
                         row--;
 
                     break;
 
-                case "down":
+                case 'd':
                     if (moveDown)
                         row++;
 
                     break;
 
-                case "left":
+                case 'l':
                     if (moveLeft)
                         col--;
 
                     break;
 
-                case "right":
+                case 'r':
                     if (moveRight)
                         col++;
 

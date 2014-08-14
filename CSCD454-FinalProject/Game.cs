@@ -90,7 +90,7 @@ Wizard");
 
         private void Move()
         {
-            ui.PushString("Please enter a direction you would like to move (up, down, left, right): ");
+            ui.PushString("Please enter a direction you would like to move (u, d, l, r): ");
             IList<Item> rewards = maze.move(ui.GetString());
             if(rewards.Count != 0)
             {
