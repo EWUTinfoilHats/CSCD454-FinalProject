@@ -41,6 +41,11 @@ namespace CSCD454_FinalProject.Combat
 
             combatList = combatList.OrderByDescending((c) => c.Initiative).ToList();
 
+            foreach (var e in playerParty)
+                e.PushUIString(e.Description);
+            foreach (var e in monsterParty)
+                e.PushUIString(e.Description);
+
             while(!AllDead(playerParty) && !AllDead(monsterParty))
             {               
                 Queue<Entity> combatQueue = new Queue<Entity>(combatList);

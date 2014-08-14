@@ -38,7 +38,7 @@ namespace CSCD454_FinalProject.UI
 
         public virtual void DisplayHook()
         {
-            
+            Console.WriteLine();
         }
 
         public virtual void GetTarget(CombatGroup targets)

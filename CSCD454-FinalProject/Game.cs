@@ -39,8 +39,9 @@ Sorcerer
 Wizard");
                 ui.PushString("Please enter the name of the class you would like to add to your party: ");
                 string ans = ui.GetString().Split()[0].Trim();
-                playerParty.Add(charFactory.CreateCharacter(ans, ui));
-                ui.PushStringLine("");
+                Entity player = charFactory.CreateCharacter(ans, ui);
+                playerParty.Add(player);
+                ui.PushStringLine("Added 1 " + player.GetType().Name);
             }
             maze = new MazeTraversal(playerParty);
         }
@@ -89,7 +90,7 @@ Wizard");
 
         private void Move()
         {
-            ui.PushString("Please enter a direction you would like to move (up, down, left, right): ");
+            ui.PushString("Please enter a direction you would like to move (u, d, l, r): ");
             IList<Item> rewards = maze.move(ui.GetString());
             if(rewards.Count != 0)
             {
@@ -101,6 +102,10 @@ Wizard");
         {
             Entity player = ui.GetTarget(playerParty);
             IList<Item> inventory = player.Inventory;
+
+            ui.PushStringLine("Main Hand: " + player.MainHand.Name);
+            ui.PushStringLine("OffHand: " + player.OffHand.Name);
+            ui.PushStringLine("Armor: " + player.Armor.Name);
 
             int i = 1;
             foreach(var item in inventory)
@@ -290,6 +295,7 @@ Wizard");
                 ui.PushStringLine("Please Select a player to give the item to.");
                 Entity target = ui.GetTarget(playerParty);
                 target.AddItem(item);
+                ui.PushStringLine("");
             }
         }
     }

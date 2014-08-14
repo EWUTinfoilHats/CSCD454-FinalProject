@@ -86,7 +86,7 @@ namespace CSCD454_FinalProject.Items
             return this;
         }
 
-        public string Type
+        public virtual string Type
         {
             get;
             private set;

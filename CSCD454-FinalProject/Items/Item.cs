@@ -34,7 +34,7 @@ namespace CSCD454_FinalProject.Items
             return this;
         }
 
-        public int Price
+        public virtual int Price
         {
             get;
             private set;
@@ -47,7 +47,7 @@ namespace CSCD454_FinalProject.Items
             return this;
         }
 
-        public int Weight
+        public virtual int Weight
         {
             get;
             private set;

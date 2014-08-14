@@ -21,21 +21,21 @@ namespace CSCD454_FinalProject.Factories
                 case "barbarian":
                     newChar = new Barbarian(new int[] { 15, 15, 15, 10, 9, 10 });
                     newChar.SetArmor(Armors.chainShirt);
-                    newChar.SetMainHand(Weapons.battleaxe);
+                    newChar.SetMainHand(new MasterworkWeapon(Weapons.battleaxe));
                     newChar.SetName("Bob");
                     break;
 
                 case "bard":
-                    newChar = new Bard(new int[] { 10, 15, 15, 10, 9, 15 });
+                    newChar = new Bard(new int[] { 15, 10, 15, 10, 9, 15 });
                     newChar.SetArmor(Armors.leatherArmor);
-                    newChar.SetMainHand(Weapons.rapier);
+                    newChar.SetMainHand(new MasterworkWeapon(Weapons.rapier));
                     newChar.SetName("Bill");
                     break;
 
                 case "cleric":
                     newChar = new Cleric(new int[] { 15, 10, 15, 15, 9, 10 });
                     newChar.SetArmor(Armors.breastplate);
-                    newChar.SetMainHand(Weapons.heavyMace);
+                    newChar.SetMainHand(new MasterworkWeapon(Weapons.heavyMace));
                     newChar.SetOffHand(Armors.heavyWoodenShield);
                     newChar.SetName("Chad");
                     break;
@@ -43,7 +43,7 @@ namespace CSCD454_FinalProject.Factories
                 case "druid":
                     newChar = new Druid(new int[] { 15, 10, 15, 15, 9, 10 });
                     newChar.SetArmor(Armors.hideArmor);
-                    newChar.SetMainHand(Weapons.club);
+                    newChar.SetMainHand(new MasterworkWeapon(Weapons.club));
                     newChar.SetOffHand(Armors.heavyWoodenShield);
                     newChar.SetName("Dave");
                     break;
@@ -51,57 +51,56 @@ namespace CSCD454_FinalProject.Factories
                 case "fighter":
                     newChar = new Fighter(new int[] { 15, 15, 15, 10, 9, 10 });
                     newChar.SetArmor(Armors.breastplate);
-                    newChar.SetMainHand(Weapons.longsword);
+                    newChar.SetMainHand(new MasterworkWeapon(Weapons.longsword));
                     newChar.SetOffHand(Armors.heavyWoodenShield);
                     newChar.SetName("Frank");
                     break;
 
                 case "monk":
-                    newChar = new Fighter(new int[] { 10, 15, 15, 10, 15, 9 });
-                    newChar.SetMainHand(Weapons.quarterstaff);
+                    newChar = new Monk(new int[] { 15, 10, 15, 10, 15, 9 });
+                    newChar.SetMainHand(new MasterworkWeapon(Weapons.quarterstaff));
                     newChar.SetName("Molly");
                     break;
 
                 case "paladin":
                     newChar = new Paladin(new int[] { 15, 10, 15, 9, 15, 10 });
                     newChar.SetArmor(Armors.breastplate);
-                    newChar.SetMainHand(Weapons.longsword);
+                    newChar.SetMainHand(new MasterworkWeapon(Weapons.longsword));
                     newChar.SetOffHand(Armors.heavyWoodenShield);
                     newChar.SetName("Phil");
                     break;
 
                 case "ranger":
-                    newChar = new Ranger(new int[] { 10, 15, 15, 9, 15, 10 });
+                    newChar = new Ranger(new int[] { 15, 10, 15, 9, 15, 10 });
                     newChar.SetArmor(Armors.leatherArmor);
-                    newChar.SetMainHand(Weapons.longbow);
+                    newChar.SetMainHand(new MasterworkWeapon(Weapons.longbow));
                     newChar.SetName("Randy");
                     break;
 
                 case "rogue":
-                    newChar = new Rogue(new int[] { 10, 15, 15, 15, 9, 10 });
+                    newChar = new Rogue(new int[] { 15, 10, 15, 15, 9, 10 });
                     newChar.SetArmor(Armors.leatherArmor);
-                    newChar.SetMainHand(Weapons.rapier);
-                    newChar.SetOffHand(Weapons.shortSword);
+                    newChar.SetMainHand(new MasterworkWeapon(Weapons.rapier));
                     newChar.SetName("Rudy");
                     break;
 
                 case "sorcerer":
                     newChar = new Sorcerer(new int[] { 10, 15, 15, 10, 9, 15 });
-                    newChar.SetMainHand(Weapons.lightCrossbow);
+                    newChar.SetMainHand(new MasterworkWeapon(Weapons.lightCrossbow));
                     newChar.SetName("Steve");
                     break;
 
                 case "wizard":
                     newChar = new Wizard(new int[] { 10, 15, 15, 15, 9, 10 });
-                    newChar.SetMainHand(Weapons.lightCrossbow);
+                    newChar.SetMainHand(new MasterworkWeapon(Weapons.lightCrossbow));
                     newChar.SetName("Willis");
                     break;
 
                 default:
                     newChar =  new Barbarian(new int[] { 10, 10, 10, 10, 10, 10 });
                     newChar.SetArmor(Armors.chainShirt);
-                    newChar.SetMainHand(Weapons.battleaxe);
-                    newChar.SetName("Bob");
+                    newChar.SetMainHand(new MasterworkWeapon(Weapons.battleaxe));
+                    newChar.SetName("Default");
                     break;
             }
             newChar.SetUI(ui);

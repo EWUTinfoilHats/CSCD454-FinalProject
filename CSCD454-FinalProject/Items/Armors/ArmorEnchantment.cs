@@ -31,7 +31,75 @@ namespace CSCD454_FinalProject.Items
         {
             get
             {
-                return base.ItemName;
+                return enchantedArmor.ItemName;
+            }
+        }
+
+        public override int ArcaneSpellFailure
+        {
+            get
+            {
+                return enchantedArmor.ArcaneSpellFailure;
+            }
+        }
+
+        public override int ArmorClass
+        {
+            get
+            {
+                return enchantedArmor.ArmorClass;
+            }
+        }
+
+        public override int ArmorCheckPenalty
+        {
+            get
+            {
+                return enchantedArmor.ArmorCheckPenalty;
+            }
+        }
+
+        public override string Type
+        {
+            get
+            {
+                return enchantedArmor.Type;
+            }
+        }
+
+        public override string Name
+        {
+            get
+            {
+                return enchantedArmor.Name;
+            }
+        }
+
+        public override int MaxDexMod
+        {
+            get
+            {
+                return enchantedArmor.MaxDexMod;
+            }
+            protected set
+            {
+                base.MaxDexMod = value;
+            }
+        }
+
+        public override int Price
+        {
+            get
+            {
+                return enchantedArmor.Price + 1000;
+            }
+        }
+
+        public override int Weight
+        {
+            get
+            {
+                return enchantedArmor.Weight;
             }
         }
     }

@@ -13,7 +13,7 @@ namespace CSCD454_FinalProject.Entitys
     {
         public Barbarian(int[] abilities)
         {
-            this.HitDie = D10.GetInstance();
+            this.HitDie = D12.GetInstance();
             this.BaBStrat = new BaB10();
             this.ThrowStrategy = new Throw200();
             this.attributes = abilities;

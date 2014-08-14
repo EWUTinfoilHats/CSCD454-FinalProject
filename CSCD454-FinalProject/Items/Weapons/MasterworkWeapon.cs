@@ -17,7 +17,7 @@ namespace CSCD454_FinalProject.Items
         {
             get
             {
-                return 1;
+                return 1 + enchantedWeapon.AttackMod;
             }
         }
 
@@ -25,7 +25,7 @@ namespace CSCD454_FinalProject.Items
         {
             get
             {
-                return "Masterwork " + base.Name;
+                return "Masterwork " + enchantedWeapon.Name;
             }
         }
     }
