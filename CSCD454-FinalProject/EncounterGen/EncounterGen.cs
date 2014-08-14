@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CSCD454_FinalProject.Dice;
 using CSCD454_FinalProject.Entitys;
 using CSCD454_FinalProject.Entitys.Enemies;
+using CSCD454_FinalProject.Combat;
 
 namespace CSCD454_FinalProject.EncounterGeneration
 {
@@ -16,10 +17,16 @@ namespace CSCD454_FinalProject.EncounterGeneration
         private static int[] EnemyNumbers = new int[] { 6,6,6,4,1,6,1,1,12,4,4,1,1,1,1,1,8,6,6,4,4,1,1,1 };//12 represents 2d6 and 8 represents 2d4
         private static string[] Monster = new string[] { "DireRat","FireBeetle","HumanSkeleton","GiantCentipede","SpiderSwarm","HumanZombie","Choker","SkeletalChampion","Ghouls","GiantSpider","Cockatrice","GelatinousCube","RustMonster","Shadow","Wight","Stirge","Darkmantle","Troglodyte","Bugbear","Vargouilles","GrayOoze","Mimic","Ogre"};
         private static D100 percentile = D100.GetInstance();
-        private Factory monsterFactory = new Factory();
+        private MonsterFactory monsterFactory = new MonsterFactory();
         private int roll;
+        private IList<Entity> players;
 
-        public IList<Monster> GenerateEncounter()
+        public EncounterGen(IList<Entity> playerParty)
+        {
+            players = playerParty;
+        }
+
+        public Encounter GenerateEncounter()
         {
             roll = percentile.Roll();
             Monster initial = monsterFactory.createMonster(Monster[rollTable[roll]]);
@@ -31,7 +38,7 @@ namespace CSCD454_FinalProject.EncounterGeneration
             {
                 returnVal.Add(initial.Clone());
             }
-            return returnVal;
+            return new Encounter(players, (IList<Entity>)returnVal);
         }
 
 

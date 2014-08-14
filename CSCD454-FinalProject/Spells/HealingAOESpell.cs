@@ -29,10 +29,11 @@ namespace CSCD454_FinalProject.Spells
             {
                 actualTargets = targets.Monsters;
             }
-            int damage = GetHealing(caster);
+            int healing = GetHealing(caster);
             foreach (Entity e in actualTargets)
             {
-                e.AddHP(damage);
+                targets.Target.AddHP(healing);
+                caster.PushUIString(targets.Target.Name + " healed " + healing + "hp by " + caster.Name);
             }
         }
     }

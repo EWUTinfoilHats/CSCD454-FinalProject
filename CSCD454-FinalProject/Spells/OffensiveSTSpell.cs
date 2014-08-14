@@ -45,10 +45,15 @@ namespace CSCD454_FinalProject.Spells
         public override void CastAt(CombatGroup targets, Entity caster)
         {
             if (Type.DidFizzle(caster))
+            {
+                caster.PushUIString(caster.Name + " fizzled " + Name);
                 return;
+            }
 
             caster.RemoveMana(ManaCost);
-            targets.Target.RemoveHP(GetDamage(caster));
+            int damage = GetDamage(caster);
+            targets.Target.RemoveHP(damage);
+            caster.PushUIString(caster.Name + " did " + damage + " damage to " + targets.Target.Name);
         }
 
         public override string Description

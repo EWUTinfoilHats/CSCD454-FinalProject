@@ -86,7 +86,7 @@
     <Compile Include="Entitys\Enemies\GiantCentipede.cs" />
     <Compile Include="Entitys\Enemies\HumanSkeleton.cs" />
     <Compile Include="Entitys\Enemies\MonsterPrototype.cs" />
-    <Compile Include="Entitys\Factory.cs" />
+    <Compile Include="Entitys\MonsterFactory.cs" />
     <Compile Include="Factories\AbstractCharacterFactory.cs" />
     <Compile Include="Factories\DefaultCharacterFactory.cs" />
     <Compile Include="Items\Armors\ArmorEnchantment.cs" />
