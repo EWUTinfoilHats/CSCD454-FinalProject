@@ -11,10 +11,13 @@ namespace CSCD454_FinalProject.UI
     public interface UserInteraction
     {
         int GetInt();
+        int GetIntInRange(int min, int max);
         string GetString();
+        void PushStringLine(string s);
         void PushString(string s);
         void DisplayHook();
         void GetTarget(CombatGroup targets);
-        EntityCommand GetAction(Entity issuer);
+        Entity GetTarget(IList<Entity> targets);
+        EntityCombatCommand GetAction(Entity issuer);
     }
 }

@@ -18,11 +18,11 @@ namespace CSCD454_FinalProject.Combat
         private IList<Entity> monsterParty;
         private int challengeRating;
 
-        public Encounter(IList<Entity> players, IList<Entity> monsters, int cR)
+        public Encounter(IList<Entity> players, IList<Entity> monsters, int CR)
         {
             playerParty = players;
             monsterParty = monsters;
-            challengeRating = cR;
+            challengeRating = CR;
         }
 
         /// <summary>
@@ -39,15 +39,17 @@ namespace CSCD454_FinalProject.Combat
                 combatList.Add(e);
             }
 
-            combatList = (IList<Entity>)combatList.OrderByDescending((c) => c.Initiative); //why do i need to cast this...
+            combatList = combatList.OrderByDescending((c) => c.Initiative).ToList();
 
             while(!AllDead(playerParty) && !AllDead(monsterParty))
             {               
                 Queue<Entity> combatQueue = new Queue<Entity>(combatList);
-                while(combatQueue.Count != 0)
+                while(combatQueue.Count != 0 && !AllDead(playerParty) && !AllDead(monsterParty))
                 {
                     Entity e = combatQueue.Dequeue();
-                    EntityCommand action = e.GetAction();
+                    if (e.IsDead())
+                        continue;
+                    EntityCombatCommand action = e.GetAction();
                     e.GetTarget(combatGroup);
                     action.Do(combatGroup);
                     e.UIDisplayHook();
@@ -55,6 +57,12 @@ namespace CSCD454_FinalProject.Combat
             }
             if (AllDead(monsterParty))
             {
+                foreach(var p in playerParty)
+                {
+                    int exp = 100 + (challengeRating - 1) * 50;
+                    p.AddExperience(exp);
+                    p.PushUIString(p.Name + " gained " + exp + "xp.");
+                }
                 AbstractLootFactory lootFactory = new DefaultLootFactory();
                 return lootFactory.GenerateLoot(challengeRating);
             }

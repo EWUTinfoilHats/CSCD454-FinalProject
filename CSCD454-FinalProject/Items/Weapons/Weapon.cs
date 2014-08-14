@@ -270,9 +270,6 @@ namespace CSCD454_FinalProject.Items
             }
         }
 
-
-
-
         public bool IsWeapon()
         {
             return true;

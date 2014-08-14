@@ -1,9 +1,9 @@
 ﻿namespace CSCD454_FinalProject.Entitys.Commands
 {
-    public abstract class EntityCommand
+    public abstract class EntityCombatCommand
     {
         protected Entity issuer;
-        public EntityCommand(Entity issuer)
+        public EntityCombatCommand(Entity issuer)
         {
             this.issuer = issuer;
         }

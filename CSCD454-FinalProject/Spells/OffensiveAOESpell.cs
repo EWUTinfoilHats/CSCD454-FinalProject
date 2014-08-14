@@ -35,8 +35,8 @@ namespace CSCD454_FinalProject.Spells
             int damage = GetDamage(caster);
             foreach(Entity e in actualTargets)
             {
-                targets.Target.RemoveHP(damage);
-                caster.PushUIString(caster.Name + " did " + damage + " damage to " + targets.Target.Name);
+                e.RemoveHP(damage);
+                caster.PushUIString(caster.Name + " did " + damage + " damage to " + e.Name);
             }
         }
     }

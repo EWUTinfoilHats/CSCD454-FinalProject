@@ -30,13 +30,13 @@ namespace CSCD454_FinalProject.Maze
         }
 
         private Boolean _visited = false;
-        private Boolean Visited
+        public  Boolean Visited
         {
             get
             {
                 return _visited;
             }
-            set
+            private set
             {
                 _visited = value;
             }

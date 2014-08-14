@@ -31,25 +31,6 @@ namespace CSCD454_FinalProject.Entitys
             set;
         }
 
-        protected int experience
-        {
-            get;
-            set;
-        }
-
-        public void AddExperience(int exp)
-        {
-            this.experience += exp;
-            LevelUp();
-        }
-
-        private void LevelUp()
-        {
-            int expLvl = (int)Math.Floor(experience / 1000.0);
-            if (expLvl > this.Level)
-                incLevel(expLvl);
-        }
-
         protected override int GetAttackBonus(bool offhand, int BaB)
         {
             int mod = 0;
@@ -57,14 +38,14 @@ namespace CSCD454_FinalProject.Entitys
             {
                 if(OffHand.IsWeapon())
                 {
-                    if (!(weaponProficiencies.Contains(OffHand.Type) || weaponProficiencies.Contains(OffHand.Name)))
+                    if (!(weaponProficiencies.Contains(OffHand.Type) || weaponProficiencies.Contains(OffHand.ItemName)))
                     {
                         mod = -4;
                     }
                 }
                 else
                 {
-                    if (!(armorProfinciencies.Contains(OffHand.Type) || armorProfinciencies.Contains(OffHand.Name)))
+                    if (!(armorProfinciencies.Contains(OffHand.Type) || armorProfinciencies.Contains(OffHand.ItemName)))
                     {
                         mod = OffHand.ArmorCheckPenalty;
                     }
@@ -72,7 +53,7 @@ namespace CSCD454_FinalProject.Entitys
             }
             else
             {
-                if(!(weaponProficiencies.Contains(MainHand.Type) || weaponProficiencies.Contains(MainHand.Name)))
+                if(!(weaponProficiencies.Contains(MainHand.Type) || weaponProficiencies.Contains(MainHand.ItemName)))
                 {
                     mod = -4;
                 }
@@ -80,7 +61,7 @@ namespace CSCD454_FinalProject.Entitys
             return base.GetAttackBonus(offhand, BaB) + mod;
         }
 
-        private void incLevel(int expLvl)
+        protected override void incLevel(int expLvl)
         {
             while (this.Level < expLvl)
             {
@@ -90,6 +71,7 @@ namespace CSCD454_FinalProject.Entitys
                 incDef(this.Level);
                 HP = HPMax;
                 Mana = ManaMax;
+                ui.PushStringLine(Name + " leveled up!");
             }
         }
 

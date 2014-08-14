@@ -13,14 +13,19 @@ namespace CSCD454_FinalProject.UI
             int count = players.Count;
             Random rand = new Random();
             int choice = rand.Next(count);
-            while (!players[choice].IsDead())
+            while (players[choice].IsDead())
                 choice = rand.Next(count);
             targets.SetTarget(players[choice]);
         }
 
-        public override EntityCommand GetAction(Entity issuer)
+        public override EntityCombatCommand GetAction(Entity issuer)
         {
             return new AttackCommand(issuer);
+        }
+
+        public override Entity GetTarget(IList<Entity> targets)
+        {
+            return targets[0];
         }
     }
 }

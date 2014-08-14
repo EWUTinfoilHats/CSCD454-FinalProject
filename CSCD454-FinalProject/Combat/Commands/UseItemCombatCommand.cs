@@ -2,10 +2,10 @@
 
 namespace CSCD454_FinalProject.Entitys.Commands
 {
-    public class UseItemCommand : EntityCommand
+    public class UseItemCombatCommand : EntityCombatCommand
     {
         private Consumable item;
-        public UseItemCommand(Entity issuer, Consumable item) : base(issuer)
+        public UseItemCombatCommand(Entity issuer, Consumable item) : base(issuer)
         {
             this.item = item;
         }

@@ -79,7 +79,7 @@ namespace CSCD454_FinalProject
 
             public CombatGroupEnum(CombatGroup g)
             {
-                cur = 0;
+                cur = -1;
                 group = g;
             }
 
@@ -95,15 +95,15 @@ namespace CSCD454_FinalProject
 
             public bool MoveNext()
             {
+                cur++;
                 if (cur >= group.Players.Count + group.Monsters.Count)
                     return false;
-                cur++;
                 return true;
             }
 
             public void Reset()
             {
-                cur = 0;
+                cur = -1;
             }
 
             object System.Collections.IEnumerator.Current

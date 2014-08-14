@@ -26,5 +26,13 @@ namespace CSCD454_FinalProject.Items
         {
             return enchantedArmor.GetBaseArmor();
         }
+
+        public override string ItemName
+        {
+            get
+            {
+                return base.ItemName;
+            }
+        }
     }
 }

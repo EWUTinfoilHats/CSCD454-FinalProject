@@ -19,6 +19,14 @@ namespace CSCD454_FinalProject.Items
             private set;
         }
 
+        public virtual string ItemName
+        {
+            get
+            {
+                return Name;
+            }
+        }
+
         public Item SetName(string name)
         {
             if (Name == "")
