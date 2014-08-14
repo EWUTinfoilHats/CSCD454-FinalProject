@@ -70,7 +70,7 @@ namespace CSCD454_FinalProject.Entitys
                 case "spiderswarm":
                     return new SpiderSwarm();
 
-                case "strige":
+                case "stirge":
                     return new Stirge();
 
                 case "troglodyte":

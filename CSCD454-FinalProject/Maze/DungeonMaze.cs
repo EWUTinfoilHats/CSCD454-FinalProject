@@ -74,8 +74,12 @@ namespace CSCD454_FinalProject.Maze
             maze = new Room[rows, cols];
         }
 
+        public bool RoomVisited(int row, int col)
+        {
+            return maze[row, col].Visited;
+        }
 //Cheat flags=====================================
-        private Boolean _spawn = false;
+        private Boolean _spawn = true;
         public Boolean spawn
         {
             get

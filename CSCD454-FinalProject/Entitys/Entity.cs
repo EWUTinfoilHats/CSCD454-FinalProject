@@ -29,6 +29,7 @@ namespace CSCD454_FinalProject.Entitys
             inventory = new List<Item>();
             attributes = new int[6];
             castingStat = Attributes.Int;
+            Level = 1;
             Mana = ManaMax;
             spells = new List<ISpell>();
         }
@@ -78,7 +79,10 @@ namespace CSCD454_FinalProject.Entitys
 
         public virtual bool AddItems(IList<Item> items)
         {
-            inventory = (IList<Item>)inventory.Concat(items);
+            foreach(var item in items)
+            {
+                inventory.Add(item);
+            }
             return true;
         }
 
@@ -257,7 +261,8 @@ namespace CSCD454_FinalProject.Entitys
         public IList<Wieldable> SetMainHand(Weapon newWep)
         {
             Weapon oldMH = MainHand;
-            IList<Wieldable> returnVal = new Wieldable[] { oldMH };
+            IList<Wieldable> returnVal = new List<Wieldable>();
+            returnVal.Add(oldMH);
             if(newWep == null)
             {
                 newWep = Weapons.emptyHand;
@@ -318,7 +323,8 @@ namespace CSCD454_FinalProject.Entitys
 
             //Offhand
             //TODO support for TWF feats
-            AttackHelper(target, BaB[0], OffHand, true);
+            if(OffHand.IsWeapon() && OffHand != Weapons.emptyHand)
+                AttackHelper(target, BaB[0], OffHand, true);
 
         }
 
@@ -329,7 +335,7 @@ namespace CSCD454_FinalProject.Entitys
             int damage = 0;
             if (attack == 1)//instant miss
             {
-                ui.PushString(Name + " missed " + target.Name);
+                ui.PushStringLine(Name + " missed " + target.Name);
                 return;
             }
             else if (attack == 20)//instant hit + threat
@@ -339,13 +345,13 @@ namespace CSCD454_FinalProject.Entitys
                 {
                     damage = weapon.GetDamageRoll(attributes[(int)Attributes.Str], offhand);
                     target.RemoveHP(damage);
-                    ui.PushString(Name + " hit " + target.Name + " for " + damage + " hp.");
+                    ui.PushStringLine(Name + " hit " + target.Name + " for " + damage + " hp.");
                 }
                 else //crit
                 {
                     damage = weapon.GetCriticalDamageRoll(attributes[(int)Attributes.Str], offhand);
                     target.RemoveHP(damage);
-                    ui.PushString(Name + " crit " + target.Name + " for " + damage + " hp.");
+                    ui.PushStringLine(Name + " crit " + target.Name + " for " + damage + " hp.");
                 }
             }
             else
@@ -354,7 +360,7 @@ namespace CSCD454_FinalProject.Entitys
 
                 if (attack < target.ArmorClass)//miss
                 {
-                    ui.PushString(Name + " missed " + target.Name);
+                    ui.PushStringLine(Name + " missed " + target.Name);
                     return;
                 }
                 if (weapon.IsInThreatRange(attack))//attack is critical threat
@@ -364,20 +370,20 @@ namespace CSCD454_FinalProject.Entitys
                     {
                         damage = weapon.GetDamageRoll(attributes[(int)Attributes.Str], offhand);
                         target.RemoveHP(damage);
-                        ui.PushString(Name + " hit " + target.Name + " for " + damage + " hp.");
+                        ui.PushStringLine(Name + " hit " + target.Name + " for " + damage + " hp.");
                     }
                     else //crit
                     {
                         damage = weapon.GetCriticalDamageRoll(attributes[(int)Attributes.Str], offhand);
                         target.RemoveHP(damage);
-                        ui.PushString(Name + " crit " + target.Name + " for " + damage + " hp.");
+                        ui.PushStringLine(Name + " crit " + target.Name + " for " + damage + " hp.");
                     }
                 }
                 else
                 {
                     damage = weapon.GetDamageRoll(attributes[(int)Attributes.Str], offhand);
                     target.RemoveHP(damage);
-                    ui.PushString(Name + " hit " + target.Name + " for " + damage + " hp.");
+                    ui.PushStringLine(Name + " hit " + target.Name + " for " + damage + " hp.");
                 }
             }
         }
@@ -448,7 +454,7 @@ namespace CSCD454_FinalProject.Entitys
     
         public void PushUIString(string msg)
         {
-            ui.PushString(msg);
+            ui.PushStringLine(msg);
         }
 
         public EntityCommand GetAction()
@@ -467,6 +473,30 @@ namespace CSCD454_FinalProject.Entitys
             {
                 return Name + " " + HP + "/" + HPMax + "hp\t" + Mana + "/" + ManaMax + " mana.";
             }
+        }
+
+        protected int experience
+        {
+            get;
+            set;
+        }
+
+        public virtual void AddExperience(int exp)
+        {
+            this.experience += exp;
+            LevelUp();
+        }
+
+        protected virtual void LevelUp()
+        {
+            int expLvl = (int)Math.Floor(experience / 1000.0);
+            if (expLvl > this.Level)
+                incLevel(expLvl);
+        }
+
+        protected virtual void incLevel(int expLvl)
+        {
+
         }
     }
 }

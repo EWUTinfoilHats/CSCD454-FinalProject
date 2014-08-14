@@ -14,7 +14,7 @@ namespace CSCD454_FinalProject.Spells.ArcaneSpells
             maxLevel = 3;
             IList<Die> damage = new List<Die>();
             for (int i = 0; i < 4; i++)
-                damage.Add(D4.GetInstance());
+                damage.Add(D6.GetInstance());
             DamageDice = damage;
 
         }

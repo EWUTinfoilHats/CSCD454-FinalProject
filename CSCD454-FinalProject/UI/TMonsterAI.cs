@@ -13,7 +13,7 @@ namespace CSCD454_FinalProject.UI
             int count = players.Count;
             Random rand = new Random();
             int choice = rand.Next(count);
-            while (!players[choice].IsDead())
+            while (players[choice].IsDead())
                 choice = rand.Next(count);
             targets.SetTarget(players[choice]);
         }

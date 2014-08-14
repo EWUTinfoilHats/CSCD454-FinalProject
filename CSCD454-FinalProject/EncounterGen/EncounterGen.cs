@@ -15,7 +15,7 @@ namespace CSCD454_FinalProject.EncounterGeneration
         private static int[] rollTable = new int[] { 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 5, 5, 5, 5, 5, 5, 6, 6, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 11, 11, 12, 12, 12, 12, 13, 13, 13, 13, 14, 14, 14, 14, 15, 15, 16, 16, 16, 16, 16, 16, 17, 17, 17, 17, 17, 17, 18, 18, 18, 18, 19, 19, 19, 19, 20, 20, 21, 21, 22, 22, 23, 23, 23, 23 };
         private static int[] ChallengeRating = new int[] { 1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4 };
         private static int[] EnemyNumbers = new int[] { 6, 6, 6, 4, 1, 6, 1, 1, 12, 4, 4, 1, 1, 1, 1, 1, 8, 6, 6, 4, 4, 1, 1, 1 };//12 represents 2d6 and 8 represents 2d4
-        private static List<string> Monster = new List<string> { "DireRat", "FireBeetle", "HumanSkeleton", "GiantCentipede", "SpiderSwarm", "HumanZombie", "Choker", "SkeletalChampion", "Ghouls", "GiantSpider", "Cockatrice", "GelatinousCube", "RustMonster", "Shadow", "Wight", "Stirge", "Darkmantle", "Troglodyte", "Bugbear", "Vargouilles", "GrayOoze", "Mimic", "Ogre" };
+        private static List<string> Monster = new List<string> { "DireRat", "FireBeetle", "HumanSkeleton", "GiantCentipede", "SpiderSwarm", "HumanZombie", "Choker", "SkeletalChampion","Goblin", "Ghoul", "GiantSpider", "Cockatrice", "GelatinousCube", "RustMonster", "Shadow", "Wight", "Stirge", "Darkmantle", "Troglodyte", "Bugbear", "Vargouille", "GrayOoze", "Mimic", "Ogre" };
         private static D100 percentile = D100.GetInstance();
         private MonsterFactory monsterFactory = new MonsterFactory();
         private int roll;
@@ -28,17 +28,18 @@ namespace CSCD454_FinalProject.EncounterGeneration
 
         public Encounter GenerateEncounter()
         {
-            roll = percentile.Roll();
+            roll = percentile.Roll() - 1;
             Monster initial = monsterFactory.createMonster(Monster[rollTable[roll]]);
 
-            IList<Monster> returnVal = new List<Monster>();
+            IList<Entity> returnVal = new List<Entity>();
             returnVal.Add(initial);
 
-            for (int i = 0; i < numberHelper(EnemyNumbers[rollTable[roll]]) - 1; i++)
+            int max = numberHelper(EnemyNumbers[rollTable[roll]]) - 1;
+            for (int i = 0; i < max; i++)
             {
                 returnVal.Add(initial.Clone());
             }
-            return new Encounter(players, (IList<Entity>)returnVal, ChallengeRating[rollTable[roll]]);
+            return new Encounter(players, returnVal, ChallengeRating[rollTable[roll]]);
         }
 
         private int numberHelper(int n) //All "MAGIC" numbers represent number of potential monsters in encounter

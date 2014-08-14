@@ -31,25 +31,6 @@ namespace CSCD454_FinalProject.Entitys
             set;
         }
 
-        protected int experience
-        {
-            get;
-            set;
-        }
-
-        public void AddExperience(int exp)
-        {
-            this.experience += exp;
-            LevelUp();
-        }
-
-        private void LevelUp()
-        {
-            int expLvl = (int)Math.Floor(experience / 1000.0);
-            if (expLvl > this.Level)
-                incLevel(expLvl);
-        }
-
         protected override int GetAttackBonus(bool offhand, int BaB)
         {
             int mod = 0;
@@ -80,7 +61,7 @@ namespace CSCD454_FinalProject.Entitys
             return base.GetAttackBonus(offhand, BaB) + mod;
         }
 
-        private void incLevel(int expLvl)
+        protected override void incLevel(int expLvl)
         {
             while (this.Level < expLvl)
             {
@@ -90,6 +71,7 @@ namespace CSCD454_FinalProject.Entitys
                 incDef(this.Level);
                 HP = HPMax;
                 Mana = ManaMax;
+                ui.PushStringLine(Name + " leveled up!");
             }
         }
 

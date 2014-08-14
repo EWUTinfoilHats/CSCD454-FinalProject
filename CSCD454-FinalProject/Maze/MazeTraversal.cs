@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CSCD454_FinalProject.Entitys;
 using CSCD454_FinalProject.Items;
+using CSCD454_FinalProject.UI;
 
 namespace CSCD454_FinalProject.Maze
 {
@@ -37,19 +38,24 @@ namespace CSCD454_FinalProject.Maze
             return new int[2] { row, col};
         }
 
+        public bool AtEnd()
+        {
+            return row == dungeon.rows - 1 && col == dungeon.cols - 1;
+        }
+
         public IList<Item> move(String direction)
         {
             switch (direction.ToLower())
             {
                 case "up":
                     if (moveUp)
-                        row++;
+                        row--;
 
                     break;
 
                 case "down":
                     if (moveDown)
-                        row--;
+                        row++;
 
                     break;
 
@@ -97,6 +103,34 @@ namespace CSCD454_FinalProject.Maze
 
             if (col == dungeon.cols - 1)
                 moveRight = false;
+        }
+
+        /// <summary>
+        /// This is a bad method that breaks all sorts of rules
+        /// </summary>
+        /// <param name="ui"></param>
+        public void DisplayMaze(UserInteraction ui)
+        {
+            for (int y = 0; y < dungeon.rows; y++)
+            {
+                StringBuilder line = new StringBuilder();
+                for (int x = 0; x < dungeon.cols; x++)
+                {
+                    if (y == row && x == col)
+                    {
+                        line.Append('P');
+                    }
+                    else if (dungeon.RoomVisited(y, x))
+                    {
+                        line.Append('O');
+                    }
+                    else
+                    {
+                        line.Append('x');
+                    }
+                }
+                ui.PushStringLine(line.ToString());
+            }
         }
     }
 }

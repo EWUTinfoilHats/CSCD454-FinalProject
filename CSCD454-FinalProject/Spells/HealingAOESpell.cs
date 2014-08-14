@@ -32,8 +32,8 @@ namespace CSCD454_FinalProject.Spells
             int healing = GetHealing(caster);
             foreach (Entity e in actualTargets)
             {
-                targets.Target.AddHP(healing);
-                caster.PushUIString(targets.Target.Name + " healed " + healing + "hp by " + caster.Name);
+                e.AddHP(healing);
+                caster.PushUIString(e.Name + " healed " + healing + "hp by " + caster.Name);
             }
         }
     }

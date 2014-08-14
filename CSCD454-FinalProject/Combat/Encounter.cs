@@ -18,11 +18,11 @@ namespace CSCD454_FinalProject.Combat
         private IList<Entity> monsterParty;
         private int challengeRating;
 
-        public Encounter(IList<Entity> players, IList<Entity> monsters, int cR)
+        public Encounter(IList<Entity> players, IList<Entity> monsters, int CR)
         {
             playerParty = players;
             monsterParty = monsters;
-            challengeRating = cR;
+            challengeRating = CR;
         }
 
         /// <summary>
@@ -39,14 +39,16 @@ namespace CSCD454_FinalProject.Combat
                 combatList.Add(e);
             }
 
-            combatList = (IList<Entity>)combatList.OrderByDescending((c) => c.Initiative); //why do i need to cast this...
+            combatList = combatList.OrderByDescending((c) => c.Initiative).ToList();
 
             while(!AllDead(playerParty) && !AllDead(monsterParty))
             {               
                 Queue<Entity> combatQueue = new Queue<Entity>(combatList);
-                while(combatQueue.Count != 0)
+                while(combatQueue.Count != 0 && !AllDead(playerParty) && !AllDead(monsterParty))
                 {
                     Entity e = combatQueue.Dequeue();
+                    if (e.IsDead())
+                        continue;
                     EntityCommand action = e.GetAction();
                     e.GetTarget(combatGroup);
                     action.Do(combatGroup);
@@ -55,6 +57,10 @@ namespace CSCD454_FinalProject.Combat
             }
             if (AllDead(monsterParty))
             {
+                foreach(var p in playerParty)
+                {
+                    p.AddExperience(100 + (challengeRating - 1) * 50);
+                }
                 AbstractLootFactory lootFactory = new DefaultLootFactory();
                 return lootFactory.GenerateLoot(challengeRating);
             }

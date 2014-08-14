@@ -26,9 +26,14 @@ namespace CSCD454_FinalProject.UI
             return Console.ReadLine();
         }
 
-        public virtual void PushString(string s)
+        public virtual void PushStringLine(string s)
         {
             Console.WriteLine(s);
+        }
+
+        public virtual void PushString(string s)
+        {
+            Console.Write(s);
         }
 
         public virtual void DisplayHook()
@@ -51,17 +56,18 @@ namespace CSCD454_FinalProject.UI
                 Console.WriteLine(i++ + ": " + e.Description);
             }
             Console.Write("Please enter the number corresponsing to your target: ");
-            int selection = GetIntInRange(1, i-1);
+            int selection = GetIntInRange(1, i-1) - 1;
             while (targets[selection].IsDead())
             {
                 Console.Write("Please ensure your target is alive. ");
-                selection = GetIntInRange(1, i-1);
+                selection = GetIntInRange(1, i-1) - 1;
             }
             targets.SetTarget(targets[selection]);
         }
 
         public virtual EntityCommand GetAction(Entity issuer)
         {
+            Console.WriteLine(issuer.Name + ":");
             Console.WriteLine("1: Attack");
             Console.WriteLine("2: Cast Spell");
             Console.WriteLine("3: Consumables");
@@ -83,7 +89,7 @@ namespace CSCD454_FinalProject.UI
                     int choice = GetIntInRange(0, i - 1);
                     if (choice == 0)
                         return GetAction(issuer);
-                    return new CastSpellCommand(issuer, issuer.SpellList[choice]);
+                    return new CastSpellCommand(issuer, issuer.SpellList[choice - 1]);
 
                 case 3:
                     i = 1;
@@ -96,7 +102,7 @@ namespace CSCD454_FinalProject.UI
                     choice = GetIntInRange(0, i - 1);
                     if (choice == 0)
                         return GetAction(issuer);
-                    return new UseItemCommand(issuer, issuer.Consumables[choice]);
+                    return new UseItemCommand(issuer, issuer.Consumables[choice - 1]);
 
                 default:
                     return new AttackCommand(issuer);
