@@ -66,5 +66,41 @@ namespace CSCD454_FinalProject.Items
                 return enchantedArmor.Type;
             }
         }
+
+        public override string Name
+        {
+            get
+            {
+                return enchantedArmor.Name;
+            }
+        }
+
+        public override int MaxDexMod
+        {
+            get
+            {
+                return enchantedArmor.MaxDexMod;
+            }
+            protected set
+            {
+                base.MaxDexMod = value;
+            }
+        }
+
+        public override int Price
+        {
+            get
+            {
+                return enchantedArmor.Price + 1000;
+            }
+        }
+
+        public override int Weight
+        {
+            get
+            {
+                return enchantedArmor.Weight;
+            }
+        }
     }
 }

@@ -98,5 +98,21 @@ namespace CSCD454_FinalProject.Items
                 return enchantedWeapon.Type;
             }
         }
+
+        public override int Price
+        {
+            get
+            {
+                return enchantedWeapon.Price + 1000;
+            }
+        }
+
+        public override int Weight
+        {
+            get
+            {
+                return enchantedWeapon.Weight;
+            }
+        }
     }
 }
