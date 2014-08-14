@@ -12,9 +12,6 @@ namespace CSCD454_FinalProject.Entitys
     {
         protected ISet<Weapon> weaponProficiencies;
 
-        public abstract Monster Clone()
-        {
-            throw new NotImplementedException();
-        }
+        public abstract Monster Clone();
     }
 }
