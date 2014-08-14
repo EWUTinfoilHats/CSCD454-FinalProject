@@ -107,6 +107,14 @@ namespace CSCD454_FinalProject.Entitys
             }
         }
 
+        public virtual int ArcaneSpellFailureChance
+        {
+            get
+            {
+                return Armor.ArcaneSpellFailure + OffHand.ArcaneSpellFailure;
+            }
+        }
+
         public int Mana
         {
             get;
@@ -179,6 +187,14 @@ namespace CSCD454_FinalProject.Entitys
         {
             get;
             protected set;
+        }
+
+        public virtual int CastingLevel
+        {
+            get
+            {
+                return 0;
+            }
         }
 
         public Weapon MainHand

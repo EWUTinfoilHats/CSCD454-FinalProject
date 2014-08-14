@@ -3,6 +3,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CSCD454_FinalProject.Dice;
 using CSCD454_FinalProject.Items.Weapons;
 using CSCD454_FinalProject.Items;
+using CSCD454_FinalProject.Spells;
+using CSCD454_FinalProject.Entitys;
 
 namespace Tests
 {
@@ -73,6 +75,47 @@ namespace Tests
                 }
             }
             Assert.IsFalse(failed, "Weapon crit outside of range");
+        }
+
+        [TestMethod]
+        public void TestSpells()
+        {
+            TestSpell test = new TestSpell();
+            Entity caster = new Wizard(new int[] { 10, 10, 10, 10, 10, 10 });
+            caster.SetArmor(Armors.halfPlate);
+            caster.SetOffHand(Armors.towerShield);
+            ArcaneSpell testArcane = new ArcaneSpell();
+            DivineSpell testDivine = new DivineSpell();
+            bool fizzled = false;
+            for(int i = 0; i < 100; i++)
+            {
+                if(testArcane.DidFizzle(caster))
+                {
+                    fizzled = true;
+                    break;
+                }
+            }
+            Assert.IsTrue(fizzled, "Arcane spells should fizzle");
+
+            fizzled = false;
+            for (int i = 0; i < 100; i++)
+            {
+                if (testDivine.DidFizzle(caster))
+                {
+                    fizzled = true;
+                    break;
+                }
+            }
+            Assert.IsFalse(fizzled, "Divine spells should not fizzle");
+        }
+    }
+
+    class TestSpell : OffensiveSTSpell
+    {
+        public TestSpell() : base("Test Spell", 0, 1, new ArcaneSpell())
+        {
+            DamageDice = new Die[] { D6.GetInstance() };
+            DamageBonus = 1;
         }
     }
 }

@@ -28,5 +28,13 @@ namespace CSCD454_FinalProject.Entitys
             armorProfinciencies.UnionWith(new string[] { "Hide Armor", "Padded Armor", "Leather Armor" });
             castingStat = Attributes.Wis;
         }
+
+        public override int CastingLevel
+        {
+            get
+            {
+                return Level;
+            }
+        }
     }
 }

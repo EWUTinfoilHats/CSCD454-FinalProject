@@ -28,5 +28,13 @@ namespace CSCD454_FinalProject.Entitys
             weaponProficiencies.Add("simple");
             castingStat = Attributes.Cha;
         }
+
+        public override int CastingLevel
+        {
+            get
+            {
+                return Level;
+            }
+        }
     }
 }

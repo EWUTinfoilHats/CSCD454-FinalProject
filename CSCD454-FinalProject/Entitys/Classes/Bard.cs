@@ -29,5 +29,25 @@ namespace CSCD454_FinalProject.Entitys
             armorProfinciencies.UnionWith(new string[] { "light", "shield" });
             castingStat = Attributes.Cha;
         }
+
+        public override int CastingLevel
+        {
+            get
+            {
+                return Level;
+            }
+        }
+
+        public override int ArcaneSpellFailureChance
+        {
+            get
+            {
+                if(!Armor.GetType().Equals("light"))
+                {
+                    return base.ArcaneSpellFailureChance;
+                }
+                return OffHand.ArcaneSpellFailure;
+            }
+        }
     }
 }

@@ -27,5 +27,13 @@ namespace CSCD454_FinalProject.Entitys
             this.armorProfinciencies = new HashSet<string>();
             weaponProficiencies.UnionWith(new string[] { "Club", "Dagger", "Heavy Crossbow", "Light Crossbow", "Quarterstaff" });
         }
+
+        public override int CastingLevel
+        {
+            get
+            {
+                return Level;
+            }
+        }
     }
 }

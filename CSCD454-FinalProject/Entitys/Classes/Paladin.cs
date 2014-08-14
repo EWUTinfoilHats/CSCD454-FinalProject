@@ -28,5 +28,13 @@ namespace CSCD454_FinalProject.Entitys
             armorProfinciencies.UnionWith(new string[] { "light", "medium", "heavy", "shield" });
             castingStat = Attributes.Wis;
         }
+
+        public override int CastingLevel
+        {
+            get
+            {
+                return Math.Max(0, Level - 3);
+            }
+        }
     }
 }
