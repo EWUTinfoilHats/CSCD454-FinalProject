@@ -143,6 +143,7 @@
     <Compile Include="Entitys\Classes\Rogue.cs" />
     <Compile Include="Entitys\Saves\SavingThrows.cs" />
     <Compile Include="Maze\DungeonMaze.cs" />
+    <Compile Include="Maze\MazeTraversal.cs" />
     <Compile Include="Maze\Room.cs" />
     <Compile Include="Size.cs" />
     <Compile Include="Entitys\Classes\Sorcerer.cs" />

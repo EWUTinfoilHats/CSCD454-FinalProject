@@ -20,7 +20,7 @@ namespace CSCD454_FinalProject.Maze
 
         public int cols { get; protected set; }
 
-        protected void generate()
+        public void generate()
         {
             makeMaze();
             fillMaze();
