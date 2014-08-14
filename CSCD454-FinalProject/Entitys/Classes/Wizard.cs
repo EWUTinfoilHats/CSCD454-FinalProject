@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CSCD454_FinalProject.Dice;
 using CSCD454_FinalProject.Items;
 using System.Collections;
+using CSCD454_FinalProject.Spells.ArcaneSpells;
 
 namespace CSCD454_FinalProject.Entitys
 {
@@ -26,6 +27,15 @@ namespace CSCD454_FinalProject.Entitys
             this.weaponProficiencies = new HashSet<string>();
             this.armorProfinciencies = new HashSet<string>();
             weaponProficiencies.UnionWith(new string[] { "Club", "Dagger", "Heavy Crossbow", "Light Crossbow", "Quarterstaff" });
+            AddSpells(new Spells.ISpell[] { new AcidSplash(), new BurningHands(), new Fireball(), new MagicMissle(), new RayOfFrost(), new ScorchingRay() });
+        }
+
+        public override int CastingLevel
+        {
+            get
+            {
+                return Level;
+            }
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CSCD454_FinalProject.Dice;
 using CSCD454_FinalProject.Items;
+using CSCD454_FinalProject.Spells.DivineSpells;
 
 namespace CSCD454_FinalProject.Entitys
 {
@@ -27,6 +28,15 @@ namespace CSCD454_FinalProject.Entitys
             weaponProficiencies.UnionWith(new string[] { "Club", "Dagger", "Dart", "Quarterstaff", "Scimitar", "Scythe", "Sickle", "Shortspear", "Sling", "Spear" });
             armorProfinciencies.UnionWith(new string[] { "Hide Armor", "Padded Armor", "Leather Armor" });
             castingStat = Attributes.Wis;
+            AddSpells(new Spells.ISpell[] { new CureWounds(), new InflictWounds() });
+        }
+
+        public override int CastingLevel
+        {
+            get
+            {
+                return Level;
+            }
         }
     }
 }

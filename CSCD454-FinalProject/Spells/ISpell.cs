@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CSCD454_FinalProject.Entitys;
+using CSCD454_FinalProject.Dice;
 
 namespace CSCD454_FinalProject.Spells
 {
-    public interface Spell
+    public interface ISpell
     {
         int Duration
         {
@@ -29,6 +30,16 @@ namespace CSCD454_FinalProject.Spells
             get;
         }
 
-        void CastAt(CombatGroup targets);
+        SpellType Type
+        {
+            get;
+        }
+
+        void CastAt(CombatGroup targets, Entity Caster);
+
+        string Description
+        {
+            get;
+        }
     }
 }

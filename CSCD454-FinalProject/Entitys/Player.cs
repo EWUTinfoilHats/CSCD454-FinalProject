@@ -88,6 +88,8 @@ namespace CSCD454_FinalProject.Entitys
                 incHP();
                 incBaB(this.Level);
                 incDef(this.Level);
+                HP = HPMax;
+                Mana = ManaMax;
             }
         }
 

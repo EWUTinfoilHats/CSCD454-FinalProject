@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CSCD454_FinalProject.Dice;
 using CSCD454_FinalProject.Items;
 using System.Collections;
+using CSCD454_FinalProject.Spells.ArcaneSpells;
 
 namespace CSCD454_FinalProject.Entitys
 {
@@ -27,6 +28,23 @@ namespace CSCD454_FinalProject.Entitys
             this.armorProfinciencies = new HashSet<string>();
             weaponProficiencies.Add("simple");
             castingStat = Attributes.Cha;
+            AddSpells(new Spells.ISpell[] { new AcidSplash(), new BurningHands(), new Fireball(), new MagicMissle(), new RayOfFrost(), new ScorchingRay() });
+        }
+
+        public override int CastingLevel
+        {
+            get
+            {
+                return Level;
+            }
+        }
+
+        public override int ManaMax
+        {
+            get
+            {
+                return 100 + 50 * (Level - 1);
+            }
         }
     }
 }

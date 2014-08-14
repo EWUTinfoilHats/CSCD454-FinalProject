@@ -54,6 +54,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Combat\CombatGroup.cs" />
+    <Compile Include="Combat\Commands\CastSpellCommand.cs" />
     <Compile Include="Combat\Encounter.cs" />
     <Compile Include="Combat\Commands\AttackCommand.cs" />
     <Compile Include="Combat\Commands\EntityCommand.cs" />
@@ -123,7 +124,22 @@
     <Compile Include="Entitys\Saves\SavingThrows.cs" />
     <Compile Include="Size.cs" />
     <Compile Include="Entitys\Classes\Sorcerer.cs" />
-    <Compile Include="Spell.cs" />
+    <Compile Include="Spells\AbstractSpell.cs" />
+    <Compile Include="Spells\ArcaneSpell.cs" />
+    <Compile Include="Spells\ArcaneSpells\AcidSplash.cs" />
+    <Compile Include="Spells\ArcaneSpells\BurningHands.cs" />
+    <Compile Include="Spells\ArcaneSpells\Fireball.cs" />
+    <Compile Include="Spells\ArcaneSpells\MagicMissle.cs" />
+    <Compile Include="Spells\ArcaneSpells\RayOfFrost.cs" />
+    <Compile Include="Spells\ArcaneSpells\ScorchingRay.cs" />
+    <Compile Include="Spells\DivineSpells\CureWounds.cs" />
+    <Compile Include="Spells\DivineSpells\InflictWounds.cs" />
+    <Compile Include="Spells\HealingSTSpell.cs" />
+    <Compile Include="Spells\DivineSpell.cs" />
+    <Compile Include="Spells\HealingAOESpell.cs" />
+    <Compile Include="Spells\OffensiveAOESpell.cs" />
+    <Compile Include="Spells\OffensiveSTSpell.cs" />
+    <Compile Include="Spells\ISpell.cs" />
     <Compile Include="Entitys\Saves\Throw002.cs" />
     <Compile Include="Entitys\Saves\Throw020.cs" />
     <Compile Include="Entitys\Saves\Throw022.cs" />
@@ -137,6 +153,7 @@
     <Compile Include="Items\Weapons\Weapons.cs" />
     <Compile Include="Items\Wieldable.cs" />
     <Compile Include="Entitys\Classes\Wizard.cs" />
+    <Compile Include="Spells\SpellType.cs" />
     <Compile Include="UI\GMonsterAI.cs" />
     <Compile Include="UI\GUserInteraction.cs" />
     <Compile Include="UI\MonsterAI.cs" />
