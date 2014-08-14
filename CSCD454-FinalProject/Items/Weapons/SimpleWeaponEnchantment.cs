@@ -19,7 +19,7 @@ namespace CSCD454_FinalProject.Items
         {
             get
             {
-                return bonus;
+                return bonus + enchantedWeapon.AttackMod;
             }
         }
 
@@ -27,7 +27,7 @@ namespace CSCD454_FinalProject.Items
         {
             get
             {
-                return bonus;
+                return bonus + enchantedWeapon.DamageMod;
             }
         }
 

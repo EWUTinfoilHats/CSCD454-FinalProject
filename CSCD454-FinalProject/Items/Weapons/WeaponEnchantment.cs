@@ -31,7 +31,71 @@ namespace CSCD454_FinalProject.Items
         {
             get
             {
-                return base.ItemName;
+                return enchantedWeapon.ItemName;
+            }
+        }
+
+        public override int AttackMod
+        {
+            get
+            {
+                return enchantedWeapon.AttackMod;
+            }
+        }
+
+        public override int CriticalMultiplier
+        {
+            get
+            {
+                return enchantedWeapon.CriticalMultiplier;
+            }
+        }
+
+        public override IList<Dice.Die> DamageDice
+        {
+            get
+            {
+                return enchantedWeapon.DamageDice;
+            }
+        }
+
+        public override int DamageMod
+        {
+            get
+            {
+                return enchantedWeapon.DamageMod;
+            }
+        }
+
+        public override string Name
+        {
+            get
+            {
+                return enchantedWeapon.Name;
+            }
+        }
+
+        public override int ThreatRangeMax
+        {
+            get
+            {
+                return enchantedWeapon.ThreatRangeMax;
+            }
+        }
+
+        public override int ThreatRangeMin
+        {
+            get
+            {
+                return enchantedWeapon.ThreatRangeMin;
+            }
+        }
+
+        public override string Type
+        {
+            get
+            {
+                return enchantedWeapon.Type;
             }
         }
     }

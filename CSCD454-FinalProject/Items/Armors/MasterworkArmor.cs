@@ -17,7 +17,7 @@ namespace CSCD454_FinalProject.Items
         {
             get
             {
-                return Math.Min(base.ArmorCheckPenalty + 1, 0);
+                return Math.Min(enchantedArmor.ArmorCheckPenalty + 1, 0);
             }
         }
 

@@ -19,7 +19,7 @@ namespace CSCD454_FinalProject.Items
         {
             get
             {
-                return base.ArmorClass + bonus;
+                return enchantedArmor.ArmorClass + bonus;
             }
         }
 
@@ -27,7 +27,7 @@ namespace CSCD454_FinalProject.Items
         {
             get
             {
-                return Math.Min(base.ArmorCheckPenalty + 1, 0);
+                return Math.Min(enchantedArmor.ArmorCheckPenalty + 1, 0);
             }
         }
 
