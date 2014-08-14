@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using CSCD454_FinalProject.Combat;
 using CSCD454_FinalProject.Entitys;
+using CSCD454_FinalProject.EncounterGeneration;
+using CSCD454_FinalProject.Items;
 
 namespace CSCD454_FinalProject.Maze
 {
@@ -47,16 +49,19 @@ namespace CSCD454_FinalProject.Maze
         }
 
 
-        public void onEnter(IList<Player> party)
+        public IList<Item> onEnter(IList<Entity> party)
         {
             if (this.hasEncounter && !Visited)
             {
-                //trigger combat
                 Visited = true;
+                EncounterGen generator = new EncounterGen(party);
+                encounter = generator.GenerateEncounter();
+                return encounter.Fight();
             }
             else
             {
-                return;
+                Visited = true;
+                return new Item[0];
             }
         }
     }
