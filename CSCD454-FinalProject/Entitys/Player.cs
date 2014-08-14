@@ -38,14 +38,14 @@ namespace CSCD454_FinalProject.Entitys
             {
                 if(OffHand.IsWeapon())
                 {
-                    if (!(weaponProficiencies.Contains(OffHand.Type) || weaponProficiencies.Contains(OffHand.Name)))
+                    if (!(weaponProficiencies.Contains(OffHand.Type) || weaponProficiencies.Contains(OffHand.ItemName)))
                     {
                         mod = -4;
                     }
                 }
                 else
                 {
-                    if (!(armorProfinciencies.Contains(OffHand.Type) || armorProfinciencies.Contains(OffHand.Name)))
+                    if (!(armorProfinciencies.Contains(OffHand.Type) || armorProfinciencies.Contains(OffHand.ItemName)))
                     {
                         mod = OffHand.ArmorCheckPenalty;
                     }
@@ -53,7 +53,7 @@ namespace CSCD454_FinalProject.Entitys
             }
             else
             {
-                if(!(weaponProficiencies.Contains(MainHand.Type) || weaponProficiencies.Contains(MainHand.Name)))
+                if(!(weaponProficiencies.Contains(MainHand.Type) || weaponProficiencies.Contains(MainHand.ItemName)))
                 {
                     mod = -4;
                 }

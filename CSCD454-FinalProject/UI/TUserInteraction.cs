@@ -44,13 +44,13 @@ namespace CSCD454_FinalProject.UI
         public virtual void GetTarget(CombatGroup targets)
         {
             int i = 1;
-            Console.WriteLine("\nPlayer Party:");
+            Console.WriteLine("\r\nPlayer Party:");
             foreach(var e in targets.Players)
             {
                 Console.WriteLine(i++ + ": " + e.Description);
             }
 
-            Console.WriteLine("\nMonsters:");
+            Console.WriteLine("\r\nMonsters:");
             foreach(var e in targets.Monsters)
             {
                 Console.WriteLine(i++ + ": " + e.Description);
@@ -65,9 +65,10 @@ namespace CSCD454_FinalProject.UI
             targets.SetTarget(targets[selection]);
         }
 
-        public virtual EntityCommand GetAction(Entity issuer)
+        public virtual EntityCombatCommand GetAction(Entity issuer)
         {
-            Console.WriteLine(issuer.Name + ":");
+            Console.WriteLine();
+            Console.WriteLine(issuer.Name + ": " + issuer.GetType().Name);
             Console.WriteLine("1: Attack");
             Console.WriteLine("2: Cast Spell");
             Console.WriteLine("3: Consumables");
@@ -102,11 +103,24 @@ namespace CSCD454_FinalProject.UI
                     choice = GetIntInRange(0, i - 1);
                     if (choice == 0)
                         return GetAction(issuer);
-                    return new UseItemCommand(issuer, issuer.Consumables[choice - 1]);
+                    return new UseItemCombatCommand(issuer, issuer.Consumables[choice - 1]);
 
                 default:
                     return new AttackCommand(issuer);
             }
+        }
+
+        public virtual Entity GetTarget(IList<Entity> targets)
+        {
+            Console.WriteLine("");
+            int i = 1;
+            foreach(var e in targets)
+            {
+                Console.WriteLine(i++ + ": " + e.Description);
+            }
+            Console.Write("Please enter the integer corresponding to your selection: ");
+            int selection = GetIntInRange(1, i - 1) - 1;
+            return targets[selection];
         }
 
         /// <summary>

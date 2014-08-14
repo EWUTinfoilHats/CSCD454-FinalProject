@@ -17,6 +17,7 @@ namespace CSCD454_FinalProject.UI
         void PushString(string s);
         void DisplayHook();
         void GetTarget(CombatGroup targets);
-        EntityCommand GetAction(Entity issuer);
+        Entity GetTarget(IList<Entity> targets);
+        EntityCombatCommand GetAction(Entity issuer);
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSCD454_FinalProject.Entitys.Commands
 {
-    public class AttackCommand : EntityCommand
+    public class AttackCommand : EntityCombatCommand
     {
         public AttackCommand(Entity issuer) : base(issuer)
         {

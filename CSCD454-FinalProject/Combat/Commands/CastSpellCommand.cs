@@ -9,7 +9,7 @@ using CSCD454_FinalProject.Spells;
 
 namespace CSCD454_FinalProject.Combat.Commands
 {
-    public class CastSpellCommand : EntityCommand
+    public class CastSpellCommand : EntityCombatCommand
     {
         private ISpell spell;
         public CastSpellCommand(Entity issuer, ISpell spell) : base(issuer)

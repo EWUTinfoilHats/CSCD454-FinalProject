@@ -72,8 +72,8 @@
     <Compile Include="Combat\Commands\CastSpellCommand.cs" />
     <Compile Include="Combat\Encounter.cs" />
     <Compile Include="Combat\Commands\AttackCommand.cs" />
-    <Compile Include="Combat\Commands\EntityCommand.cs" />
-    <Compile Include="Combat\Commands\UseItemCommand.cs" />
+    <Compile Include="Combat\Commands\EntityCombatCommand.cs" />
+    <Compile Include="Combat\Commands\UseItemCombatCommand.cs" />
     <Compile Include="Dice\D100.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Main.cs" />
@@ -176,6 +176,7 @@
     <Compile Include="Items\Wieldable.cs" />
     <Compile Include="Entitys\Classes\Wizard.cs" />
     <Compile Include="Spells\SpellType.cs" />
+    <Compile Include="UI\Commands\UICommand.cs" />
     <Compile Include="UI\TMonsterAI.cs" />
     <Compile Include="UI\TUserInteraction.cs" />
     <Compile Include="UI\MonsterAI.cs" />

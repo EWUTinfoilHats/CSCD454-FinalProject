@@ -72,5 +72,10 @@ namespace CSCD454_FinalProject.Items
         {
             get;
         }
+
+        string ItemName
+        {
+            get;
+        }
     }
 }

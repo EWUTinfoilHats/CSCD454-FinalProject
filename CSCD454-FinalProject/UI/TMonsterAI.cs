@@ -18,9 +18,14 @@ namespace CSCD454_FinalProject.UI
             targets.SetTarget(players[choice]);
         }
 
-        public override EntityCommand GetAction(Entity issuer)
+        public override EntityCombatCommand GetAction(Entity issuer)
         {
             return new AttackCommand(issuer);
+        }
+
+        public override Entity GetTarget(IList<Entity> targets)
+        {
+            return targets[0];
         }
     }
 }

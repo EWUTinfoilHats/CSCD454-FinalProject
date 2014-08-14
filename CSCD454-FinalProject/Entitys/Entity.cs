@@ -297,7 +297,8 @@ namespace CSCD454_FinalProject.Entitys
             {
                 newOH = Weapons.emptyHand;
             }
-
+            if (newOH.IsWeapon() && ((Weapon)newOH).Is2H)
+                return newOH;
             Wieldable old = OffHand;
             OffHand = newOH;
             return old;
@@ -457,7 +458,7 @@ namespace CSCD454_FinalProject.Entitys
             ui.PushStringLine(msg);
         }
 
-        public EntityCommand GetAction()
+        public EntityCombatCommand GetAction()
         {
             return ui.GetAction(this);
         }

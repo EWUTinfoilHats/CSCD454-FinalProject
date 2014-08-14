@@ -49,7 +49,7 @@ namespace CSCD454_FinalProject.Combat
                     Entity e = combatQueue.Dequeue();
                     if (e.IsDead())
                         continue;
-                    EntityCommand action = e.GetAction();
+                    EntityCombatCommand action = e.GetAction();
                     e.GetTarget(combatGroup);
                     action.Do(combatGroup);
                     e.UIDisplayHook();
@@ -59,7 +59,9 @@ namespace CSCD454_FinalProject.Combat
             {
                 foreach(var p in playerParty)
                 {
-                    p.AddExperience(100 + (challengeRating - 1) * 50);
+                    int exp = 100 + (challengeRating - 1) * 50;
+                    p.AddExperience(exp);
+                    p.PushUIString(p.Name + " gained " + exp + "xp.");
                 }
                 AbstractLootFactory lootFactory = new DefaultLootFactory();
                 return lootFactory.GenerateLoot(challengeRating);

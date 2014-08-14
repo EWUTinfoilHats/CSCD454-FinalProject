@@ -26,5 +26,13 @@ namespace CSCD454_FinalProject.Items
         {
             return enchantedWeapon.GetBaseWeapon();
         }
+
+        public override string ItemName
+        {
+            get
+            {
+                return base.ItemName;
+            }
+        }
     }
 }
