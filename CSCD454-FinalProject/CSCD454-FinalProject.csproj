@@ -88,7 +88,9 @@
     <Compile Include="Entitys\Enemies\MonsterPrototype.cs" />
     <Compile Include="Entitys\MonsterFactory.cs" />
     <Compile Include="Factories\AbstractCharacterFactory.cs" />
+    <Compile Include="Factories\AbstractLootFactory.cs" />
     <Compile Include="Factories\DefaultCharacterFactory.cs" />
+    <Compile Include="Factories\DefaultLootFactory.cs" />
     <Compile Include="Items\Armors\ArmorEnchantment.cs" />
     <Compile Include="Items\Armors\Armors.cs" />
     <Compile Include="Items\Consumables\Consumable.cs" />
